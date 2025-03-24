@@ -15,7 +15,7 @@
         "postthemeProd": "webpack --config assets/webpack/webpack.theme.mobile.styles.correct.js",
         "gutenbergBlocksDev": "cross-env mode=development webpack --config assets/webpack/webpack.gutenberg.blocks.dev.js",
         "gutenbergBlocksProd": "cross-env mode=production webpack --config assets/webpack/webpack.gutenberg.blocks.prod.js",
-        "localServer": "cross-env site_local_url=diadoc.local node ./assets/webpack/local.server.js"
+        "localServer": "cross-env site_local_url=utfsoft.local node ./assets/webpack/local.server.js"
     },
     "dependencies": {
         "@popperjs/core": "^2.11.8",
