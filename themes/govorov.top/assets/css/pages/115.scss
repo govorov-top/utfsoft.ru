@@ -1,0 +1,34 @@
+/******************************
+* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss
+* Стили страницы
+******************************/
+@import "../fragments/variables";
+@import "../fragments/components_mixin";
+@import "../fragments/media_mixin";
+@import "../fragments/fonts_mixin";
+/* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
+@include dd_boxes_style_6;
+@include rg-testimonials-swiper;
+/* Стили страницы */
+.page-115 {
+    .accordion-item {
+        color: var(--rg-text-color);
+        margin: 0;
+        padding-bottom: 20px;
+        padding-top: 20px;
+
+        .accordion-button {
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+
+        .accordion-body {
+            padding: 20px 0 0;
+            background: transparent;
+
+            p {
+                max-width: 90%;
+            }
+        }
+    }
+}

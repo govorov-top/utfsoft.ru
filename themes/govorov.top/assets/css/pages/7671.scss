@@ -1,0 +1,79 @@
+/******************************
+* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss
+* Стили страницы
+******************************/
+@import "../fragments/variables";
+@import "../fragments/components_mixin";
+@import "../fragments/media_mixin";
+@import "../fragments/fonts_mixin";
+/* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
+@include rg-bg-figure;
+@include global_tpl_box_tariffs;
+@include dd_box_style_1;
+/* Стили страницы */
+.page-7671 {
+    &.section_1 {
+        .rg-bg-figure {
+            .desc {
+                p {
+                    &:nth-of-type(2) {
+                        @include max_992 {
+                            max-width: 521px;
+                        }
+                    }
+
+                    &:last-of-type {
+                        @include max_992 {
+                            max-width: 417px;
+                        }
+                    }
+                }
+            }
+
+            img {
+                position: absolute;
+                max-width: 455px;
+                right: 20px;
+                bottom: 0;
+                z-index: 1;
+                @include max_1400 {
+                    max-width: 430px;
+                    right: 6px;
+                }
+                @include max_1200 {
+                    max-width: 380px;
+                    right: -18px;
+                }
+                @include max_992 {
+                    max-width: 290px;
+                    bottom: -10px;
+                    right: 6px;
+                }
+            }
+        }
+    }
+
+    &.section_2 {
+        .items {
+            .item {
+                width: 100%;
+                max-width: 300px;
+
+                img {
+                    max-width: 70px;
+                    margin: 0 auto 1rem;
+                }
+            }
+        }
+    }
+
+    &.section_6 {
+        img {
+            @include max_768 {
+                max-width: 300px;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}

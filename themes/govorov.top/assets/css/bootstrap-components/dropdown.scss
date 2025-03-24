@@ -1,0 +1,40 @@
+@import "../fragments/variables";
+@import "../fragments/components_mixin";
+@import "../fragments/media_mixin";
+@import "../fragments/fonts_mixin";
+/* Настройка макета Dropdown */
+$dropdown-padding-x: 10px;
+$dropdown-padding-y: 20px;
+$dropdown-border-width: 0;
+$dropdown-inner-border-radius: 10px;
+$dropdown-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+$dropdown-link-active-color: var(--rg-color-site);
+$dropdown-link-active-bg: transparent;
+$dropdown-link-hover-bg: transparent;
+$dropdown-item-padding-y: 5px;
+$dropdown-item-padding-x: 8px;
+.dropdown-menu {
+    box-shadow: var(--bs-dropdown-box-shadow);
+    @include max_992 {
+        padding: 15px 10px;
+    }
+    a {
+        @include max_992 {
+            @include px-to-rem(
+                (
+                    fs: 19,
+                )
+            );
+        }
+        @include max_768 {
+            @include px-to-rem(
+                (
+                    fs: 17,
+                )
+            );
+        }
+        @include max_576 {
+            font-size: 1rem;
+        }
+    }
+}

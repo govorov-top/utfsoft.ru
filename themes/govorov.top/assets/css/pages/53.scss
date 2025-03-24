@@ -1,0 +1,45 @@
+/******************************
+* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss
+* Стили страницы
+******************************/
+@import "../fragments/variables";
+@import "../fragments/components_mixin";
+@import "../fragments/media_mixin";
+@import "../fragments/fonts_mixin";
+/* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
+@include dd_box_style_3;
+@include dd_boxes_style_3;
+@include dd_boxes_style_2;
+@include dd_box_style_1;
+@include dd_boxes_style_5;
+@include rg-testimonials-swiper;
+@include global_tpl_box_tariffs;
+/* Стили страницы */
+.page-53 {
+    &.functions {
+        .dd_boxes_style_5 {
+            .col {
+                .rg-card {
+                    img {
+                        min-height: 199px;
+                        @include max_1400 {
+                            min-height: 168px;
+                        }
+                        @include max_1200 {
+                            min-height: 144px;
+                        }
+                        @include max_992 {
+                            min-height: 103px;
+                        }
+                        @include max_768 {
+                            min-height: 166px;
+                        }
+                        @include max_576 {
+                            min-height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

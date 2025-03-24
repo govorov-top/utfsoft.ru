@@ -1,0 +1,20 @@
+/******************************
+* Часто повторяющиеся элементы
+* Меняем стили блоков на странице виджетов
+******************************/
+@import "fragments/variables";
+@import "fragments/components_mixin";
+@import "fragments/media_mixin";
+@import "fragments/fonts_mixin";
+
+/* Часто повторяющиеся элементы */
+
+/* Меняем стили блоков на странице виджетов */
+div {
+    // - [Footer] Описание сайта
+    &[data-widget-area-id="footer-widget-description-site"],
+    &[data-widget-area-id="footer-widget-contacts"],
+    &[data-widget-area-id="footer-widget-logo-and-politics"] {
+        background-color: $rg-color-site;
+    }
+}

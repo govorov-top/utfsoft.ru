@@ -1,0 +1,216 @@
+/******************************
+* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss
+* Стили страницы
+******************************/
+@import "../fragments/variables";
+@import "../fragments/components_mixin";
+@import "../fragments/media_mixin";
+@import "../fragments/fonts_mixin";
+/* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
+@include global_tpl_box_tariffs;
+@include dd_box_style_3;
+@include dd_box_style_4;
+@include dd_box_style_5;
+@include dd_boxes_style_1;
+@include rg-testimonials-swiper;
+/* Стили страницы */
+.page-238 {
+    &.edo {
+        .rg-card {
+            gap: 1rem;
+            grid-template-columns: repeat(2, 265px) 1fr;
+            @include max_1400 {
+                grid-template-columns: repeat(2, 210px) 1fr;
+            }
+            @include max_992 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .item {
+                &.img {
+                    border-radius: 10px;
+                    overflow: hidden;
+                    grid-column: 1/3;
+                    @include max_992 {
+                        grid-column: 1/-1;
+                    }
+                    &_1 {
+                        grid-row: 1/3;
+                        @include max_992 {
+                            grid-row: 2/3;
+                        }
+                    }
+                    &_2,
+                    &_3 {
+                        grid-row: 3/4;
+                        @include max_992 {
+                            grid-row: 4/5;
+                        }
+                    }
+                    &_2 {
+                        grid-column: 1/2;
+                        @include max_992 {
+                            grid-column: 1/2;
+                        }
+                    }
+                    &_3 {
+                        grid-column: 2/3;
+                        @include max_992 {
+                            grid-column: 2/3;
+                        }
+                    }
+                }
+                &.title,
+                &.text,
+                &.text-with-button {
+                    grid-column: 3/-1;
+                    @include max_992 {
+                        grid-column: 1/-1;
+                    }
+                }
+                &.title {
+                    grid-row: 1/2;
+                }
+                &.text {
+                    grid-row: 2/3;
+                    @include max_992 {
+                        grid-row: 3/4;
+                    }
+                }
+                &.text-with-button {
+                    grid-row: 3/4;
+                    @include max_992 {
+                        grid-row: 5/6;
+                    }
+                }
+            }
+        }
+    }
+    &.how {
+        .title,
+        .desc {
+            max-width: 62%;
+            @include max_1400 {
+                max-width: 59%;
+            }
+            @include max_1200 {
+                max-width: 70%;
+            }
+            @include max_992 {
+                max-width: 100%;
+            }
+        }
+        .title {
+            @include max_992 {
+                @include px-to-rem(
+                    (
+                        fs: 38,
+                        base: 17,
+                    )
+                );
+            }
+            @include max_definite_width(495.98) {
+                @include px-to-rem(
+                    (
+                        fs: 25,
+                        base: 15,
+                    )
+                );
+            }
+        }
+    }
+    &.review {
+        .rg-card {
+            &.diadoc {
+                border-color: var(--rg-color-site) !important;
+            }
+            .header {
+                img {
+                    width: auto;
+                }
+                .price {
+                    @include px-to-rem(
+                        (
+                            fs: 30,
+                        )
+                    );
+                }
+            }
+        }
+    }
+    &.tables {
+        table.table {
+            $border-size: 2px;
+            $highlight-color: var(--rg-color-site);
+            $border-color: #dee2e6;
+            thead {
+                tr {
+                    th {
+                        @include px-to-rem(
+                            (
+                                fs: 25,
+                            )
+                        );
+                        &.highlighted-column {
+                            border: $border-size solid $highlight-color;
+                            border-bottom: 1px solid $border-color;
+                            border-radius: 20px 20px 0 0;
+                            display: block;
+                            width: calc(100% + 2px);
+                            margin-left: -1px;
+                            z-index: 1;
+                            position: relative;
+                        }
+                        &.corus {
+                            min-width: 126px;
+                        }
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        text-align: center;
+                        vertical-align: middle;
+                        &.strong.text-start {
+                            line-height: 120%;
+                            @include px-to-rem(
+                                (
+                                    fs: 17,
+                                )
+                            );
+                        }
+                        &:not(:first-child) {
+                            line-height: 120%;
+                            @include px-to-rem(
+                                (
+                                    fs: 16,
+                                )
+                            );
+                        }
+                        &.highlighted-column {
+                            border: $border-size solid $highlight-color;
+                            border-top: 1px solid $border-color;
+                            border-bottom: 1px solid $border-color;
+                        }
+                    }
+                    &:last-child {
+                        td,
+                        th {
+                            border-bottom: none;
+                        }
+                        td.highlighted-column {
+                            border: $border-size solid $highlight-color;
+                            border-top: 1px solid $border-color;
+                            border-radius: 0 0 20px 20px;
+                            display: block;
+                            width: calc(100% + 2px);
+                            margin-left: -1px;
+                            z-index: 1;
+                            position: relative;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,290 @@
+/******************************
+* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss
+* Стили страницы
+******************************/
+@import "../fragments/variables";
+@import "../fragments/components_mixin";
+@import "../fragments/media_mixin";
+@import "../fragments/fonts_mixin";
+/* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
+@include dd_box_style_3;
+@include rg-bg-box;
+@include global_tpl_box_tariffs;
+@include box_style_15;
+@include dd_box_style_1;
+@include rg-testimonials-swiper;
+
+/* Стили страницы */
+.page-10005 {
+    &.banner {
+        .dd_box_style_3 {
+            @include min_definite_width(1400) {
+                grid-template-columns: 738px auto;
+            }
+        }
+    }
+
+    &.possibilities {
+        .content {
+            padding: 50px 30px;
+            max-width: 100%;
+            @include max_576 {
+                padding: 30px 20px;
+            }
+
+            .item {
+                grid-template-columns: 584px 576px;
+                margin-bottom: 50px;
+                @include max_1400 {
+                    grid-template-columns: 1fr 1fr;
+                    gap: 50px;
+                }
+                @include max_1200 {
+                    gap: 30px;
+                }
+                @include max_768 {
+                    grid-template-columns: 1fr;
+                    gap: 20px;
+                    margin-bottom: 30px;
+                }
+
+                .wrapper {
+                    @include max_768 {
+                        display: contents;
+                    }
+
+                    .title {
+                        @include px-to-rem(
+                            (
+                                fs: 30,
+                            )
+                        );
+                        @include max_768 {
+                            grid-row: 1/2;
+                            text-align: center;
+                        }
+                    }
+
+                    .desc {
+                        @include max_768 {
+                            grid-row: 3/4;
+                        }
+                    }
+                }
+
+                .image {
+                    @include max_768 {
+                        grid-row: 2/3;
+                    }
+                }
+            }
+        }
+    }
+
+    &.integration {
+        .items {
+            .item {
+                max-width: 48.5%;
+                @include max_992 {
+                    max-width: 100%;
+                }
+
+                .icon-title {
+                    .title {
+                        @include rg-font-style(
+                            (
+                                style: "semibold",
+                                prop: "font",
+                                fs: 30,
+                                lh: 130%,
+                            )
+                        );
+                    }
+                }
+
+                .accordion {
+                    &-item {
+                        border: none;
+                        background: transparent;
+                    }
+
+                    &-body {
+                        color: var(--rg-text-color);
+                        background: transparent;
+                        padding: 0;
+                    }
+
+                    &-button {
+                        background: transparent;
+
+                        p {
+                            @include rg-font-style(
+                                (
+                                    style: "medium",
+                                    prop: "font",
+                                    fs: 20,
+                                    lh: 140%,
+                                )
+                            );
+                        }
+
+                        i {
+                            color: var(--rg-color-site);
+                        }
+
+                        &:after {
+                            content: none;
+                        }
+                    }
+                }
+
+                .price {
+                    @include rg-font-style(
+                        (
+                            style: "semibold",
+                            prop: "font",
+                            fs: 30,
+                            lh: 130%,
+                        )
+                    );
+                }
+            }
+        }
+    }
+
+    &.app {
+        p.desc {
+            @include px-to-rem(
+                (
+                    fs: 24,
+                    prop: "font-size",
+                    important: 1,
+                )
+            );
+            line-height: 140%;
+            @include max_992 {
+                font-size: 1rem !important;
+            }
+        }
+
+        .nav img {
+            min-height: 41px;
+            @include max_768 {
+                min-height: 39px;
+                width: 130px;
+            }
+        }
+
+        picture {
+            min-height: 504px;
+            @include max_1400 {
+                min-height: 431px;
+            }
+            @include max_1200 {
+                min-height: 359px;
+            }
+            @include max_992 {
+                min-height: 263px;
+            }
+            @include max_768 {
+                min-height: 374px;
+            }
+            @include max_576 {
+                min-height: auto;
+            }
+        }
+    }
+
+    &.testimonial {
+        .items {
+            .item {
+                max-width: 49%;
+                @include max_992 {
+                    max-width: 100%;
+                }
+
+                .title {
+                    @include rg-font-style(
+                        (
+                            style: "semibold",
+                            prop: "font",
+                            fs: 30,
+                            lh: 130%,
+                        )
+                    );
+                }
+            }
+        }
+    }
+
+    &.roaming {
+        .rg-card {
+            background: var(--rg-color-site-black);
+
+            p,
+            h2 {
+                color: #fff;
+            }
+
+            h2 {
+                @include px-to-rem(
+                    (
+                        fs: 60,
+                    )
+                );
+                line-height: 110%;
+                @include max_1200 {
+                    @include px-to-rem(
+                        (
+                            fs: 55,
+                            base: 18,
+                        )
+                    );
+                }
+                @include max_992 {
+                    @include px-to-rem(
+                        (
+                            fs: 40,
+                            base: 17,
+                        )
+                    );
+                }
+                @include max_definite_width(427.98) {
+                    @include px-to-rem(
+                        (
+                            fs: 26,
+                            prop: "font-size",
+                            important: 1,
+                            base: 15,
+                        )
+                    );
+                }
+            }
+
+            p.desc {
+                @include px-to-rem(
+                    (
+                        fs: 24,
+                    )
+                );
+                line-height: 140%;
+                @include max_definite_width(427.98) {
+                    font-size: 1rem !important;
+                }
+            }
+
+            picture {
+                min-height: 400px;
+                @include max_1400 {
+                    min-height: 340px;
+                }
+                @include max_1200 {
+                    min-height: 287px;
+                }
+                @include max_768 {
+                    min-height: auto;
+                }
+            }
+        }
+    }
+}

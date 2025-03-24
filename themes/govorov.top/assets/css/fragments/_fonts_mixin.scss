@@ -1,0 +1,94 @@
+@use "sass:math";
+@import "variables";
+/******************************
+* Размеры шрифтов
+* Шрифты в виде переменных
+* Шрифты в виде миксина
+* Конвертер px в rem
+******************************/
+/* Размеры шрифтов */
+$rg-base-font-size: 20px;
+$rg-base-font-line-height: 140%;
+/* Шрифты в виде переменных  */
+$rg-font-name: "Rubik";
+$rg-font-style-regular:
+    $rg-font-name + "-Regular",
+    sans-serif;
+$rg-font-style-medium:
+    $rg-font-name + "-Medium",
+    sans-serif;
+$rg-font-style-medium:
+    $rg-font-name + "-Light",
+    sans-serif;
+$rg-font-style-semi-bold:
+    $rg-font-name + "-SemiBold",
+    sans-serif;
+$rg-font-style-bold:
+    $rg-font-name + "-Bold",
+    sans-serif;
+/* Конвертер px в rem */
+// @include px-to-rem((pxValue: 20, base: 25));
+@mixin px-to-rem($args) {
+    $defaults: (
+        fs: 20,
+        prop: "font-size",
+        important: 0,
+        base: 20,
+    );
+    $config: map-merge($defaults, $args);
+    $pxValue: map-get($config, fs);
+    $property: map-get($config, prop);
+    $important: map-get($config, important);
+    $base: map-get($config, base);
+    @if $important > 0 {
+        #{$property}: math.div($pxValue, $base) + rem !important;
+    } @else {
+        #{$property}: math.div($pxValue, $base) + rem;
+    }
+}
+/* Шрифты в виде миксина  */
+// @include rg-font-style('regular');
+// Выведет: font: 1rem "Rubik-Regular", "sans-serif";
+// @include rg-font-style('regular', 'font-family');
+// Выведет: font-family: "Rubik-Regular", "sans-serif";
+// @include rg-font-style('semibold','font', 40, 140%);
+// Выведет:	font: 3rem/140% Rubik-SemiBold,"sans-serif";
+@mixin rg-font-style($args) {
+    $defaults: (
+        style: "light",
+        prop: "font",
+        fs: 20,
+        lh: 140%,
+        othr-fs: "sans-serif",
+        fname: "Rubik",
+        base: 20,
+    );
+    $config: map-merge($defaults, $args);
+    $style: map-get($config, style);
+    $property: map-get($config, prop);
+    $font-size: map-get($config, fs);
+    $line-height: map-get($config, lh);
+    $other-fonts: map-get($config, othr-fs);
+    $font-name: map-get($config, fname);
+    $base: map-get($config, base);
+    @if $style == "regular" {
+        $style: "Regular";
+    } @else if $style == "medium" {
+        $style: "Medium";
+    } @else if $style == "bold" {
+        $style: "Bold";
+    } @else if ($style == "light") {
+        $style: "Light";
+    } @else {
+        $style: "SemiBold";
+    }
+    @if $property == "font-family" {
+        #{$property}:
+            $font-name + "-" + $style,
+            $other-fonts;
+    } @else {
+        #{$property}:
+            math.div($font-size, $base) + rem / $line-height $font-name + "-" + $style,
+            $other-fonts;
+    }
+}

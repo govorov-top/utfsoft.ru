@@ -1,0 +1,70 @@
+/******************************
+* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss
+* Стили страницы
+******************************/
+@import "../fragments/variables";
+@import "../fragments/components_mixin";
+@import "../fragments/media_mixin";
+@import "../fragments/fonts_mixin";
+/* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
+@include global_tpl_box_tariffs;
+@include rg-testimonials-swiper;
+@include rg-bg-box;
+@include dd_boxes_style_1;
+@include dd_box_style_9;
+/* Стили страницы */
+.page-7709 {
+    &.banner {
+        h1 {
+            @include px-to-rem(
+                (
+                    fs: 46,
+                )
+            );
+            @include max_1400 {
+                @include px-to-rem(
+                    (
+                        fs: 39,
+                    )
+                );
+            }
+            @include max_1200 {
+                @include px-to-rem(
+                    (
+                        fs: 33,
+                        base: 18,
+                    )
+                );
+            }
+            @include max_992 {
+                @include px-to-rem(
+                    (
+                        fs: 24,
+                        base: 17,
+                    )
+                );
+            }
+            @include max_576 {
+                font-size: 24px;
+            }
+        }
+    }
+    &.section_2 {
+        img {
+            @include max_768 {
+                display: block;
+                width: auto;
+                margin: 0 auto;
+                padding-bottom: 15px;
+            }
+        }
+    }
+    &.section_3 {
+        .dd_boxes_style_1 {
+            img {
+                width: 50px;
+                min-height: 50px;
+            }
+        }
+    }
+}

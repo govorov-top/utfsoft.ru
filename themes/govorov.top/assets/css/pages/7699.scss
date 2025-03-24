@@ -1,0 +1,82 @@
+/******************************
+* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss
+* Стили страницы
+******************************/
+@import "../fragments/variables";
+@import "../fragments/components_mixin";
+@import "../fragments/media_mixin";
+@import "../fragments/fonts_mixin";
+/* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
+@include dd_box_style_9;
+@include rg-ep-tariffs;
+@include rg-testimonials-swiper;
+@include global_tpl_box_tariffs;
+@include rg-bg-box;
+/* Стили страницы */
+.page-7699 {
+    &.banner {
+        h1 {
+            @include px-to-rem(
+                (
+                    fs: 57,
+                )
+            );
+            @include max_1400 {
+                @include px-to-rem(
+                    (
+                        fs: 48,
+                    )
+                );
+            }
+            @include max_1400 {
+                @include px-to-rem(
+                    (
+                        fs: 38,
+                        base: 18,
+                    )
+                );
+            }
+            @include max_1200 {
+                @include px-to-rem(
+                    (
+                        fs: 30,
+                        base: 17,
+                    )
+                );
+            }
+        }
+    }
+    &.connect {
+        img {
+            &:not(.arrow) {
+                width: auto;
+                margin: 0 auto;
+                display: block;
+                @include max_992 {
+                    max-width: 100%;
+                }
+                @include max_576 {
+                    display: none;
+                }
+            }
+            &.arrow {
+                position: absolute;
+                left: auto;
+                right: 0;
+                width: auto;
+                &.arrow_1 {
+                    right: 39%;
+                    top: 65%;
+                }
+                &.arrow_2 {
+                    right: 42%;
+                    top: 61%;
+                }
+                &.arrow_3 {
+                    right: 40%;
+                    top: 72%;
+                }
+            }
+        }
+    }
+}

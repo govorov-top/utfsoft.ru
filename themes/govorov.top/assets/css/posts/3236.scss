@@ -1,0 +1,58 @@
+/******************************
+* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss
+* Стили поста
+******************************/
+@import "../fragments/variables";
+@import "../fragments/components_mixin";
+@import "../fragments/media_mixin";
+@import "../fragments/fonts_mixin";
+/* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
+@include dd_box_style_1;
+@include dd_boxes_style_2;
+@include global_tpl_box_tariffs;
+@include dd_boxes_style_3;
+@include rg-testimonials-swiper;
+@include rg-bg-box;
+/* Стили поста */
+.post-3236 {
+    &.banner {
+        h1 {
+            @include px-to-rem(
+                (
+                    fs: 49,
+                )
+            );
+            @include max_1400 {
+                @include px-to-rem(
+                    (
+                        fs: 42,
+                    )
+                );
+            }
+            @include max_1200 {
+                @include px-to-rem(
+                    (
+                        fs: 35,
+                        base: 18,
+                    )
+                );
+            }
+            @include max_992 {
+                @include px-to-rem(
+                    (
+                        fs: 26,
+                        base: 17,
+                    )
+                );
+            }
+            @include max_576 {
+                @include px-to-rem(
+                    (
+                        fs: 35,
+                        base: 16,
+                    )
+                );
+            }
+        }
+    }
+}

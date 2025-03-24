@@ -1,0 +1,29 @@
+@import "../fragments/variables";
+@import "../fragments/components_mixin";
+@import "../fragments/media_mixin";
+@import "../fragments/fonts_mixin";
+/* Настройка макета Tooltips */
+$tooltip-max-width: 300px;
+$tooltip-color: #000;
+$tooltip-bg: #fff;
+$tooltip-opacity: 1;
+$tooltip-border-color: #ddd;
+$tooltip-padding-y: 0.5rem;
+$tooltip-padding-x: 0.75rem;
+.tooltip {
+    .tooltip-inner {
+        text-align: left;
+        box-shadow: 0 2px 10px 0 rgba(42, 42, 42, 0.15);
+        .price {
+            color: #00cc99;
+            font-weight: bold;
+        }
+        .ozon {
+            color: #007bff;
+        }
+        .promo-end {
+            color: #ccc;
+            font-size: 12px;
+        }
+    }
+}

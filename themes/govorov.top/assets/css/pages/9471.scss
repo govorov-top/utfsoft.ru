@@ -1,0 +1,42 @@
+/******************************
+* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss
+* Стили страницы
+******************************/
+@import "../fragments/variables";
+@import "../fragments/components_mixin";
+@import "../fragments/media_mixin";
+@import "../fragments/fonts_mixin";
+/* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
+@include dd_box_style_1;
+@include dd_box_style_3;
+@include dd_boxes_style_2;
+@include global_tpl_box_tariffs;
+/* Стили страницы */
+.page-9471 {
+    &.electro {
+        p {
+            &.desc {
+                &.last {
+                    max-width: 74%;
+                    @include max_1400 {
+                        max-width: 70%;
+                    }
+                    @include max_768 {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+        img {
+            bottom: 0;
+            right: 0;
+            width: 348px;
+            @include max_1200 {
+                width: 280px;
+            }
+            @include max_992 {
+                width: 240px;
+            }
+        }
+    }
+}

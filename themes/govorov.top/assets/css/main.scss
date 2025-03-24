@@ -1,0 +1,2424 @@
+/******************************
+* Normalize
+*  - html и body
+*  - Оформление отображения кода <pre>, <code>
+*  - Настройка контейнера .container
+*  - Grids
+*  - Border radius
+*  - Bootstrap Icons
+*  - Tags like button
+*  - Заголовки h1, .h1, h2, .h2, h3, .h3, h5, .h5
+*  - Шрифты
+*  -- Шрифт Rubik Medium 20px
+*  - Символ рубля ₽
+*  - Перенос текста
+*  - Бегущий текст
+*  - Жирный шрифт
+*  - Ссылки
+*  - Цвета по умолчанию
+*  - Карточки сайта
+*  - Тень
+*  - Блок с тенью
+*  - Картинки
+*  - Видео
+*  - Списки
+*  - Секции
+*  - Заливка - background
+*  - Оформление заголовок + описание
+* Header
+*  - Мобильное меню
+*  - Хлебные крошки
+* Body
+*  - Шаблоны страниц
+*  -- Отзывы (/testimonials/)
+*  - Пагинация
+*  - Навигация по постом <-- Prev | Next -->
+*  - Кнопки
+*  - Формы
+*  - Аккордеоны
+*  - Табы
+*  - Комментарии
+* Footer
+* Дополнительные модули
+* Анимация @keyframes
+******************************/
+@import "fragments/variables";
+@import "fragments/components_mixin";
+@import "fragments/media_mixin";
+@import "fragments/fonts_mixin";
+/* Часто повторяющиеся элементы */
+@include rg-fast-connect-form;
+/* Normalize */
+:root {
+    //Цвета элементов
+    --rg-bg-site: #{$rg-bg-site};
+    --rg-color-site: #{$rg-color-site};
+    --rg-color-site-yellow: #{$rg-color-site-yellow};
+    --rg-color-site-black: #{$rg-color-site-black};
+    --rg-color-light-grey: #f9f9f9;
+    --rg-fs: #{$rg-base-font-size};
+    @include max_1200 {
+        --rg-fs: 18px;
+    }
+    @include max_992 {
+        --rg-fs: 17px;
+    }
+    @include max_768 {
+        --rg-fs: 16px;
+    }
+    @include max_576 {
+        --rg-fs: 15px;
+    }
+    //Заливка
+    --rg-bg-section-light: #{$rg-bg-section-light};
+    --rg-bg-section-dark: #{$rg-bg-section-dark};
+    //Текст
+    --rg-text-color-light: #{$rg-text-color-light};
+    --rg-text-color-turquoise: #{$rg-text-color-turquoise};
+    --rg-text-color: #{$rg-text-color};
+    --rg-color-red: #{$rg-color-red};
+    --rg-cursor-hover: #{$rg-cursor-hover};
+}
+// - html и body
+html {
+    overflow-x: hidden;
+    font-size: var(--rg-fs);
+    body {
+        font-size: var(--rg-fs);
+        line-height: $rg-base-font-line-height;
+        @include rg-font-style(
+            (
+                style: "regular",
+                prop: "font-family",
+            )
+        );
+        background: $rg-bg-site;
+        color: $rg-text-color;
+        overflow-x: hidden;
+        position: relative;
+    }
+}
+// - Оформление отображения кода <pre>, <code>
+pre,
+code {
+    background: #1f1f1f !important;
+    color: $rg-color-site !important;
+    padding: 25px 15px;
+    width: 100%;
+    display: block;
+    margin: 25px 0;
+}
+// - Настройка контейнера .container
+.container {
+    &.mini {
+        @include min_definite_width(768) {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+    }
+}
+// - Grids
+.grid {
+    display: grid;
+}
+.grid-inline {
+    display: inline-grid;
+}
+// - Border radius
+.br-1 {
+    border-radius: 10px !important;
+}
+.br-2 {
+    border-radius: 20px !important;
+}
+.br-3 {
+    border-radius: 30px !important;
+}
+.br-4 {
+    border-radius: 40px !important;
+}
+.br-5 {
+    border-radius: 50px !important;
+}
+// - Bootstrap Icons
+.bi {
+    &-coin {
+        &:before {
+            content: url(../img/repeat-elements/tariffs/coin.svg);
+        }
+    }
+}
+// - Tags like button
+.dd-tag {
+    @include rg-font-style(
+        (
+            style: "semibold",
+            prop: "font",
+            fs: 20,
+            lh: 140%,
+        )
+    );
+    display: inline-block;
+    border: 2px solid var(--rg-color-site);
+    padding: 8px 18px;
+    border-radius: 20px;
+    background: var(--rg-color-site);
+    color: white;
+    @include max_1200 {
+        @include px-to-rem(
+            (
+                fs: 19,
+                base: 18,
+            )
+        );
+    }
+    @include max_definite_width(425.98) {
+        @include px-to-rem(
+            (
+                fs: 15,
+                prop: "font-size",
+                important: 1,
+                base: 15,
+            )
+        );
+    }
+    &_transparent {
+        color: var(--rg-color-site);
+        background: transparent;
+        &_black {
+            color: var(--rg-color-site-black);
+            border-color: var(--rg-color-site-black);
+        }
+        &_white {
+            color: #fff;
+            border-color: #fff;
+        }
+    }
+}
+// - More orders
+.order-6 {
+    order: 6;
+}
+.order-7 {
+    order: 7;
+}
+.order-8 {
+    order: 8;
+}
+.order-9 {
+    order: 9;
+}
+.order-10 {
+    order: 10;
+}
+// - Заголовки h1, .h1, h2, .h2, h3, .h3, h5, .h5
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h5,
+.h5 {
+    @include rg-font-style(
+        (
+            style: "bold",
+            prop: "font",
+            fs: 60,
+        )
+    );
+    padding-bottom: 36px;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 0;
+    span {
+        color: $rg-color-site;
+        &.color-turquoise {
+            color: var(--rg-text-color-turquoise);
+        }
+        &.no-color {
+            color: $rg-text-color;
+        }
+    }
+    br {
+        @include max_576 {
+            display: none;
+        }
+    }
+    &.pb-50 {
+        padding-bottom: 50px;
+        @include max_992 {
+            padding-bottom: 30px;
+        }
+    }
+}
+.h1,
+h1 {
+    @include max_1400 {
+        @include px-to-rem(
+            (
+                fs: 50,
+            )
+        );
+    }
+}
+.h2,
+h2 {
+    @include px-to-rem(
+        (
+            fs: 40,
+        )
+    );
+    padding-bottom: 30px;
+    line-height: 120%;
+    @include max_1400 {
+        @include px-to-rem(
+            (
+                fs: 38,
+            )
+        );
+    }
+    @include max_1200 {
+        line-height: 100%;
+    }
+    @include max_992 {
+        @include px-to-rem(
+            (
+                fs: 34,
+                base: 17,
+            )
+        );
+    }
+    @include max_768 {
+        @include px-to-rem(
+            (
+                fs: 30,
+                base: 16,
+            )
+        );
+    }
+    @include max_576 {
+        @include px-to-rem(
+            (
+                fs: 26,
+                base: 15,
+            )
+        );
+    }
+}
+.h3,
+h3 {
+    @include px-to-rem(
+        (
+            fs: 36,
+        )
+    );
+    padding-bottom: 25px;
+    @include max_576 {
+        @include px-to-rem(
+            (
+                fs: 23,
+                base: 15,
+            )
+        );
+        padding-bottom: 15px;
+    }
+}
+h5,
+.h5 {
+    @include rg-font-style(
+        (
+            style: "semibold",
+            prop: "font",
+            fs: 27,
+        )
+    );
+    @include max_992 {
+        @include px-to-rem(
+            (
+                fs: 22,
+                base: 17,
+            )
+        );
+        padding-bottom: 1rem;
+    }
+    @include max_768 {
+        @include px-to-rem(
+            (
+                fs: 20,
+                base: 16,
+            )
+        );
+        padding-bottom: 1rem;
+    }
+}
+// - Шрифты
+// -- Шрифт Rubik Medium 20px
+.rg-font-20-medium {
+    @include rg-font-style(
+        (
+            style: "medium",
+            prop: "font",
+            fs: 20,
+        )
+    );
+}
+// - Символ рубля ₽
+.rubl:after {
+    content: "\20BD";
+    display: inline-block;
+}
+// - Перенос текста
+.whiteSpace {
+    &_nowrap {
+        white-space: nowrap;
+    }
+}
+// - Бегущий текст
+.marquee {
+    overflow: hidden;
+    position: relative;
+    .rightToLeft {
+        animation: marquee_rightToLeft 5s infinite linear;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        display: table;
+    }
+    .leftToRight {
+        display: block;
+        animation: marquee_leftToRight 5s infinite linear;
+    }
+}
+@keyframes marquee_rightToLeft {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+@keyframes marquee_leftToRight {
+    from {
+        transform: translateX(-115%);
+    }
+    to {
+        transform: translateX(115%);
+    }
+}
+// - Жирный шрифт
+.strong,
+b {
+    @include rg-font-style(
+        (
+            style: "semibold",
+            prop: "font-family",
+        )
+    );
+}
+// - Ссылки
+a {
+    transition: all 0.3s linear;
+    color: $rg-color-site;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        color: $rg-color-site;
+        text-decoration: none;
+        outline: none;
+        cursor: $rg-cursor-hover;
+        &.color-text {
+            color: $rg-text-color;
+            text-decoration: underline;
+        }
+    }
+}
+// - Цвета по умолчанию
+.color-default {
+    color: $rg-color-site !important;
+}
+.color-text {
+    color: $rg-text-color !important;
+}
+.color-white {
+    color: white !important;
+}
+.color-red {
+    color: $rg-color-red;
+}
+.color-turquoise {
+    color: var(--rg-text-color-turquoise);
+}
+// - Карточки сайта
+.rg-card {
+    position: relative;
+    border-radius: 10px;
+    padding: 30px;
+    @include max_1200 {
+        padding: 20px;
+    }
+}
+// - Тень
+.shadow {
+    box-shadow: 2px 2px 10px 0px rgba(42, 42, 42, 0.15);
+}
+// - Картинки
+img {
+    height: auto;
+    width: 100%;
+    aspect-ratio: attr(width) / attr(height);
+    &.lazy {
+        opacity: 0;
+    }
+    &:not([src]):not([srcset]) {
+        visibility: hidden;
+    }
+    &:not(.initial) {
+        transition: opacity 1s;
+    }
+    &.initial,
+    &.loaded,
+    &.error {
+        opacity: 1;
+    }
+}
+object {
+    width: 100%;
+}
+// - Видео: задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%)
+.adaptive-video {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    padding: 0 0 56.25%;
+    border-radius: 10px;
+    &_white {
+        &:before {
+            color: white;
+        }
+    }
+    .bg-layout {
+        z-index: 1;
+        top: 0;
+        left: 0;
+        display: flex;
+        transition: opacity 0.7s;
+        opacity: 1;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        .play-button {
+            transition: all 0.7s ease-in-out;
+            border: none;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 80px;
+                height: 80px;
+                transform: translate(-50%, -50%);
+                border-radius: 100%;
+                background-color: #222;
+                background-repeat: no-repeat;
+                background-position: 50%;
+                background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='42' height='42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M37.38 19.85a.75.75 0 010 1.3L11.374 36.182a.75.75 0 01-1.125-.65V5.467a.75.75 0 011.125-.649L37.38 19.851z' stroke='%23fff' stroke-width='2.5'/%3E%3C/svg%3E");
+            }
+        }
+    }
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-width: 0;
+        outline-width: 0;
+    }
+}
+// - Списки
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+ul,
+.wp-block-navigation.is-vertical {
+    li {
+        list-style: none;
+        margin: 0;
+    }
+    &.rg-list {
+        padding: 0 0 1rem;
+        > li,
+        ul.wp-block-navigation__container > li {
+            position: relative;
+            margin-bottom: 10px;
+            padding-left: 22px;
+            &::before,
+            &::after {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                margin: 0 auto;
+                content: "";
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &_check {
+            > li {
+                &::before {
+                    font-size: 25px;
+                    content: "\F269";
+                    color: var(--rg-color-site);
+                    left: -4px;
+                    font-family: "bootstrap-icons", serif;
+                }
+            }
+            &_white {
+                > li {
+                    &::before {
+                        color: white;
+                    }
+                }
+            }
+        }
+        &_icon {
+            > li {
+                padding-left: 30px;
+                @include max_768 {
+                    padding-left: 28px;
+                }
+                &::before {
+                    top: 3px;
+                    width: 20px;
+                    height: 20px;
+                    content: "";
+                    //background: url(../img/components/rg-list/star.svg) no-repeat center / contain;
+                    @include max_768 {
+                        top: 0;
+                        width: 20px;
+                        height: 24px;
+                        background-size: 20px;
+                    }
+                }
+                &::after {
+                    display: none;
+                }
+            }
+            &-star {
+                > li {
+                    &::before {
+                        //background: url(../img/components/rg-list/star-gray.svg) no-repeat center / contain;
+                        top: 2px;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+        &_circle,
+        ul.wp-block-navigation__container {
+            > li {
+                &::before {
+                    top: 8px;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background: var(--rg-color-site);
+                }
+                &::after {
+                    display: none;
+                }
+            }
+            &_white {
+                > li {
+                    &::before {
+                        background: white;
+                    }
+                }
+            }
+        }
+        &_plus {
+            > li {
+                &.minus {
+                    color: #a7a7a7;
+                    &::before {
+                        top: 25%;
+                        bottom: auto;
+                        left: 0;
+                        width: 13px;
+                        height: 2px;
+                        margin: auto;
+                        transform: rotate(0);
+                        border-radius: 5px;
+                        background: #d4d4d4;
+                    }
+                    &::after {
+                        display: none;
+                    }
+                }
+                &::before,
+                &::after {
+                    top: 6px;
+                    left: 5px;
+                    width: 2px;
+                    height: 15px;
+                    background: var(--rg-color-site);
+                }
+                &::before {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+        &_minus {
+            > li {
+                color: #a7a7a7;
+                &::before {
+                    top: 10px;
+                    bottom: auto;
+                    width: 13px;
+                    height: 2px;
+                    margin: auto;
+                    border-radius: 5px;
+                    background: #d4d4d4;
+                }
+                &::after {
+                    display: none;
+                }
+            }
+            &__colored {
+                > li {
+                    color: var(--rg-color-text);
+                    &::before {
+                        background: var(--rg-color-site);
+                    }
+                }
+            }
+        }
+        &_star {
+            > li {
+                &::after {
+                    display: none;
+                }
+                &::before {
+                    top: 7px;
+                    width: 15px;
+                    height: 15px;
+                    background: var(--rg-color-site);
+                    clip-path: polygon(
+                        50% 0%,
+                        66% 27%,
+                        98% 35%,
+                        76% 57%,
+                        79% 91%,
+                        50% 78%,
+                        21% 91%,
+                        24% 57%,
+                        2% 35%,
+                        32% 27%
+                    );
+                }
+            }
+        }
+    }
+}
+ol {
+    counter-reset: myCounter;
+    list-style: none;
+    margin-bottom: 1rem;
+    > li {
+        margin-bottom: 10px;
+        padding-left: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &:before {
+            content: counter(myCounter) ". ";
+            counter-increment: myCounter;
+            top: 0;
+            left: 0;
+            @include rg-font-style(
+                (
+                    style: "semibold",
+                )
+            );
+            color: $rg-color-site;
+            margin-left: -20px;
+        }
+    }
+    ul {
+        margin-top: 10px;
+        padding-left: 1rem;
+        padding-bottom: 0 !important;
+    }
+}
+// - Секции
+section,
+.section {
+    padding: 50px 0;
+    @include max_1200 {
+        padding: 35px 0;
+    }
+    @include max_992 {
+        padding: 25px 0;
+    }
+    &.pb-50 {
+        padding-bottom: 25px;
+    }
+}
+// - Заливка - background
+.bg {
+    &-default {
+        background: var(--rg-color-site);
+    }
+    &-gray {
+        background: var(--rg-color-light-grey);
+    }
+    &-none {
+        background: none !important;
+    }
+    &-svg-line {
+        background: var(--rg-color-site) url(../img/bg.svg) no-repeat 50% / cover;
+    }
+}
+// - Оформление заголовок + описание
+.title-desc {
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    text-align: center;
+    .title {
+        padding-bottom: 0;
+    }
+    .desc {
+        margin: 1rem auto 0;
+        padding: 0;
+        @include rg-font-style(
+            (
+                style: "regular",
+                prop: "font",
+                fs: 21,
+                lh: 30px,
+            )
+        );
+        @include max_768 {
+            @include rg-font-style(
+                (
+                    style: "regular",
+                    prop: "font",
+                    fs: 18,
+                    lh: 27px,
+                    base: 16,
+                )
+            );
+        }
+    }
+}
+/* Header */
+header#header.header {
+    .header_container {
+        &.fixed {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 49;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+            background: white;
+        }
+        > .items {
+            grid-template-columns: 272px 55% 212px;
+            column-gap: 15px;
+            @include max_1400 {
+                grid-template-columns: 210px 54% 212px;
+            }
+            @include max_1200 {
+                grid-template-columns: 162px 62% 156px;
+                column-gap: 10px;
+            }
+            @include max_992 {
+                grid-template-columns: 200px 148px 25px;
+            }
+            @include max_768 {
+                grid-template-columns: 190px 151px 25px;
+            }
+            @include max_576 {
+                grid-template-columns: 190px 143px 25px;
+            }
+            @include max_definite_width(500) {
+                grid-template-columns: 100px 166px 25px !important;
+                padding-top: 67px !important;
+            }
+            @include max_definite_width(370) {
+                grid-template-columns: 60px 166px 25px !important;
+            }
+            > .item {
+                &.mobile-logotype {
+                    @include max_definite_width(499.98) {
+                        display: block !important;
+                        width: 100%;
+                        background: rgba(211, 211, 211, 0.15);
+                        padding: 15px 25px;
+                        top: 0;
+                    }
+                    img {
+                        max-width: 75%;
+                        margin: 0 auto;
+                        display: table;
+                    }
+                }
+                &.menu-and-contacts {
+                    .contacts {
+                        .item {
+                            p:not(.title),
+                            a:not(.btn) {
+                                color: var(--rg-text-color, $rg-text-color);
+                                @include px-to-rem(
+                                    (
+                                        fs: 17,
+                                    )
+                                );
+                                margin-bottom: 0;
+                                @include max_1400 {
+                                    @include px-to-rem(
+                                        (
+                                            fs: 16,
+                                        )
+                                    );
+                                }
+                            }
+                            a {
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                            &.russia {
+                                img {
+                                    width: 25px;
+                                    margin-right: 2px;
+                                }
+                            }
+                            i {
+                                color: var(--rg-color-site);
+                            }
+                        }
+                    }
+                    .menu {
+                        > .header-menu {
+                            > ul.menu-items {
+                                > .menu-item {
+                                    a {
+                                        @include rg-font-style(
+                                            (
+                                                style: "medium",
+                                                prop: "font",
+                                                fs: 20,
+                                            )
+                                        );
+                                        padding: 0 0 7px 0;
+                                        position: relative;
+                                        color: var(--rg-text-color, $rg-text-color);
+                                        @include max_1400 {
+                                            @include px-to-rem(
+                                                (
+                                                    fs: 18,
+                                                )
+                                            );
+                                        }
+                                        @include max_1200 {
+                                            @include px-to-rem(
+                                                (
+                                                    fs: 16,
+                                                    base: 18,
+                                                )
+                                            );
+                                        }
+                                        &::before {
+                                            position: absolute;
+                                            content: "";
+                                            width: 0;
+                                            height: 2px;
+                                            background-color: var(--rg-color-site, $rg-color-site);
+                                            left: 50%;
+                                            bottom: 5px;
+                                            transition: all 0.4s ease-in-out;
+                                        }
+                                        &:hover {
+                                            color: var(--rg-color-site, $rg-color-site);
+                                            &::before {
+                                                width: 90%;
+                                                margin: auto;
+                                                left: 0;
+                                                right: 0;
+                                            }
+                                        }
+                                        &::after {
+                                            color: var(--rg-color-site, $rg-color-site);
+                                        }
+                                        &.dropdown-toggle {
+                                            padding-right: 15px;
+                                            &::after {
+                                                content: "\F22C";
+                                                font-family: "bootstrap-icons", serif;
+                                                border: none;
+                                                position: absolute;
+                                                @include px-to-rem(
+                                                    (
+                                                        fs: 14,
+                                                    )
+                                                );
+                                                top: 0;
+                                                right: -2px;
+                                                margin: auto;
+                                                display: table;
+                                            }
+                                            &:hover {
+                                                &::after {
+                                                    content: "\F229";
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &:last-child {
+                                        a {
+                                            margin-right: 0;
+                                        }
+                                    }
+                                }
+                                .menu-item.dropdown {
+                                    &:hover {
+                                        > .dropdown-menu {
+                                            display: block !important;
+                                        }
+                                    }
+                                    > .dropdown-menu {
+                                        margin-top: 0;
+                                        border: 0;
+                                        top: 100%;
+                                        padding: 20px 10px;
+                                        transition: 0.5s;
+                                        border-radius: 10px;
+                                        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+                                        &.show {
+                                            display: none;
+                                        }
+                                        .dropdown {
+                                            position: initial;
+                                            .dropdown-menu {
+                                                background: white;
+                                                top: 0;
+                                                left: calc(100% - 10px);
+                                            }
+                                            .dropdown-toggle {
+                                                &::after {
+                                                    transform: rotate(270deg);
+                                                }
+                                            }
+                                            &:hover {
+                                                > .dropdown-menu {
+                                                    display: block !important;
+                                                }
+                                            }
+                                        }
+                                        .menu-item {
+                                            a {
+                                                padding: 5px 8px;
+                                            }
+                                        }
+                                    }
+                                    .dropdown-item {
+                                        &:hover,
+                                        &:focus {
+                                            background-color: transparent;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.fixed {
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            z-index: 2;
+                            transition: 1s;
+                        }
+                        .item {
+                            &.logo {
+                                &.visible {
+                                    display: block;
+                                }
+                                .img_logo {
+                                    margin-right: 5px;
+                                    max-width: 40px;
+                                }
+                                @include max_1400 {
+                                    max-width: 170px;
+                                    margin-right: 15px;
+                                }
+                            }
+                            &:last-child {
+                                width: 100%;
+                                max-width: 1220px;
+                                @include max_1400 {
+                                    max-width: 100%;
+                                    flex: 1 1 500px;
+                                }
+                                nav {
+                                    padding: 0;
+                                    li a {
+                                        @include max_1400 {
+                                            @include px-to-rem(
+                                                (
+                                                    fs: 17,
+                                                )
+                                            );
+                                        }
+                                    }
+                                }
+                                #menu-header-menu {
+                                    width: 100%;
+                                    li {
+                                        a {
+                                            position: relative;
+                                            font-family: $rg-font-style-semi-bold;
+                                            color: $rg-text-color;
+                                            background-color: transparent;
+                                            padding: 5px 8px;
+                                            &.active,
+                                            &:active {
+                                                background-color: #f8f9fa;
+                                            }
+                                            &:hover {
+                                                &:before {
+                                                    width: 100%;
+                                                }
+                                            }
+                                            &:before {
+                                                position: absolute;
+                                                left: 0;
+                                                top: 35px;
+                                                content: "";
+                                                height: 2px;
+                                                transition: all 0.5s ease-in-out;
+                                                opacity: 1;
+                                                background: $rg-color-site;
+                                                width: 0;
+                                                border-radius: 25px;
+                                            }
+                                        }
+                                        &:last-child {
+                                            margin-right: 0;
+                                            @include max_1200 {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                    > li {
+                                        &.active > a:not(.dropdown-toggle) {
+                                            &:before {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                    .dropdown {
+                                        &:hover {
+                                            > .dropdown-menu {
+                                                display: block !important;
+                                            }
+                                        }
+                                        > .dropdown-menu {
+                                            margin-top: 0;
+                                            border: 0;
+                                            top: calc(100% + 2px);
+                                            padding: 20px 10px;
+                                            transition: 0.5s;
+                                            border-radius: 10px;
+                                            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+                                            &.show {
+                                                display: none;
+                                            }
+                                            .dropdown {
+                                                position: initial;
+                                                .dropdown-menu {
+                                                    background: white;
+                                                    top: 0;
+                                                    left: calc(100% - 10px);
+                                                }
+                                                .dropdown-toggle {
+                                                    &::after {
+                                                        transform: rotate(270deg);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .dropdown-item {
+                                            padding: 5px 8px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    @include max_992 {
+                        grid-area: 1 / 1 / 1 / -1;
+                    }
+                    @include max_definite_width(499.98) {
+                        margin-top: 47px !important;
+                    }
+                }
+                &.brief {
+                    a {
+                        @include max_1200 {
+                            padding: 7px 10px;
+                            @include px-to-rem(
+                                (
+                                    fs: 18,
+                                    base: 18,
+                                )
+                            );
+                        }
+                        @include max_992 {
+                            transform: translateX(140px);
+                        }
+                        @include max_768 {
+                            transform: translateX(60px);
+                            padding: 10px 15px;
+                        }
+                        @include max_definite_width(525) {
+                            transform: translateX(40px) !important;
+                        }
+                        @include max_definite_width(500) {
+                            transform: translateX(0) !important;
+                        }
+                    }
+                }
+                &.mobile-menu-button {
+                    padding: 0;
+                    color: var(--rg-color-site, $rg-color-site);
+                    span.text {
+                        @include rg-font-style(
+                            (
+                                style: "medium",
+                                prop: "font",
+                                fs: 20,
+                            )
+                        );
+                    }
+                    .navbar-btn {
+                        position: relative;
+                        width: 25px;
+                        height: 20px;
+                        > span {
+                            display: block;
+                            position: absolute;
+                            width: 100%;
+                            height: 4px;
+                            border-radius: 4px;
+                            background-color: var(--rg-color-site, $rg-color-site);
+                            transition-duration: 0.25s;
+                            top: 0;
+                            &::before,
+                            &::after {
+                                display: block;
+                                position: absolute;
+                                width: 100%;
+                                height: 4px;
+                                border-radius: 4px;
+                                background-color: var(--rg-color-site, $rg-color-site);
+                                transition-duration: 0.25s;
+                            }
+                            &::before {
+                                content: "";
+                                top: 8px;
+                            }
+                            &::after {
+                                content: "";
+                                top: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// - Мобильное меню
+#mobileMenu {
+    overflow-y: auto;
+    overflow-x: hidden;
+    .logotype {
+        max-width: 120px;
+        margin: 25px auto;
+    }
+    ul {
+        li {
+            a {
+                color: var(--rg-text-color, $rg-text-color);
+                @include rg-font-style(
+                    (
+                        style: "bold",
+                    )
+                );
+                padding: 10px;
+                &.dropdown-toggle {
+                    &::after {
+                        color: var(--rg-color-site, $rg-color-site);
+                    }
+                }
+            }
+            ul {
+                &.dropdown-menu {
+                    padding: 0;
+                    margin: 0 0 0 15px;
+                    border: 0;
+                    li {
+                        a {
+                            position: relative;
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                bottom: 0;
+                                margin: auto;
+                                width: 5px;
+                                height: 5px;
+                                border-radius: 50%;
+                                background: var(--rg-color-site, $rg-color-site);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// - Хлебные крошки
+#breadcrumbs {
+    background: #f8f9fa;
+    margin: 15px 0 0;
+    padding: 1px 0;
+    @include max_992 {
+        margin: 0;
+    }
+    .breadcrumb {
+        margin: 15px 0;
+        > *:first-of-type {
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        li {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 325px;
+            display: inline-block;
+        }
+        a {
+            color: $rg-text-color;
+        }
+    }
+}
+/* Body */
+// - Шаблоны страниц
+main {
+    h1 {
+        @include max_768 {
+            @include px-to-rem(
+                (
+                    fs: 36,
+                    base: 16,
+                )
+            );
+        }
+        @include max_576 {
+            @include px-to-rem(
+                (
+                    fs: 32,
+                    base: 15,
+                )
+            );
+        }
+        @include max_definite_width(350) {
+            font-size: 28px !important;
+        }
+    }
+    &.page-h1,
+    &.page-testimonials {
+        h1 {
+            padding: 50px 0 0;
+        }
+    }
+    &.page-search {
+        .search-result {
+            .item {
+                margin-bottom: 50px;
+                .img {
+                    width: 125px;
+                    height: 125px;
+                    margin-right: 20px;
+                }
+                .text {
+                    p {
+                        &.title {
+                            a {
+                                @include px-to-rem(
+                                    (
+                                        fs: 22,
+                                    )
+                                );
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.page-testimonials {
+        .preview-testimonials {
+            @include max_1400 {
+                h1 {
+                    @include px-to-rem(
+                        (
+                            fs: 40,
+                        )
+                    );
+                }
+            }
+            @include max_992 {
+                h1 {
+                    @include px-to-rem(
+                        (
+                            fs: 24,
+                            base: 17,
+                        )
+                    );
+                }
+            }
+            p {
+                @include max_1400 {
+                    @include px-to-rem(
+                        (
+                            fs: 20,
+                        )
+                    );
+                }
+                @include max_992 {
+                    @include px-to-rem(
+                        (
+                            fs: 16.2,
+                            base: 17,
+                        )
+                    );
+                    line-height: inherit;
+                }
+            }
+            @include max_768 {
+                img {
+                    position: absolute;
+                    right: -70px;
+                    bottom: 0;
+                    top: 0;
+                    width: 285px;
+                    margin: auto;
+                }
+            }
+            @include max_576 {
+                img {
+                    display: none;
+                }
+            }
+        }
+        article {
+            &.testimonial {
+                margin-bottom: 50px;
+                max-width: 855px;
+                .items {
+                    max-width: 855px;
+                    width: 100%;
+                    padding-left: 111px;
+                    @include max_768 {
+                        padding-left: 75px;
+                    }
+                    @include max_definite_width(489.98) {
+                        padding-left: 0;
+                    }
+                    img {
+                        max-width: 225px;
+                        border-radius: 30px;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        z-index: 1;
+                        @include max_768 {
+                            max-width: 150px;
+                        }
+                        @include max_definite_width(489.98) {
+                            display: none;
+                        }
+                    }
+                    .shadow-box {
+                        padding-left: 145px;
+                        @include max_768 {
+                            padding: 15px 15px 15px 95px;
+                            .review {
+                                p {
+                                    @include px-to-rem(
+                                        (
+                                            fs: 16,
+                                        )
+                                    );
+                                }
+                            }
+                        }
+                        @include max_definite_width(489.98) {
+                            padding: 25px 15px;
+                        }
+                        p {
+                            &.name {
+                                @include rg-font-style(
+                                    (
+                                        style: "bold",
+                                        prop: "font",
+                                        fs: 20,
+                                    )
+                                );
+                            }
+                            @include max_768 {
+                                &.theme {
+                                    @include px-to-rem(
+                                        (
+                                            fs: 14.4,
+                                            base: 16,
+                                        )
+                                    );
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.page-404 {
+        .preview {
+            .container {
+                max-width: 1035px;
+                position: relative;
+                h1 {
+                    @include px-to-rem(
+                        (
+                            fs: 100,
+                        )
+                    );
+                    @include max_768 {
+                        @include px-to-rem(
+                            (
+                                fs: 66,
+                                base: 16,
+                            )
+                        );
+                    }
+                }
+                p {
+                    @include px-to-rem(
+                        (
+                            fs: 24,
+                        )
+                    );
+                    @include max_992 {
+                        @include px-to-rem(
+                            (
+                                fs: 22,
+                                base: 17,
+                            )
+                        );
+                    }
+                    @include max_768 {
+                        @include px-to-rem(
+                            (
+                                fs: 18,
+                                base: 16,
+                            )
+                        );
+                    }
+                    &.desc {
+                        @include px-to-rem(
+                            (
+                                fs: 32,
+                            )
+                        );
+                        line-height: 36px;
+                        @include max_992 {
+                            @include px-to-rem(
+                                (
+                                    fs: 24,
+                                    base: 17,
+                                )
+                            );
+                        }
+                        @include max_768 {
+                            @include px-to-rem(
+                                (
+                                    fs: 18,
+                                    base: 16,
+                                )
+                            );
+                            line-height: 26px;
+                        }
+                    }
+                }
+                ul {
+                    li {
+                        a {
+                            @include px-to-rem(
+                                (
+                                    fs: 24,
+                                )
+                            );
+                            text-decoration: underline;
+                            @include max_992 {
+                                @include px-to-rem(
+                                    (
+                                        fs: 22,
+                                        base: 17,
+                                    )
+                                );
+                            }
+                            @include max_768 {
+                                @include px-to-rem(
+                                    (
+                                        fs: 18,
+                                        base: 16,
+                                    )
+                                );
+                            }
+                        }
+                    }
+                }
+                img {
+                    @include max_576 {
+                        position: absolute;
+                        max-width: 226px;
+                        bottom: 0;
+                        right: 10px;
+                    }
+                    @include max_definite_width(440) {
+                        max-width: 180px;
+                    }
+                }
+            }
+        }
+    }
+    &.page-blog {
+    }
+    &.page-actions {
+        article {
+            margin-bottom: 50px;
+        }
+    }
+}
+// -- Отзывы (/testimonials/)
+.rg-testimonial-card {
+    .rg-card {
+        .img {
+            max-width: 320px;
+            @include max_992 {
+                max-width: 200px;
+            }
+        }
+        .text {
+            flex: 1 1 320px;
+            p {
+                &.name {
+                    @include rg-font-style(
+                        (
+                            style: "semibold",
+                            prop: "font",
+                            fs: 24,
+                            lh: 1,
+                        )
+                    );
+                }
+            }
+        }
+        &.single {
+        }
+    }
+}
+// - Пагинация
+.pagination {
+    .page-numbers {
+        color: $rg-text-color;
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        padding: 0.375rem 0.75rem;
+        margin: 0 10px;
+        border-radius: 50px;
+        &:hover {
+            z-index: 2;
+            color: $rg-color-site;
+            background-color: white;
+            border-color: $rg-color-site;
+        }
+        &:focus {
+            z-index: 3;
+            color: $rg-color-site;
+            background-color: #e9ecef;
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+        }
+        &.current {
+            z-index: 3;
+            color: #fff;
+            background-color: $rg-color-site;
+            border-color: $rg-color-site;
+        }
+    }
+}
+// - Навигация по постом <-- Prev | Next -->
+#rg-posts-navigation {
+    nav {
+        > .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-direction: row-reverse;
+            gap: 50px;
+            @include max_768 {
+                gap: 30px;
+            }
+            @include max_576 {
+                gap: 15px;
+            }
+            .nav-next,
+            .nav-previous {
+                width: 30%;
+                @include max_768 {
+                    width: 50%;
+                }
+            }
+            a {
+                line-height: 120%;
+                display: flex;
+                white-space: nowrap !important;
+            }
+        }
+    }
+    ul {
+        justify-content: space-between !important;
+        > div {
+            height: max-content;
+            max-width: 50%;
+            position: relative;
+            .meta-nav {
+                background: url(../img/arrow.svg) no-repeat 50% / contain;
+                position: absolute;
+                left: -30px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                width: 25px;
+                height: 25px;
+            }
+            &.nav-previous {
+                .meta-nav {
+                    transform: rotate(180deg);
+                }
+            }
+            &.nav-next {
+                .meta-nav {
+                    left: auto;
+                    right: -30px;
+                }
+            }
+        }
+    }
+}
+// - Кнопки
+.btn {
+    position: relative;
+    @include rg-font-style(
+        (
+            style: "semibold",
+            prop: "font-family",
+        )
+    );
+    background-color: var(--rg-color-site);
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: all 0.2s ease;
+    &:hover {
+        color: #fff;
+        background-color: #32d3bc;
+        transform: translateY(-2px);
+        box-shadow: 2px 2px 10px rgb(0 0 0 / 15%);
+    }
+    &:first-child:active,
+    &:active,
+    &:focus {
+        color: #000;
+        background-color: var(--rg-color-site);
+        transform: translateY(2px);
+    }
+    &_yellow {
+        color: #fff;
+        background-color: var(--rg-color-site-yellow);
+        &:hover {
+            color: #fff;
+            background-color: #ffba3e;
+            transform: translateY(-2px);
+            box-shadow: 2px 2px 10px rgb(0 0 0 / 15%);
+        }
+        &:first-child:active,
+        &:active,
+        &:focus {
+            color: #000;
+            background-color: #ffba3e;
+            transform: translateY(2px);
+        }
+    }
+    &_brdr {
+        background-color: #fff;
+        border: 2px solid var(--rg-color-site);
+        color: var(--rg-color-site);
+        &:hover {
+            border-color: var(--rg-color-site);
+            color: var(--rg-color-site);
+            background-color: #fff;
+            transform: translateY(-2px);
+        }
+        &:first-child:active,
+        &:active,
+        &:focus {
+            color: #fff;
+            background-color: var(--rg-color-site);
+            border-color: var(--rg-color-site);
+            transform: translateY(2px);
+        }
+    }
+    &_white {
+        background-color: #fff;
+        color: var(--rg-color-site);
+        box-shadow: none;
+        &:hover {
+            color: var(--rg-color-site);
+            background-color: #fff;
+            box-shadow: 2px 2px 10px rgb(0 0 0 / 15%);
+            transform: translateY(-2px);
+        }
+        &:first-child:active,
+        &:active,
+        &:focus {
+            color: #fff !important;
+            background-color: var(--rg-color-site) !important;
+            box-shadow: none;
+            transform: translateY(2px);
+        }
+        &_color {
+            &_black {
+                color: var(--rg-color-site-black);
+                &:hover {
+                    color: var(--rg-color-site-black);
+                }
+                &:first-child:active,
+                &:active,
+                &:focus {
+                    color: #fff !important;
+                    background-color: var(--rg-color-site-black) !important;
+                }
+            }
+        }
+    }
+    &_icon {
+        padding-right: 55px;
+        @include max_992 {
+            padding-right: 25px;
+        }
+        &:before {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            right: 30px;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            margin: auto;
+            @include max_992 {
+                right: 0;
+            }
+        }
+    }
+    &_link {
+        padding: 0 25px 0 0;
+        color: var(--rg-text-color);
+        background: none;
+        box-shadow: none;
+        &:before {
+            right: 0;
+            font-weight: 700;
+        }
+        &:hover,
+        &:first-child:active,
+        &:active,
+        &:focus {
+            color: var(--rg-text-color);
+            background: none;
+            box-shadow: none;
+        }
+        &-white {
+            color: #fff;
+            &:hover,
+            &:first-child:active,
+            &:active,
+            &:focus {
+                color: #fff;
+            }
+        }
+        &-terquese {
+            color: var(--rg-color-site);
+            &:hover,
+            &:first-child:active,
+            &:active,
+            &:focus {
+                color: var(--rg-color-site);
+            }
+        }
+        &-revert {
+            padding: 0 0 0 25px;
+            &:before {
+                right: auto !important;
+                left: 0 !important;
+                transform: rotate(180deg);
+            }
+        }
+    }
+    &_no_style {
+        padding: 0;
+        color: var(--rg-text-color);
+        background: none !important;
+        box-shadow: none !important;
+        &:before {
+            content: none !important;
+        }
+        &:hover,
+        &:first-child:active,
+        &:active,
+        &:focus {
+            color: var(--rg-text-color) !important;
+            background: transparent !important;
+            background: none !important;
+            box-shadow: none !important;
+            &:before {
+                content: none !important;
+            }
+        }
+    }
+    &_center {
+        display: flex;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &:disabled,
+    &.disabled,
+    &_disabled {
+        color: white;
+        pointer-events: painted;
+        background-color: $rg-color-site;
+        border-color: var(--rg-color-site, $rg-color-site);
+        filter: opacity(0.5);
+        &:hover {
+            cursor: not-allowed;
+        }
+    }
+    &_max-content {
+        width: max-content;
+    }
+}
+// ЕБАЛА ЕБУЧАЯ ОТ БУТСТРАПА
+:not(.btn-check) + .btn {
+    &:active {
+        color: #000;
+        background-color: var(--rg-color-site);
+    }
+    &_yellow {
+        &:active {
+            color: #000;
+            background-color: #ffba3e;
+        }
+    }
+    &_brdr {
+        &:active {
+            color: #fff;
+            background-color: var(--rg-color-site);
+            border-color: var(--rg-color-site);
+        }
+    }
+    &_link {
+        &:active {
+            color: var(--rg-text-color);
+            background: none;
+        }
+        &-white {
+            &:active {
+                color: #fff;
+            }
+        }
+        &-terquese {
+            &:active {
+                color: var(--rg-color-site);
+            }
+        }
+    }
+    &_white {
+        &:active {
+            color: #fff;
+            background-color: var(--rg-color-site);
+        }
+        &_color {
+            &_black {
+                &:active {
+                    color: #fff;
+                    background-color: var(--rg-color-site-black);
+                }
+            }
+        }
+    }
+}
+// - Формы
+form,
+.form-floating {
+    .form-control {
+        border-radius: 10px;
+        &:focus {
+            color: $rg-text-color;
+            box-shadow: 0 0 0 0.25rem rgb(11 111 189 / 20%);
+            ~ label {
+                color: #949494;
+            }
+        }
+    }
+    .form-element {
+        max-width: 335px;
+        display: block;
+        margin: 0 auto 20px;
+    }
+    .form-floating > .form-control:focus ~ label {
+        color: #949494;
+    }
+    .form-check-label {
+        cursor: pointer;
+    }
+    .form-check-input {
+        cursor: pointer;
+        &:checked {
+            background-color: $rg-color-site;
+            border-color: $rg-color-site;
+        }
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+    .wpcf7-list-item {
+        margin: 0;
+    }
+    .ajax-loader {
+        display: none !important;
+    }
+    &.search-form {
+        input[type="search"] {
+            border-radius: 50px 0 0 50px;
+        }
+        button {
+            padding: 0 20px;
+            border-radius: 0 50px 50px 0;
+        }
+    }
+    .form-line {
+        .item {
+            width: 100%;
+            max-width: 220px;
+            &.b {
+                width: auto;
+            }
+        }
+    }
+}
+// - Аккордеоны
+.rg-accordion {
+    .accordion-item {
+        border: 0;
+        border-bottom: 2px solid #f0f0f0;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-radius: 0;
+        .accordion-button {
+            cursor: pointer;
+            padding-right: 55px;
+            padding-left: 0;
+            &:after {
+                right: 0;
+                position: absolute;
+                background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%232a2a2a'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 1 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+                    no-repeat 50% / contain;
+                width: 40px;
+                height: 40px;
+            }
+            p {
+                @include rg-font-style(
+                    (
+                        fs: 25,
+                        style: "semibold",
+                        prop: "font",
+                    )
+                );
+                color: var(--rg-text-color);
+            }
+            &:not(.collapsed) {
+                background-color: #fff;
+                box-shadow: none;
+            }
+        }
+        .accordion-body {
+            background: #fdfdfd;
+            padding-bottom: 5px;
+            padding-top: 0;
+            > *:last-child:not(.btn) {
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+        }
+        &:first-child {
+            .accordion-button {
+                padding-top: 0;
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+// - Табы
+.tabs-panel {
+    .nav-pills {
+        .btn {
+            transition: 0.5s;
+            border-radius: 10px;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            border-color: $rg-color-site;
+            @include max_576 {
+                @include px-to-rem(
+                    (
+                        fs: 16,
+                        base: 15,
+                    )
+                );
+            }
+            &:not(.active) {
+                background: white;
+                color: $rg-color-site;
+            }
+            &.active,
+            &:hover {
+                background: $rg-color-site;
+                color: white;
+            }
+        }
+    }
+    .tab-content {
+        margin: 25px 0 0 0;
+    }
+    &_2 {
+        .nav-pills {
+            .nav-item {
+                display: flex;
+                align-items: center;
+                &:not(:last-child) {
+                    padding: 0 10px 0 0;
+                    border-right: 2px solid #d9d9d9;
+                }
+                .btn {
+                    position: relative;
+                    background: transparent;
+                    border-radius: 0;
+                    border: none;
+                    padding: 0;
+                    @include px-to-rem(
+                        (
+                            fs: 30,
+                        )
+                    );
+                    transition: 0.5s;
+                    color: #c4c4c4;
+                    &:not(.active) {
+                        color: #c4c4c4;
+                    }
+                    &.active,
+                    &:hover {
+                        color: $rg-color-site;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+        &-small {
+            .nav-pills {
+                .nav-item {
+                    @include max_576 {
+                        &:not(:last-child) {
+                            padding: 0 5px 0 0;
+                        }
+                    }
+                    .btn {
+                        @include px-to-rem(
+                            (
+                                fs: 25,
+                            )
+                        );
+                        @include max_992 {
+                            @include px-to-rem(
+                                (
+                                    fs: 21,
+                                )
+                            );
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// - Комментарии
+#rg-comments {
+    max-width: 900px;
+    margin: 0 auto 50px;
+    li.comment {
+        .user {
+            .author-img {
+                margin-top: 4px;
+                width: 30px;
+            }
+            .author {
+                color: $rg-color-site;
+            }
+            .comment {
+                p {
+                    display: inline;
+                }
+            }
+        }
+        .dots {
+            height: 4px;
+            width: 4px;
+            margin-bottom: 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .reply {
+            margin-left: 12px;
+            small {
+                color: #b7b4b4;
+                &:hover {
+                    color: $rg-color-site;
+                    cursor: $rg-cursor-hover;
+                }
+            }
+        }
+    }
+}
+/* Footer */
+footer {
+    &.footer {
+        background: rgb(240 252 250);
+        > .container {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        p {
+            @include px-to-rem(
+                (
+                    fs: 18,
+                )
+            );
+            @include max_1200 {
+                @include px-to-rem(
+                    (
+                        fs: 16,
+                        base: 18,
+                    )
+                );
+            }
+            &.widget-title {
+                color: $rg-color-site;
+                font-family: $rg-font-style-semi-bold;
+                @include px-to-rem(
+                    (
+                        fs: 19.9998,
+                    )
+                );
+            }
+        }
+        ul {
+            padding: 0;
+            li {
+                margin: 0 0 15px !important;
+                a {
+                    @include px-to-rem(
+                        (
+                            fs: 18,
+                        )
+                    );
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        a:not(.btn, .color-default) {
+            color: $rg-text-color !important;
+            padding: 0 !important;
+            &:hover {
+                text-decoration: underline !important;
+            }
+        }
+        .RGphoneSHORT {
+            @include px-to-rem(
+                (
+                    fs: 18,
+                )
+            );
+            &:before {
+                min-width: 153px;
+                background: rgb(240 252 250);
+            }
+        }
+        #footer-widget-1 {
+            @include max_992 {
+                margin-bottom: 50px;
+            }
+            img {
+                max-width: 90% !important;
+            }
+            p {
+                @include max_1200 {
+                    @include px-to-rem(
+                        (
+                            fs: 16,
+                            base: 18,
+                        )
+                    );
+                }
+                @include max_992 {
+                    @include px-to-rem(
+                        (
+                            fs: 15,
+                            base: 17,
+                        )
+                    );
+                }
+                &.grey {
+                    color: #9b9b9b;
+                }
+            }
+            a.btn {
+                font-size: 1rem;
+                padding: 10px 15px;
+            }
+        }
+        #footer-widget-2 {
+            .widget {
+                li {
+                    @include max_992 {
+                        margin-bottom: 5px !important;
+                    }
+                    @include max_768 {
+                        margin-bottom: 15px !important;
+                    }
+                }
+            }
+        }
+        #footer-widget-3 {
+            @include max_576 {
+                margin-bottom: 50px;
+            }
+        }
+        #footer-widget-2,
+        #footer-widget-3 {
+            p,
+            a {
+                @include max_1200 {
+                    @include px-to-rem(
+                        (
+                            fs: 16,
+                            base: 18,
+                        )
+                    );
+                }
+            }
+        }
+        #footer-widget-4 {
+            @include max_992 {
+                margin-bottom: 50px;
+            }
+            p {
+                @include max_1200 {
+                    @include px-to-rem(
+                        (
+                            fs: 16,
+                            base: 18,
+                        )
+                    );
+                }
+                &.title {
+                    font-family: $rg-font-style-bold;
+                    margin-bottom: 5px;
+                }
+                &.desc {
+                    margin-left: 0;
+                }
+            }
+        }
+        .copyright {
+            background: #000;
+            img {
+                max-width: 320px !important;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+/* Дополнительные модули */
+@import "modules";
+/* Анимация @keyframes */
+@keyframes heart {
+    from,
+    to,
+    60% {
+        transform: scale(1);
+    }
+    12%,
+    36% {
+        transform: scale(1.5);
+    }
+    24%,
+    48% {
+        transform: scale(1);
+    }
+}

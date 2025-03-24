@@ -1,0 +1,58 @@
+/******************************
+* Функции (чтобы мы могли манипулировать цветами, SVG, calc и т.д.)
+* Стандартная настройка сайта
+* Модернизируем компоненты
+* Включаем остальные необходимые таблицы стилей начальной загрузки
+* Включаем любой дополнительный CSS начальной загрузки по мере необходимости
+* При необходимости включаем API утилит last для создания классов на основе карты Sass в "_utilities.scss"
+******************************/
+@import "fragments/variables";
+@import "fragments/components_mixin";
+@import "fragments/media_mixin";
+@import "fragments/fonts_mixin";
+
+/* Функции (чтобы мы могли манипулировать цветами, SVG, calc и т.д.) */
+@import "bootstrap/scss/functions";
+/* Стандартная настройка сайта */
+$body-color: #fff;
+$enable-dark-mode: false;
+$box-shadow: 2px 2px 10px 0px rgba(42, 42, 42, 0.15);
+$gray-900: $rg-color-site-black;
+$form-check-input-checked-border-color: $rg-color-site;
+$form-check-input-checked-bg-color: $rg-color-site;
+$focus-ring-box-shadow: 0 0 0 5px rgb(0 190 162 / 15%);
+$custom-color: #df711b;
+$custom-theme-colors: (
+    "custom": $custom-color,
+);
+$btn-font-family: $rg-font-style-semi-bold;
+/* Модернизируем компоненты */
+@import "bootstrap-components/tooltip";
+@import "bootstrap-components/dropdown";
+/* Включаем остальные необходимые таблицы стилей начальной загрузки */
+@import "bootstrap/scss/variables";
+// Затем следуют наши карты по умолчанию
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+/* Включаем любой дополнительный CSS начальной загрузки по мере необходимости */
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/offcanvas";
+@import "bootstrap/scss/close";
+@import "bootstrap/scss/breadcrumb";
+@import "bootstrap/scss/popover";
+@import "bootstrap/scss/tooltip";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/accordion";
+/* При необходимости включаем API утилит last для создания классов на основе карты Sass в "_utilities.scss" */
+@import "bootstrap/scss/utilities/api";
