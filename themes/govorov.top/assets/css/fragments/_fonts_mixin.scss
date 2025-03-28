@@ -1,5 +1,6 @@
 @use "sass:math";
 @import "variables";
+
 /******************************
 * Размеры шрифтов
 * Шрифты в виде переменных
@@ -7,10 +8,11 @@
 * Конвертер px в rem
 ******************************/
 /* Размеры шрифтов */
-$rg-base-font-size: 20px;
-$rg-base-font-line-height: 140%;
+$rg-base-font-size: 22px;
+$rg-base-font-size-small: 20px;
+$rg-base-font-line-height: 145%;
 /* Шрифты в виде переменных  */
-$rg-font-name: "Rubik";
+$rg-font-name: "Geologica";
 $rg-font-style-regular:
     $rg-font-name + "-Regular",
     sans-serif;
@@ -46,13 +48,14 @@ $rg-font-style-bold:
         #{$property}: math.div($pxValue, $base) + rem;
     }
 }
+
 /* Шрифты в виде миксина  */
 // @include rg-font-style('regular');
-// Выведет: font: 1rem "Rubik-Regular", "sans-serif";
+// Выведет: font: 1rem "Geologica-Regular", "sans-serif";
 // @include rg-font-style('regular', 'font-family');
-// Выведет: font-family: "Rubik-Regular", "sans-serif";
+// Выведет: font-family: "Geologica-Regular", "sans-serif";
 // @include rg-font-style('semibold','font', 40, 140%);
-// Выведет:	font: 3rem/140% Rubik-SemiBold,"sans-serif";
+// Выведет:	font: 3rem/140% Geologica-SemiBold,"sans-serif";
 @mixin rg-font-style($args) {
     $defaults: (
         style: "light",
@@ -60,7 +63,7 @@ $rg-font-style-bold:
         fs: 20,
         lh: 140%,
         othr-fs: "sans-serif",
-        fname: "Rubik",
+        fname: "Geologica",
         base: 20,
     );
     $config: map-merge($defaults, $args);

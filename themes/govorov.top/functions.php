@@ -92,7 +92,7 @@ if (!is_admin()) {
  */
 function rg_get_font_face_styles(): string
 {
-    $font_name = 'Rubik';
+    $font_name = 'Geologica';
     $code = "
         @font-face {
             font-family: '" . $font_name . "-Regular';
