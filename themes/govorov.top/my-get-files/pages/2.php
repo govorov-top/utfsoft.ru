@@ -1,4 +1,4 @@
-<section class="page-2 banner pt-0">
+<section class="page-2 banner rg-banner pt-0">
     <div class="container">
         <div class="content d-flex flex-column flex-md-row align-items-center justify-content-between">
             <div class="wrapper order-1">
@@ -19,7 +19,7 @@
 <section class="page-2 products-for-business">
     <div class="container">
         <h2 class="pb-50">Продукты для бизнеса</h2>
-        <div class="items d-flex flex-wrap justify-content-between">
+        <div class="items rg-block-1 d-flex flex-wrap justify-content-between">
             <div class="item">
                 <img src="/wp-content/themes/govorov.top/assets/img/pages/2/products-for-business-1.png"
                      class="mb-3 w-auto"
@@ -84,4 +84,4 @@
         </div>
     </div>
 </section>
-<?php echo do_shortcode('[rg-code f="repeat-elements/feedback-form.php"]');
+<?php echo do_shortcode('[rg-code f="repeat-elements/feedback-form.php"]'); ?>

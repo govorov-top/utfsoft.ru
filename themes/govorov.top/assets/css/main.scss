@@ -176,6 +176,9 @@ code {
 
 .mb-50 {
     margin-bottom: 50px;
+    @include max_992 {
+        margin-bottom: 40px;
+    }
 }
 
 .mb-40 {
@@ -217,8 +220,11 @@ h3,
 
     &.pb-50 {
         padding-bottom: 50px;
-        @include max_768 {
+        @include max_992 {
             padding-bottom: 40px;
+        }
+        @include max_576 {
+            padding-bottom: 30px;
         }
     }
 
@@ -226,6 +232,9 @@ h3,
         padding-bottom: 40px;
         @include max_992 {
             padding-bottom: 30px;
+        }
+        @include max_576 {
+            padding-bottom: 20px;
         }
     }
 }
@@ -658,6 +667,7 @@ section,
 .title-desc {
     max-width: 950px;
     text-align: center;
+    margin-inline: auto;
 
     &.big {
         max-width: 1100px;
@@ -671,6 +681,11 @@ section,
         margin: 0;
         padding: 0;
     }
+}
+
+// - Блок 1100px
+.block-1100 {
+    max-width: 1100px;
 }
 
 /* Header */
