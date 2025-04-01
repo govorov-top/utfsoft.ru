@@ -11,7 +11,7 @@
 </head>
 <?php
 $isNY = false;
-$logoName = 'edo';
+$logoName = 'main_logo';
 // Получаем текущую дату
 $currentDate = new DateTime();
 
@@ -27,14 +27,12 @@ $endDate = new DateTime(date('Y') + 1 . '-02-01');
 ?>
 <body <?php body_class($isNY ? 'rg-ny' : ''); ?> itemscope itemtype="https://schema.org/WebPage">
 
-<header class="header" id="header" itemscope itemtype="https://schema.org/Organization">
+<header class="header position-relative" id="header" itemscope itemtype="https://schema.org/Organization">
     <span class="d-none" itemprop="name"><?= get_bloginfo('name') . ' - ' . get_bloginfo('description') ?></span>
-
-    <?= do_shortcode('[rg-code f="widgets/RGActionsBanners.php"]') ?>
 
     <div class="container container_header <?= is_front_page() ? 'home' : '' ?>">
         <div class="header-content d-flex justify-content-center align-items-center items">
-            <div class="item header-logo me-auto">
+            <div class="item header-logo me-auto me-sm-4 me-lg-auto">
                 <a href="/" class="no-line">
                     <picture>
                         <img class="w-auto" alt="<?= get_bloginfo('name') . ' - ' . get_bloginfo('description') ?>"
@@ -42,6 +40,12 @@ $endDate = new DateTime(date('Y') + 1 . '-02-01');
                     </picture>
                 </a>
             </div>
+            <button data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                    aria-controls="mobileMenu"
+                    class="item mobile-menu-button d-flex flex-column d-lg-none ms-auto ms-sm-0 me-sm-auto"
+            >
+                <span></span><span></span><span></span>
+            </button>
             <div class="item header-menu">
                 <nav class="menu navbar desktop navbar-expand-lg header-nav-bar-custom p-0">
                     <?php
@@ -51,34 +55,29 @@ $endDate = new DateTime(date('Y') + 1 . '-02-01');
                         'container' => 'div',
                         'container_class' => 'header-menu collapse navbar-collapse',
                         'container_id' => 'navbarNavHeaderMenu',
-                        'menu_class' => 'navbar-nav menu-items d-flex align-items-lg-center gap-2 gap-lg-3  w-100',
+                        'menu_class' => 'navbar-nav menu-items d-flex align-items-lg-center gap-2 gap-lg-3 gap-xl-4 w-100',
                         'fallback_cb' => 'BootstrapMenu::fallback',
                         'walker' => new BootstrapMenu()
                     ));
                     ?>
                 </nav>
             </div>
-            <div class="item header-callback d-flex align-items-center gap-3 gap-xl-4 ms-auto">
-                <a href="#" class="whatsapp no-line color-green"><i class="bi bi-whatsapp"></i></a>
-                <div class="d-none d-sm-flex align-items-end flex-column">
-                    <a href="tel:84952258118 " class="strong phone no-line color-text">8 495 225 8118 </a>
-                    <button class="btn_link btn" id="requestCall">Заказать звонок</button>
-                </div>
+            <div class="item header-callback d-none d-sm-flex align-items-start align-items-lg-end gap-3 gap-lg-0 flex-row-reverse flex-lg-column ms-auto">
+                <a href="tel:89999999999" class="strong phone color-text">8 999 999 99 99</a>
+                <button class=" small-text strong" id="requestCall">Позвоните мне</button>
             </div>
-            <button data-bs-toggle="collapse" data-bs-target="#mobileMenu"
-                    class="item mobile-menu-button d-flex flex-column align-items-center justify-content-center d-lg-none ms-3 ms-sm-4"
-                    aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
         </div>
     </div>
-    <div class="container d-lg-none position-relative">
-        <div id="mobileMenu" class="collapse" tabindex="-1">
-            <nav id="menu-paste"
-                 class="text-start navbar navbar-expand-lg gap-2 header-nav-bar-custom align-items-start">
+
+    <div id="mobileMenu" class="offcanvas offcanvas-end" tabindex="-1">
+        <div class="offcanvas-header p-0">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex p-0 flex-column">
+            <nav id="menu-paste" class="p-0 text-start navbar navbar-expand-lg header-nav-bar-custom align-items-start">
 
             </nav>
-
+            <button class="btn btn_max-content mt-auto">Получить консультацию</button>
         </div>
     </div>
 </header>

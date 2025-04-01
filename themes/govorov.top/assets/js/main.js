@@ -160,18 +160,33 @@ document.addEventListener("DOMContentLoaded", () => {
             if (mobileMenu && isMobile) {
                 const mobileMenuPaste = document.getElementById("menu-paste");
                 if (mobileMenuPaste) {
-                    const btnMobileMenu = document.querySelector(".mobile-menu-button");
-                    btnMobileMenu.addEventListener("click", () => {
-                        btnMobileMenu.classList.toggle("active");
-                        if (mobileMenuPaste.innerText <= 0) {
-                            let copyMenu = document.querySelector("ul.navbar-nav");
-                            if (copyMenu) {
-                                mobileMenuPaste.appendChild(copyMenu);
-                            } else {
-                                console.error("Меню не найдено! Замени ID в main.js");
+                    const closeBtn = mobileMenu.querySelector("button.btn-close");
+                    if (closeBtn) {
+                        const btnMobileMenu = document.querySelector(".mobile-menu-button");
+                        btnMobileMenu.addEventListener("click", () => {
+                            btnMobileMenu.classList.toggle("active");
+                            if (mobileMenuPaste.innerText <= 0) {
+                                let copyMenu = document.querySelector("ul.navbar-nav");
+                                if (copyMenu) {
+                                    mobileMenuPaste.appendChild(copyMenu);
+                                } else {
+                                    console.error("Меню не найдено! Замени ID в main.js");
+                                }
                             }
-                        }
-                    });
+                            const menuItems = mobileMenuPaste.querySelectorAll("li > a");
+                            menuItems.forEach(link => {
+                                link.addEventListener("click", () => {
+                                    const attrLink = link.getAttribute("href");
+                                    if (String(attrLink) && attrLink[0] === "#" && attrLink.length > 1) {
+                                        closeBtn.click();
+                                    }
+                                });
+                            });
+                        });
+                        closeBtn.addEventListener("click", () => {
+                            btnMobileMenu.classList.remove("active");
+                        });
+                    }
                 }
             }
         }

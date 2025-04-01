@@ -6,8 +6,8 @@
 @import "_media_mixin";
 @import "fonts_mixin";
 
-// Компонент ke-container-for-cards
-@mixin ko-container-for-cards {
+// Компонент rg-container-for-cards
+@mixin rg-container-for-cards {
     .ke-container-for-cards {
         > div,
         article {
