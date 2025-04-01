@@ -1,4 +1,4 @@
 /* import CSS */
 import "../css/pages.scss";
 /* / */
-import(/* webpackChunkName: "style-page-11" */ "../css/pages/11.scss");
+import(/* webpackChunkName: "style-page-2" */ "../css/pages/2.scss");

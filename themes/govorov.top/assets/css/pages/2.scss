@@ -1,0 +1,89 @@
+/******************************
+* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss
+* Стили страницы
+******************************/
+@import "../fragments/variables";
+@import "../fragments/components_mixin";
+@import "../fragments/media_mixin";
+@import "../fragments/fonts_mixin";
+/* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
+
+/* Стили страницы */
+.page-2 {
+    &.banner {
+        .content {
+            .wrapper {
+                max-width: 574px;
+                @include max_1400 {
+                    max-width: 545px;
+                }
+                @include max_1200 {
+                    max-width: 459px;
+                }
+                @include max_992 {
+                    max-width: 370px;
+                }
+                @include max_768 {
+                    display: contents;
+                }
+
+                .desc {
+                    margin-bottom: 40px;
+                    @include max_992 {
+                        margin-bottom: 30px;
+                    }
+                    @include max_768 {
+                        margin-bottom: 40px;
+                    }
+                    @include max_576 {
+                        margin-bottom: 30px;
+                    }
+                }
+
+                .btn {
+                    @include max_definite_width(400) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .image {
+                @include max_1400 {
+                    max-width: 472px;
+                }
+                @include max_1200 {
+                    max-width: 400px;
+                }
+                @include max_992 {
+                    max-width: 324px;
+                }
+                @include max_768 {
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+
+    &.products-for-business {
+        .items {
+            .item {
+                max-width: 600px;
+                margin-bottom: 60px;
+                @include max_1400 {
+                    max-width: 530px;
+                }
+                @include max_1200 {
+                    max-width: 465px;
+                    margin-bottom: 50px;
+                }
+                @include max_992 {
+                    max-width: 340px;
+                }
+                @include max_768 {
+                    max-width: 100%;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}

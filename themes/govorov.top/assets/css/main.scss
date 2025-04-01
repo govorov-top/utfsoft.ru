@@ -44,7 +44,8 @@
 @import "fragments/media_mixin";
 @import "fragments/fonts_mixin";
 /* Часто повторяющиеся элементы */
-
+@include rg-bg-box;
+@include rg-feedback-form;
 /* Normalize */
 :root {
     //Цвета элементов
@@ -179,6 +180,9 @@ code {
 
 .mb-40 {
     margin-bottom: 40px;
+    @include max_992 {
+        margin-bottom: 30px;
+    }
 }
 
 // - Заголовки h1, .h1, h2, .h2, h3, .h3,
@@ -213,8 +217,8 @@ h3,
 
     &.pb-50 {
         padding-bottom: 50px;
-        @include max_992 {
-            padding-bottom: 30px;
+        @include max_768 {
+            padding-bottom: 40px;
         }
     }
 
@@ -320,7 +324,11 @@ h3 {
         );
     }
     @include max_576 {
-        max-width: 25px;
+        @include px-to-rem(
+            (
+                fs: 25,
+            )
+        );
     }
 }
 
@@ -1151,8 +1159,13 @@ main {
     }
 
     &:hover {
-        color: var(--rg-color-site);
-        background-color: var(--rg-color-site-light);
+        color: #fff;
+        background-color: #034866;
+    }
+
+    &:disabled {
+        background: #e8e8e8;
+        color: #fff;
     }
 
     &:first-child:active,
@@ -1164,7 +1177,7 @@ main {
 
     &_link {
         background: transparent;
-        padding: 10px 0;
+        padding: 10px 0 !important;
 
         &:hover {
             .arrow {
@@ -1219,23 +1232,47 @@ main {
 
 // - Формы
 form {
-    .form-control {
-        border-radius: 10px;
+    .form-floating > .form-control {
+        font-size: var(--rg-fs-small);
+        padding: 10px 10px 10px 0 !important;
+        border-radius: 0;
+        border-width: 0 0 1px 0;
+        color: $rg-text-color;
+        min-height: 50px;
+        height: 50px;
+
+        &:not(:placeholder-shown),
+        &:focus {
+            ~ label {
+                color: $rg-text-color;
+                background: transparent;
+                transform: scale(0.65) translateY(-0.8rem) translateX(0);
+
+                &:after {
+                    content: none;
+                }
+            }
+        }
 
         &:focus {
             color: $rg-text-color;
-            box-shadow: 0 0 0 0.25rem rgb(11 111 189 / 20%);
+            box-shadow: none;
         }
     }
 
     .form-element {
-        max-width: 335px;
+        &.button {
+            margin-bottom: 15px;
+        }
+
+        width: 100%;
         display: block;
         margin: 0 auto 20px;
     }
 
     .form-floating > label {
-        color: #949494;
+        padding: 10px 10px 10px 0 !important;
+        color: $rg-color-site;
     }
 
     .form-check-label {

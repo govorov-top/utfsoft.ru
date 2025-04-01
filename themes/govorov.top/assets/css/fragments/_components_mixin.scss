@@ -136,3 +136,62 @@
         }
     }
 }
+
+@mixin rg-bg-box {
+    .rg-bg-box {
+        border-radius: 20px;
+        background: $rg-bg-light-grey;
+    }
+}
+
+// Форма перед футером .rg-feedback-form
+@mixin rg-feedback-form {
+    .rg-feedback-form {
+        .content {
+            padding: 50px;
+            @include max_1200 {
+                padding: 40px;
+            }
+            @include max_992 {
+                padding: 30px;
+            }
+            @include max_576 {
+                padding: 30px 20px;
+            }
+
+            .wrapper {
+                max-width: 542px;
+                @include max_1400 {
+                    max-width: 503px;
+                }
+                @include max_1200 {
+                    max-width: 431px;
+                }
+                @include max_992 {
+                    max-width: 100%;
+                    margin-bottom: 20px;
+                }
+                @include max_576 {
+                    margin-bottom: 43px;
+                }
+            }
+
+            .form-wrapper {
+                width: 100%;
+                max-width: 567px;
+                background: #fff;
+                border-radius: 20px;
+                padding: 30px;
+                @include max_1400 {
+                    max-width: 479px;
+                }
+                @include max_1200 {
+                    max-width: 420px;
+                }
+                @include max_992 {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
