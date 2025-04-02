@@ -122,7 +122,7 @@
         </div>
     </div>
 </section>
-<section class="application-examples">
+<section class="page-38 application-examples">
     <div class="container">
         <div class="block-1100 mb-40">
             <h2 class="pb-4">

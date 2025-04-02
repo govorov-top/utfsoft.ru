@@ -557,16 +557,18 @@ ul,
         > li,
         ul.wp-block-navigation__container > li {
             position: relative;
-            margin-bottom: 10px;
-            padding-left: 22px;
+            margin-bottom: 15px;
+            padding-left: 15px;
 
-            &::before,
-            &::after {
+            &::before {
                 position: absolute;
-                top: 0;
-                bottom: 0;
+                top: 13px;
+                width: 5px;
+                height: 5px;
+                border-radius: 5px;
+                background: $rg-color-site;
                 left: 0;
-                margin: 0 auto;
+                display: block;
                 content: "";
             }
 

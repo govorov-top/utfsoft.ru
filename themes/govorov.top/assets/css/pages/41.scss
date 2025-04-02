@@ -1,0 +1,167 @@
+/******************************
+* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss
+* Стили страницы
+******************************/
+@import "../fragments/variables";
+@import "../fragments/components_mixin";
+@import "../fragments/media_mixin";
+@import "../fragments/fonts_mixin";
+/* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
+@include rg-banner;
+@include rg-block-1;
+/* Стили страницы */
+.page-41 {
+    &.banner {
+        .content {
+            .wrapper {
+                @include min_definite_width(1400) {
+                    max-width: 700px;
+                }
+            }
+        }
+    }
+
+    &.what-benefit {
+        .items {
+            .item {
+                max-width: 390px;
+                @include max_1400 {
+                    max-width: 350px;
+                }
+                @include max_1200 {
+                    max-width: 300px;
+                }
+                @include max_992 {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    &.your-infrastructure {
+        .content {
+            .wrapper {
+                max-width: 660px;
+                @include max_1400 {
+                    max-width: 565px;
+                }
+                @include max_1200 {
+                    max-width: 507px;
+                }
+                @include max_992 {
+                    max-width: 330px;
+                }
+                @include max_768 {
+                    display: contents;
+                }
+
+                h2 {
+                    @include max_1400 {
+                        padding-bottom: 40px;
+                    }
+                    @include max_1200 {
+                        padding-bottom: 30px;
+                    }
+                }
+            }
+
+            img {
+                @include max_1400 {
+                    max-width: 495px;
+                    width: 100% !important;
+                }
+                @include max_1200 {
+                    max-width: 412px;
+                }
+                @include max_992 {
+                    max-width: 350px;
+                }
+                @include max_768 {
+                    margin-bottom: 40px;
+                }
+                @include max_576 {
+                    max-width: 340px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    &.main-features {
+        .content {
+            padding: 40px;
+            @include max_1200 {
+                padding: 30px;
+            }
+            @include max_768 {
+                padding: 30px 20px;
+            }
+            @include max_576 {
+                padding: 30px 10px;
+            }
+
+            .items {
+                grid-template-columns: 1fr 1fr;
+                gap: 50px;
+                @include max_1200 {
+                    gap: 30px;
+                }
+                @include max_992 {
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+
+    &.access-from-any-device {
+        .items {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+            @include max_1200 {
+                gap: 30px;
+            }
+            @include max_992 {
+                gap: 20px;
+            }
+            @include max_768 {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .item {
+                .top {
+                    padding: 30px 25px 0;
+                    @include max_992 {
+                        padding: 20px 20px 0;
+                    }
+                    @include max_768 {
+                        min-width: 227px;
+                    }
+
+                    p:not(.subtitle) {
+                        @include max_992 {
+                            @include px-to-rem(
+                                (
+                                    fs: 14,
+                                )
+                            );
+                        }
+                    }
+                }
+
+                .bottom {
+                    .items {
+                        img {
+                            @include max_1400 {
+                                max-width: 35px;
+                            }
+                            @include max_1200 {
+                                max-width: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
