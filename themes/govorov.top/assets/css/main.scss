@@ -438,6 +438,10 @@ a {
     color: $rg-text-color !important;
 }
 
+.color-grey {
+    color: #62818e !important;
+}
+
 .color-white {
     color: white !important;
 }
@@ -688,6 +692,12 @@ section,
 // - Блок 1100px
 .block-1100 {
     max-width: 1100px;
+    @include max_1400 {
+        max-width: 990px;
+    }
+    @include max_1200 {
+        max-width: 850px;
+    }
 }
 
 /* Header */

@@ -1,0 +1,143 @@
+/******************************
+* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss
+* Стили страницы
+******************************/
+@import "../fragments/variables";
+@import "../fragments/components_mixin";
+@import "../fragments/media_mixin";
+@import "../fragments/fonts_mixin";
+/* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
+@include rg-banner;
+
+/* Стили страницы */
+.page-45 {
+    &.about {
+        .content {
+            padding: 50px;
+            @include max_1200 {
+                padding: 30px;
+            }
+            @include max_768 {
+                padding: 30px 20px;
+            }
+            @include max_576 {
+                padding: 20px 10px;
+            }
+
+            .desc {
+                max-width: 1000px;
+                @include max_1400 {
+                    max-width: 990px;
+                }
+                @include max_1200 {
+                    max-width: 850px;
+                }
+            }
+        }
+    }
+
+    &.company-solutions {
+        .items {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+            @include max_1200 {
+                gap: 30px;
+            }
+            @include max_992 {
+                grid-template-columns: 1fr;
+            }
+
+            .item {
+                .mb-15 {
+                    @include max_576 {
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .rg-list {
+                    li:not(:last-of-type) {
+                        @include max_576 {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.stahanovec-10 {
+        .content {
+            padding: 50px;
+            @include max_1200 {
+                padding: 30px;
+            }
+            @include max_768 {
+                padding: 30px 20px;
+            }
+            @include max_576 {
+                padding: 20px 10px;
+            }
+
+            .wrapper {
+                max-width: 694px;
+                @include max_1400 {
+                    max-width: 609px;
+                }
+                @include max_1200 {
+                    max-width: 500px;
+                }
+                @include max_992 {
+                    display: contents;
+                }
+            }
+
+            .image {
+                @include max_1400 {
+                    max-width: 365px;
+                    width: 100% !important;
+                }
+                @include max_1200 {
+                    max-width: 351px;
+                }
+                @include max_992 {
+                    max-width: 400px;
+                    margin-bottom: 40px;
+                }
+                @include max_768 {
+                    max-width: 350px;
+                    margin-inline: auto;
+                    margin-bottom: 30px;
+                }
+                @include max_576 {
+                    max-width: 290px;
+                }
+            }
+        }
+    }
+
+    &.rich-experience {
+        h2 {
+            @include max_1200 {
+                padding-bottom: 30px;
+            }
+        }
+
+        .items {
+            .item {
+                max-width: 230px;
+                @include max_1200 {
+                    max-width: 175px;
+                }
+                @include max_992 {
+                    max-width: 290px;
+                }
+                @include max_768 {
+                    max-width: 210px;
+                }
+                @include max_576 {
+                    max-width: 47.5%;
+                }
+            }
+        }
+    }
+}
