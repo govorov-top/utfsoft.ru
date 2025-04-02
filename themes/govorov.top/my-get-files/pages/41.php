@@ -10,12 +10,26 @@
                     вашем сервере, а сотрудники быстро находят нужные пароли. Администратор управляет правами
                     пользователей, отслеживает все действия и изменения.
                 </p>
-                <button class="btn order-4">Подберем решение</button>
+                <button class="btn order-4 popClick" data-pop="banner-pop">Подберем решение</button>
             </div>
             <img src="/wp-content/themes/govorov.top/assets/img/pages/41/banner.svg" alt="Пассворк"
                  class="image order-2 mb-3 mb-sm-4 mb-md-0 w-auto">
         </div>
     </div>
+    <!--noindex-->
+    <!--googleoff: all-->
+    <div class="popup" data-max-width="650" id="banner-pop">
+        <div class="pop html br-2 bg-white justify-content-between">
+            <p class="title h3 pb-3">Пассворк</p>
+            <p class="desc mb-4">Оставьте контактные данные, и мы свяжемся с вами в ближайшее время.</p>
+            <div class="form-right">
+                <?= do_shortcode('[contact-form-7 id="e756533" title="/passvork/ форма в баннере Пассворк"]') ?>
+            </div>
+        </div>
+    </div>
+    <!--googleon: all-->
+    <!--/noindex-->
+
 </section>
 <section class="page-41 what-benefit">
     <div class="container">

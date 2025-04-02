@@ -10,12 +10,25 @@
                     всем установленным нормам, требованиям и законам в процессе выполнения различных действий по
                     отношению к информационным системам.
                 </p>
-                <button class="btn order-4">Подберем решение</button>
+                <button class="btn order-4 popClick" data-pop="banner-pop">Подберем решение</button>
             </div>
             <img src="/wp-content/themes/govorov.top/assets/img/pages/38/banner.svg" alt="Альфа"
                  class="image order-2 mb-3 mb-sm-4 mb-md-0 w-auto">
         </div>
     </div>
+    <!--noindex-->
+    <!--googleoff: all-->
+    <div class="popup" data-max-width="650" id="banner-pop">
+        <div class="pop html br-2 bg-white justify-content-between">
+            <p class="title h3 pb-3">Альфа</p>
+            <p class="desc mb-4">Оставьте контактные данные, и мы свяжемся с вами в ближайшее время.</p>
+            <div class="form-right">
+                <?= do_shortcode('[contact-form-7 id="fc6d7ed" title="/alfa/ форма в баннере Альфа"]') ?>
+            </div>
+        </div>
+    </div>
+    <!--googleon: all-->
+    <!--/noindex-->
 </section>
 <section class="page-38 services">
     <div class="container">

@@ -64,7 +64,8 @@ $endDate = new DateTime(date('Y') + 1 . '-02-01');
             </div>
             <div class="item header-callback d-none d-sm-flex align-items-start align-items-lg-end gap-3 gap-lg-0 flex-row-reverse flex-lg-column ms-auto">
                 <a href="tel:89999999999" class="strong phone color-text">8 999 999 99 99</a>
-                <button class=" small-text strong" id="requestCall">Позвоните мне</button>
+                <button class=" small-text strong popClick" data-pop="header-pop" id="requestCall">Позвоните мне
+                </button>
             </div>
         </div>
     </div>
@@ -81,3 +82,16 @@ $endDate = new DateTime(date('Y') + 1 . '-02-01');
         </div>
     </div>
 </header>
+<!--noindex-->
+<!--googleoff: all-->
+<div class="popup" data-max-width="650" id="header-pop">
+    <div class="pop html br-2 bg-white justify-content-between">
+        <p class="title h3 pb-3">Заказать обратный звонок</p>
+        <p class="desc mb-4">Оставьте контактные данные, и мы свяжемся с вами в ближайшее время.</p>
+        <div class="form-right">
+            <?= do_shortcode('[contact-form-7 id="e62711f" title="* Форма обратной связи в header"]') ?>
+        </div>
+    </div>
+</div>
+<!--googleon: all-->
+<!--/noindex-->

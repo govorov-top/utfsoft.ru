@@ -10,12 +10,25 @@
                     производительности сотрудников, обеспечения защиты информации и мониторинга ключевых операций
                     предприятия.
                 </p>
-                <button class="btn order-4">Подберем решение</button>
+                <button class="btn order-4 popClick" data-pop="banner-pop">Подберем решение</button>
             </div>
             <img src="/wp-content/themes/govorov.top/assets/img/pages/45/banner.svg" alt="Стахановец"
                  class="image order-2 mb-3 mb-sm-4 mb-md-0 w-auto">
         </div>
     </div>
+    <!--noindex-->
+    <!--googleoff: all-->
+    <div class="popup" data-max-width="650" id="banner-pop">
+        <div class="pop html br-2 bg-white">
+            <p class="title h3 pb-3">Стахановец</p>
+            <p class="desc mb-4">Оставьте контактные данные, и мы свяжемся с вами в ближайшее время.</p>
+            <div class="form-right">
+                <?= do_shortcode('[contact-form-7 id="60b819c" title="/stahanovec/ форма в баннере Стахановец"]') ?>
+            </div>
+        </div>
+    </div>
+    <!--googleon: all-->
+    <!--/noindex-->
 </section>
 <section class="about page-45">
     <div class="container">
@@ -127,7 +140,7 @@
                     пользователям современный интерфейс и новый подход к обеспечению безопасности данных и анализу
                     кадрового потенциала.
                 </p>
-                <button class="btn order-4">Подобрать решение</button>
+                <button class="btn order-4 popClick" data-pop="banner-pop">Подобрать решение</button>
             </div>
             <img src="" data-src="/wp-content/themes/govorov.top/assets/img/pages/45/stahanovec-10.svg"
                  alt="Стахановец 10"
