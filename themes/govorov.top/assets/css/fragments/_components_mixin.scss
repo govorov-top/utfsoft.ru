@@ -247,6 +247,7 @@
                 }
                 @include max_768 {
                     max-width: 300px;
+                    width: 100% !important;
                 }
             }
         }

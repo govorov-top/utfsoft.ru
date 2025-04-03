@@ -11,3 +11,6 @@ import(/* webpackChunkName: "style-page-41" */ "../css/pages/41.scss");
 
 /* /stahanovec/ */
 import(/* webpackChunkName: "style-page-45" */ "../css/pages/45.scss");
+
+/* /indid/ */
+import(/* webpackChunkName: "style-page-55" */ "../css/pages/55.scss");
