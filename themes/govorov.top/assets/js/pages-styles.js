@@ -14,3 +14,6 @@ import(/* webpackChunkName: "style-page-45" */ "../css/pages/45.scss");
 
 /* /indid/ */
 import(/* webpackChunkName: "style-page-55" */ "../css/pages/55.scss");
+
+/* /usergate/ */
+import(/* webpackChunkName: "style-page-61" */ "../css/pages/61.scss");

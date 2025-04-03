@@ -762,6 +762,25 @@ header#header.header {
                 font-size: var(--rg-fs-small);
                 color: $rg-text-color;
                 padding: 0;
+                position: relative;
+
+                &:hover {
+                    &:before {
+                        width: 100%;
+                    }
+                }
+
+                &:before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    height: 1px;
+                    background: currentColor;
+                    width: 0;
+                    transition: all 0.3s linear;
+                }
             }
 
             .menu-item {
@@ -1701,6 +1720,26 @@ footer.footer#footer {
                         line-height: $rg-base-font-line-height;
                         font-size: var(--rg-fs-small);
                         display: block;
+                        position: relative;
+                        width: max-content;
+
+                        &:hover {
+                            &:before {
+                                width: 100%;
+                            }
+                        }
+
+                        &:before {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            bottom: -2px;
+                            left: 0;
+                            height: 1px;
+                            background: currentColor;
+                            width: 0;
+                            transition: all 0.3s linear;
+                        }
                     }
                 }
             }
