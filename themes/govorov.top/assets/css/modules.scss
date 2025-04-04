@@ -276,7 +276,12 @@
 
         .wpcf7-not-valid-tip {
             position: absolute;
-            top: -20px;
+            top: -17px;
+            line-height: 1;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 100%;
+            overflow: hidden;
             @include px-to-rem(
                 (
                     fs: 13,

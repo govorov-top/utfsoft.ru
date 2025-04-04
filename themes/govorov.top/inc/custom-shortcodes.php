@@ -207,7 +207,7 @@ if (in_array('advanced-custom-fields-pro/acf.php', apply_filters('active_plugins
                 $res = '<a class="RGemailSHORT" href="mailto:' . $array[$attr] . '">' . $array[$attr] . '</a>';
                 break;
             case 'phone' :
-                $res = '<a class="RGphoneSHORT" href="tel:' . preg_replace('/[^0-9]/', '', $array[$attr]) . '">' . $array[$attr] . '</a>';
+                $res = '<a href="tel:' . preg_replace('/[^0-9]/', '', $array[$attr]) . '">' . $array[$attr] . '</a>';
                 break;
             case 'link_address' :
                 $res = '<a href="' . $array[$attr] . '" rel="nofollow noopener noreferrer" target="_blank">' . $array[$attr] . '</a>';
