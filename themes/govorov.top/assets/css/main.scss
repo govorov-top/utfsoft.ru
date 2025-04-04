@@ -1210,7 +1210,10 @@ main {
         background: transparent;
         padding: 10px 0 !important;
 
-        &:hover {
+        &:hover,
+        &:first-child:active,
+        &:active,
+        &:focus {
             background: transparent;
 
             .arrow {
@@ -1260,6 +1263,15 @@ main {
     &:active {
         color: #fff;
         background-color: #034866;
+    }
+
+    &_link {
+        &:hover,
+        &:first-child:active,
+        &:active,
+        &:focus {
+            background: transparent;
+        }
     }
 }
 
