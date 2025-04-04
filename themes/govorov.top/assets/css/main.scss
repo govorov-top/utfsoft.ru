@@ -1226,6 +1226,8 @@ main {
         padding: 10px 0 !important;
 
         &:hover {
+            background: transparent;
+
             .arrow {
                 width: 50px;
             }
@@ -1441,98 +1443,17 @@ form {
     .nav-pills {
         .btn {
             transition: 0.5s;
-            border-radius: 10px;
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-            border-color: $rg-color-site;
-            @include max_576 {
-                @include px-to-rem(
-                    (
-                        fs: 16,
-                        base: 15,
-                    )
-                );
-            }
+            border-radius: 50px;
 
             &:not(.active) {
-                background: white;
-                color: $rg-color-site;
+                background: #e8e8e8;
+                color: #62818e;
             }
 
             &.active,
             &:hover {
-                background: $rg-color-site;
-                color: white;
-            }
-        }
-    }
-
-    .tab-content {
-        margin: 25px 0 0 0;
-    }
-
-    &_2 {
-        .nav-pills {
-            .nav-item {
-                display: flex;
-                align-items: center;
-
-                &:not(:last-child) {
-                    padding: 0 10px 0 0;
-                    border-right: 2px solid #d9d9d9;
-                }
-
-                .btn {
-                    position: relative;
-                    background: transparent;
-                    border-radius: 0;
-                    border: none;
-                    padding: 0;
-                    @include px-to-rem(
-                        (
-                            fs: 30,
-                        )
-                    );
-
-                    transition: 0.5s;
-                    color: #c4c4c4;
-
-                    &:not(.active) {
-                        color: #c4c4c4;
-                    }
-
-                    &.active,
-                    &:hover {
-                        color: $rg-color-site;
-                        box-shadow: none;
-                    }
-                }
-            }
-        }
-
-        &-small {
-            .nav-pills {
-                .nav-item {
-                    @include max_576 {
-                        &:not(:last-child) {
-                            padding: 0 5px 0 0;
-                        }
-                    }
-
-                    .btn {
-                        @include px-to-rem(
-                            (
-                                fs: 25,
-                            )
-                        );
-                        @include max_992 {
-                            @include px-to-rem(
-                                (
-                                    fs: 21,
-                                )
-                            );
-                        }
-                    }
-                }
+                background: #62818e;
+                color: #fff;
             }
         }
     }

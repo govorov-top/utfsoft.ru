@@ -41,7 +41,7 @@
                     Отечественный создатель инновационных технологий для формирования интеллектуального
                     видео-пространства. Функционирует с начала 2007 года, отлично подходит для объектов любого масштаба.
                 </p>
-                <a href="/" class="btn btn_link"><span class="arrow"></span></a>
+                <a href="/usergate/" class="btn btn_link"><span class="arrow"></span></a>
             </div>
             <div class="item">
                 <img src="/wp-content/themes/govorov.top/assets/img/pages/2/products-for-business-2.png"
@@ -51,7 +51,7 @@
                     Поставщик эффективных решений в сфере кибербезопасности. Пасcворк предлагает своим пользователям
                     возможность пользоваться специальным менеджером паролей с управлением доступами.
                 </p>
-                <a href="/" class="btn btn_link"><span class="arrow"></span></a>
+                <a href="/passvork/" class="btn btn_link"><span class="arrow"></span></a>
             </div>
             <div class="item">
                 <img src="/wp-content/themes/govorov.top/assets/img/pages/2/products-for-business-3.png"
@@ -61,7 +61,7 @@
                     «Лаборатория Касперского» — международная компания, работающая в сфере информационной безопасности и
                     цифровой приватности с 1997 года.
                 </p>
-                <a href="/" class="btn btn_link"><span class="arrow"></span></a>
+                <a href="/kaspersky/" class="btn btn_link"><span class="arrow"></span></a>
             </div>
             <div class="item">
                 <img src="/wp-content/themes/govorov.top/assets/img/pages/2/products-for-business-4.png"
@@ -71,7 +71,7 @@
                     Организация гарантирует российским корпоративным пользователям надежные механизмы защиты информации
                     и безопасность работы.
                 </p>
-                <a href="/" class="btn btn_link"><span class="arrow"></span></a>
+                <a href="/indid/" class="btn btn_link"><span class="arrow"></span></a>
             </div>
             <div class="item mb-lg-0">
                 <img src="/wp-content/themes/govorov.top/assets/img/pages/2/products-for-business-5.png"
@@ -82,7 +82,7 @@
                     компании и автоматизацию работы сотрудников, а также на поддержание высокого уровня информационной
                     безопасности.
                 </p>
-                <a href="/" class="btn btn_link"><span class="arrow"></span></a>
+                <a href="/stahanovec/" class="btn btn_link"><span class="arrow"></span></a>
             </div>
             <div class="item mb-0">
                 <img src="/wp-content/themes/govorov.top/assets/img/pages/2/products-for-business-6.png"
@@ -92,7 +92,7 @@
                     Компания «Альфа» занимается управлением процессами, связанными с соответствием всем необходимым
                     требованиям законодательства и IT-стандартам в использовании информационных сетей.
                 </p>
-                <a href="/" class="btn btn_link"><span class="arrow"></span></a>
+                <a href="/alfa/" class="btn btn_link"><span class="arrow"></span></a>
             </div>
         </div>
     </div>

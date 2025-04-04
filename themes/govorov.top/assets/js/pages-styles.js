@@ -17,3 +17,6 @@ import(/* webpackChunkName: "style-page-55" */ "../css/pages/55.scss");
 
 /* /usergate/ */
 import(/* webpackChunkName: "style-page-61" */ "../css/pages/61.scss");
+
+/* /kaspersky/ */
+import(/* webpackChunkName: "style-page-64" */ "../css/pages/64.scss");

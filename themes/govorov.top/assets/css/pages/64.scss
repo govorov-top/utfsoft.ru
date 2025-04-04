@@ -1,0 +1,103 @@
+/******************************
+* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss
+* Стили страницы
+******************************/
+@import "../fragments/variables";
+@import "../fragments/components_mixin";
+@import "../fragments/media_mixin";
+@import "../fragments/fonts_mixin";
+/* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
+@include rg-banner;
+@include rg-block-1;
+
+/* Стили страницы */
+.page-64 {
+    &.banner {
+        .content {
+            .wrapper {
+                @include min_definite_width(1400) {
+                    max-width: 700px;
+                }
+            }
+        }
+    }
+
+    &.available-solutions {
+        .items {
+            .item {
+                .subtitle {
+                    line-height: normal;
+                }
+            }
+        }
+    }
+
+    &.main-advantages {
+        .content {
+            padding: 40px;
+            @include max_992 {
+                padding: 30px;
+            }
+            @include max_768 {
+                padding: 30px 20px;
+            }
+            @include max_576 {
+                padding: 20px 10px;
+            }
+
+            .nav-item {
+                @include max_576 {
+                    width: 100%;
+                }
+
+                .btn {
+                    @include max_576 {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    &.responsible-for-safety {
+        .content {
+            .left {
+                max-width: 630px;
+                @include max_1400 {
+                    max-width: 520px;
+                }
+                @include max_1200 {
+                    max-width: 395px;
+                }
+                @include max_992 {
+                    max-width: 350px;
+                }
+                @include max_768 {
+                    max-width: 100%;
+                }
+            }
+
+            .right {
+                max-width: 568px;
+                @include max_1400 {
+                    max-width: 491px;
+                }
+                @include max_1200 {
+                    max-width: 444px;
+                }
+                @include max_992 {
+                    max-width: 311px;
+                }
+                @include max_768 {
+                    max-width: 100%;
+                }
+
+                .item {
+                    p:not(.subtitle) {
+                        color: #62818e;
+                    }
+                }
+            }
+        }
+    }
+}
