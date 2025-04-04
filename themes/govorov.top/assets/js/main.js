@@ -123,6 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const headerSite = document.querySelector("header.header#header");
     if (headerSite) {
         const headerMenuSite = document.querySelector("#header nav.menu");
+
         if (headerMenuSite) {
             const headerFixBlock = headerSite.querySelector(".container_header");
             const isMobile = window.matchMedia("(max-width: 991.98px)").matches;

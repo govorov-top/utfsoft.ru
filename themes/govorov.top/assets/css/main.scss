@@ -702,18 +702,30 @@ section,
 
 /* Header */
 header#header.header {
-    padding: 66px 0 50px;
-    @include max_1200 {
-        padding: 20px 0 50px;
-    }
-    @include max_992 {
-        padding: 30px 0 40px;
-    }
-    @include max_576 {
-        padding: 20px 0 40px;
+    .container_header {
+        &.fixed {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 49;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+            background: white;
+            margin: auto;
+        }
     }
 
     .header-content {
+        padding: 30px 0;
+        @include max_1200 {
+            padding: 20px 0 30px;
+        }
+        @include max_992 {
+            padding: 30px 0;
+        }
+        @include max_576 {
+            padding: 20px 0;
+        }
+
         .header-logo {
             img {
                 @include max_1200 {
@@ -729,7 +741,14 @@ header#header.header {
         }
 
         .header-callback {
-            .phone {
+            a {
+                color: $rg-color-site;
+                @include rg-font-style(
+                    (
+                        style: "regular",
+                        prop: "font-family",
+                    )
+                );
             }
 
             #requestCall {

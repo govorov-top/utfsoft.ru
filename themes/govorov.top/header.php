@@ -30,8 +30,8 @@ $endDate = new DateTime(date('Y') + 1 . '-02-01');
 <header class="header position-relative" id="header" itemscope itemtype="https://schema.org/Organization">
     <span class="d-none" itemprop="name"><?= get_bloginfo('name') . ' - ' . get_bloginfo('description') ?></span>
 
-    <div class="container container_header <?= is_front_page() ? 'home' : '' ?>">
-        <div class="header-content d-flex justify-content-center align-items-center items">
+    <div class=" container_header <?= is_front_page() ? 'home' : '' ?>">
+        <div class="header-content container d-flex justify-content-center align-items-center items">
             <div class="item header-logo me-auto me-sm-4 me-lg-auto">
                 <a href="/" class="no-line">
                     <picture>
@@ -63,7 +63,7 @@ $endDate = new DateTime(date('Y') + 1 . '-02-01');
                 </nav>
             </div>
             <div class="item header-callback d-none d-sm-flex align-items-start align-items-lg-end gap-3 gap-lg-0 flex-row-reverse flex-lg-column ms-auto">
-                <a href="tel:89999999999" class="strong phone color-text">8 999 999 99 99</a>
+                <?= do_shortcode('[site_info phone]') ?>
                 <button class=" small-text strong popClick" data-pop="header-pop" id="requestCall">Позвоните мне
                 </button>
             </div>
