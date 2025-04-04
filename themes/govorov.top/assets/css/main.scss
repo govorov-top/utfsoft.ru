@@ -966,115 +966,81 @@ header#header.header {
 // - Шаблоны страниц
 main {
     &.page-404 {
-        .preview {
-            .container {
-                max-width: 1035px;
-                position: relative;
+        .content {
+            min-height: 600px;
+            @include max_1400 {
+                min-height: 530px;
+            }
+            @include max_1200 {
+                min-height: 446px;
+            }
+            @include max_992 {
+                min-height: 334px;
+            }
+            @include max_768 {
+                min-height: 1px;
+            }
+
+            .wrapper {
+                padding: 50px;
+                @include max_992 {
+                    padding: 40px;
+                }
+                @include max_768 {
+                    padding: 30px 30px 0;
+                }
+                @include max_576 {
+                    padding: 20px 10px;
+                }
 
                 h1 {
                     @include px-to-rem(
                         (
-                            fs: 100,
+                            fs: 40,
                         )
                     );
-                    @include max_768 {
+                    @include max_1200 {
                         @include px-to-rem(
                             (
-                                fs: 66,
-                                base: 16,
+                                fs: 35,
                             )
                         );
                     }
-                }
-
-                p {
-                    @include px-to-rem(
-                        (
-                            fs: 24,
-                        )
-                    );
                     @include max_992 {
                         @include px-to-rem(
                             (
-                                fs: 22,
-                                base: 17,
+                                fs: 30,
                             )
                         );
                     }
-                    @include max_768 {
+                    @include max_576 {
                         @include px-to-rem(
                             (
-                                fs: 18,
-                                base: 16,
+                                fs: 25,
                             )
                         );
-                    }
-
-                    &.desc {
-                        @include px-to-rem(
-                            (
-                                fs: 32,
-                            )
-                        );
-                        line-height: 36px;
-                        @include max_992 {
-                            @include px-to-rem(
-                                (
-                                    fs: 24,
-                                    base: 17,
-                                )
-                            );
-                        }
-                        @include max_768 {
-                            @include px-to-rem(
-                                (
-                                    fs: 18,
-                                    base: 16,
-                                )
-                            );
-                            line-height: 26px;
-                        }
                     }
                 }
 
-                ul {
-                    li {
-                        a {
-                            @include px-to-rem(
-                                (
-                                    fs: 24,
-                                )
-                            );
-                            text-decoration: underline;
-                            @include max_992 {
-                                @include px-to-rem(
-                                    (
-                                        fs: 22,
-                                        base: 17,
-                                    )
-                                );
-                            }
-                            @include max_768 {
-                                @include px-to-rem(
-                                    (
-                                        fs: 18,
-                                        base: 16,
-                                    )
-                                );
-                            }
-                        }
+                .btn {
+                    @include max_576 {
+                        margin: auto;
                     }
+                }
+            }
+
+            .image {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                @include max_768 {
+                    position: static;
                 }
 
                 img {
                     @include max_576 {
-                        position: absolute;
-                        max-width: 226px;
-                        bottom: 0;
-                        right: 10px;
-                    }
-                    @include max_definite_width(440) {
-                        max-width: 180px;
+                        width: 100%;
+                        max-width: 100%;
                     }
                 }
             }
