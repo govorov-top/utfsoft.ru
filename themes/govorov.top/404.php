@@ -16,7 +16,7 @@ get_header(); ?>
                     <h1 class="pb-4">
                         Страница, которую вы пытаетесь <br class="d-none d-md-block"> просмотреть, не существует...
                     </h1>
-                    <button class="btn link-js btn_max-content mt-auto " data-link="/">На главную</button>
+                    <a href="/" class="btn btn_max-content mt-auto ">На главную</a>
                 </div>
 
                 <picture class="image">
