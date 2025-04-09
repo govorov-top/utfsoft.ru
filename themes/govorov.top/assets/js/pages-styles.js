@@ -20,3 +20,6 @@ import(/* webpackChunkName: "style-page-61" */ "../css/pages/61.scss");
 
 /* /kaspersky/ */
 import(/* webpackChunkName: "style-page-64" */ "../css/pages/64.scss");
+
+/* /obrabotka-i-obespechenie-bezopasnosti-informacii/ */
+import(/* webpackChunkName: "style-page-72" */ "../css/pages/72.scss");

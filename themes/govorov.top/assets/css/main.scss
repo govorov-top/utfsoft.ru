@@ -1256,6 +1256,11 @@ main {
     &_max-content {
         max-width: max-content;
     }
+
+    &_center {
+        margin: 0 auto;
+        display: flex;
+    }
 }
 
 // ЕБАЛА ЕБУЧАЯ ОТ БУТСТРАПА
