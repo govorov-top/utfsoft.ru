@@ -23,3 +23,6 @@ import(/* webpackChunkName: "style-page-64" */ "../css/pages/64.scss");
 
 /* /obrabotka-i-obespechenie-bezopasnosti-informacii/ */
 import(/* webpackChunkName: "style-page-72" */ "../css/pages/72.scss");
+
+/* /primo-rpa/ */
+import(/* webpackChunkName: "style-page-75" */ "../css/pages/75.scss");
