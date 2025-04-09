@@ -9,25 +9,25 @@
 ?>
 
 <section class="no-results not-found">
-	<header class="page-header">
-		<h1 class="page-title"><?php _e( 'Nothing Found', 'rstheme' ); ?></h1>
-	</header><!-- .page-header -->
+    <header class="page-header">
+        <h1 class="page-title"><?php _e('Ничего не найдено', 'rstheme'); ?></h1>
+    </header><!-- .page-header -->
 
-	<div class="page-content">
-		<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
+    <div class="page-content">
+        <?php if (is_home() && current_user_can('publish_posts')) : ?>
 
-			<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'rstheme' ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
+            <p><?php printf(__('На сайте еще не добавлены посты блога', 'rstheme')); ?></p>
 
-		<?php elseif ( is_search() ) : ?>
+        <?php elseif (is_search()) : ?>
 
-			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'rstheme' ); ?></p>
-			<?php get_search_form(); ?>
+            <p><?php _e('Извините, но ничего не соответствует вашим поисковым запросам. Попробуйте еще раз с другими ключевыми словами.', 'rstheme'); ?></p>
+            <?php get_search_form(); ?>
 
-		<?php else : ?>
+        <?php else : ?>
 
-			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'rstheme' ); ?></p>
-			<?php get_search_form(); ?>
+            <p><?php _e('Кажется, мы не можем найти то, что вы ищете. Возможно, поиск поможет.', 'rstheme'); ?></p>
+            <?php get_search_form(); ?>
 
-		<?php endif; ?>
-	</div><!-- .page-content -->
+        <?php endif; ?>
+    </div><!-- .page-content -->
 </section><!-- .no-results -->
