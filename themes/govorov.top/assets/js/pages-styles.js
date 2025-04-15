@@ -32,3 +32,6 @@ import(/* webpackChunkName: "style-page-80" */ "../css/pages/80.scss");
 
 /* /spektr/ */
 import(/* webpackChunkName: "style-page-84" */ "../css/pages/84.scss");
+
+/* /alfadok/ */
+import(/* webpackChunkName: "style-page-90" */ "../css/pages/90.scss");

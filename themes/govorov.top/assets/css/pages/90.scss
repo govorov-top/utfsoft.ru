@@ -1,0 +1,126 @@
+/******************************
+* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss
+* Стили страницы
+******************************/
+@import "../fragments/variables";
+@import "../fragments/components_mixin";
+@import "../fragments/media_mixin";
+@import "../fragments/fonts_mixin";
+/* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
+@include rg-banner;
+
+/* Стили страницы */
+.page-90 {
+    &.data-protection-relevance {
+        .items {
+            grid-template-columns: repeat(3, 380px);
+            @include max_1400 {
+                grid-template-columns: repeat(3, 340px);
+            }
+            @include max_1200 {
+                grid-template-columns: repeat(3, 300px);
+            }
+            @include max_992 {
+                grid-template-columns: repeat(3, 220px);
+            }
+            @include max_768 {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    &.usage-options {
+        .items {
+            grid-template-columns: repeat(2, 620px);
+            @include max_1400 {
+                grid-template-columns: repeat(2, 530px);
+            }
+            @include max_1200 {
+                grid-template-columns: repeat(2, 450px);
+            }
+            @include max_992 {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            @include max_768 {
+                gap: 30px;
+            }
+
+            .item {
+                img {
+                    max-width: 250px;
+                    @include max_1400 {
+                        max-width: 220px;
+                    }
+                    @include max_1200 {
+                        max-width: 175px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.alfadoc-benefits {
+        .content {
+            .items {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                @include max_992 {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: auto;
+                }
+            }
+        }
+    }
+
+    &.alfadoc-assistance {
+        .content {
+            .wrapper {
+                max-width: 620px;
+                @include max_1400 {
+                    max-width: 555px;
+                }
+                @include max_1200 {
+                    max-width: 466px;
+                }
+                @include max_992 {
+                    display: contents;
+                }
+            }
+
+            img {
+                max-width: 526px;
+                @include max_1400 {
+                    max-width: 474px;
+                }
+                @include max_1200 {
+                    max-width: 457px;
+                }
+                @include max_576 {
+                    max-width: 340px;
+                }
+            }
+        }
+    }
+
+    &.service-advantages {
+        .items {
+            grid-template-columns: repeat(3, 380px);
+            gap: 50px 0;
+            @include max_1400 {
+                grid-template-columns: repeat(3, 340px);
+            }
+            @include max_1200 {
+                grid-template-columns: repeat(3, 300px);
+            }
+            @include max_992 {
+                grid-template-columns: repeat(3, 220px);
+                gap: 40px 0;
+            }
+            @include max_768 {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    }
+}
