@@ -1,0 +1,198 @@
+/******************************
+* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss
+* Стили страницы
+******************************/
+@import "../fragments/variables";
+@import "../fragments/components_mixin";
+@import "../fragments/media_mixin";
+@import "../fragments/fonts_mixin";
+/* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
+@include rg-banner;
+
+/* Стили страницы */
+.page-84 {
+    &.about-company {
+        .content {
+            .desc {
+                max-width: 853px;
+                @include max_1400 {
+                    max-width: 713px;
+                }
+                @include max_1200 {
+                    max-width: 575px;
+                }
+                @include max_992 {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    &.available-products {
+        .nav-item {
+            @include max_576 {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+
+        .nav-link {
+            &.active {
+                span {
+                    background: #fff;
+                }
+            }
+
+            span {
+                width: 2px;
+                transition: all 0.5s ease;
+                height: 29px;
+                display: block;
+                background: #62818e;
+            }
+        }
+
+        .tab-content {
+            .tab-pane {
+                .max-1000 {
+                    max-width: 1000px;
+                    @include max_1400 {
+                        max-width: 850px;
+                    }
+                    @include max_1200 {
+                        max-width: 750px;
+                    }
+                }
+
+                .btn {
+                    @include max_576 {
+                        width: 100%;
+                    }
+                }
+
+                &_1 {
+                    .items {
+                        .item {
+                            max-width: 555px;
+                            @include max_1400 {
+                                max-width: 494px;
+                            }
+                            @include max_1200 {
+                                max-width: 455px;
+                            }
+                            @include max_992 {
+                                max-width: 100%;
+                            }
+                        }
+
+                        img {
+                            @include max_992 {
+                                max-width: 100%;
+                            }
+                            @include max_576 {
+                                width: 100% !important;
+                            }
+                        }
+                    }
+                }
+
+                &_2 {
+                    .wrapper {
+                        .desc {
+                            max-width: 400px;
+                            @include max_1400 {
+                                max-width: 420px;
+                            }
+                            @include max_992 {
+                                max-width: 100%;
+                            }
+                        }
+
+                        img {
+                            @include max_992 {
+                                max-width: 100%;
+                            }
+                            @include max_576 {
+                                width: 100% !important;
+                            }
+                        }
+
+                        &-2 {
+                            .item {
+                                max-width: 570px;
+                                @include max_1400 {
+                                    max-width: 500px;
+                                }
+                                @include max_1200 {
+                                    max-width: 410px;
+                                }
+                                @include max_992 {
+                                    max-width: 316px;
+                                }
+                                @include max_768 {
+                                    max-width: 100%;
+                                }
+                            }
+                        }
+                    }
+
+                    .items {
+                        grid-template-columns: repeat(3, 1fr);
+                        @include max_992 {
+                            grid-template-columns: repeat(2, 1fr);
+                        }
+                        @include max_768 {
+                            grid-template-columns: 1fr;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.meet-requirements {
+        .title-desc {
+            @include min_definite_width(1400) {
+                max-width: 980px;
+            }
+        }
+
+        .items {
+            grid-template-columns: repeat(4, 1fr);
+            @include max_992 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+
+    &.clients {
+        .items {
+            gap: 50px 0;
+            grid-template-columns: repeat(5, 200px);
+            @include max_1400 {
+                grid-template-columns: repeat(5, 175px);
+                gap: 45px 0;
+            }
+            @include max_1200 {
+                grid-template-columns: repeat(5, 140px);
+                gap: 30px 0;
+            }
+            @include max_992 {
+                grid-template-columns: repeat(5, 105px);
+                gap: 23px 0;
+            }
+            @include max_768 {
+                grid-template-columns: repeat(3, 140px);
+                gap: 30px;
+            }
+            @include max_576 {
+                grid-template-columns: repeat(2, 140px);
+                gap: 30px 60px;
+            }
+            @include max_definite_width(359.98) {
+                grid-template-columns: 140px !important;
+                gap: 30px !important;
+            }
+        }
+    }
+}

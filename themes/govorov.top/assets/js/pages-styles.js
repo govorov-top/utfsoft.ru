@@ -29,3 +29,6 @@ import(/* webpackChunkName: "style-page-75" */ "../css/pages/75.scss");
 
 /* /kiber-fajly/ */
 import(/* webpackChunkName: "style-page-80" */ "../css/pages/80.scss");
+
+/* /spektr/ */
+import(/* webpackChunkName: "style-page-84" */ "../css/pages/84.scss");
