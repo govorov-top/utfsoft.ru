@@ -188,6 +188,90 @@ code {
     }
 }
 
+// p-40
+.p-40 {
+    padding: 40px;
+    @include max_1200 {
+        padding: 30px;
+    }
+    @include max_768 {
+        padding: 30px 20px;
+    }
+    @include max_576 {
+        padding: 20px 10px;
+    }
+}
+
+// pb-40
+.pb-40 {
+    padding-bottom: 40px !important;
+}
+
+@include min_definite_width(576) {
+    .pb-sm-40 {
+        padding-bottom: 40px !important;
+    }
+}
+
+@include min_definite_width(768) {
+    .pb-md-40 {
+        padding-bottom: 40px !important;
+    }
+}
+
+@include min_definite_width(992) {
+    .pb-lg-40 {
+        padding-bottom: 40px !important;
+    }
+}
+
+@include min_definite_width(1200) {
+    .pb-xl-40 {
+        padding-bottom: 40px !important;
+    }
+}
+
+@include min_definite_width(1400) {
+    .pb-xxl-40 {
+        padding-bottom: 40px !important;
+    }
+}
+
+// pb-50
+.pb-50 {
+    padding-bottom: 50px !important;
+}
+
+@include min_definite_width(576) {
+    .pb-sm-50 {
+        padding-bottom: 50px !important;
+    }
+}
+
+@include min_definite_width(768) {
+    .pb-md-50 {
+        padding-bottom: 50px !important;
+    }
+}
+
+@include min_definite_width(992) {
+    .pb-lg-50 {
+        padding-bottom: 50px !important;
+    }
+}
+
+@include min_definite_width(1200) {
+    .pb-xl-50 {
+        padding-bottom: 50px !important;
+    }
+}
+
+@include min_definite_width(1400) {
+    .pb-xxl-50 {
+        padding-bottom: 50px !important;
+    }
+}
+
 // - Заголовки h1, .h1, h2, .h2, h3, .h3,
 h1,
 .h1,

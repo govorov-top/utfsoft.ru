@@ -26,3 +26,6 @@ import(/* webpackChunkName: "style-page-72" */ "../css/pages/72.scss");
 
 /* /primo-rpa/ */
 import(/* webpackChunkName: "style-page-75" */ "../css/pages/75.scss");
+
+/* /kiber-fajly/ */
+import(/* webpackChunkName: "style-page-80" */ "../css/pages/80.scss");
