@@ -38,3 +38,6 @@ import(/* webpackChunkName: "style-page-90" */ "../css/pages/90.scss");
 
 /* /mts-link/ */
 import(/* webpackChunkName: "style-page-95" */ "../css/pages/95.scss");
+
+/* /kontur-id/ */
+import(/* webpackChunkName: "style-page-99" */ "../css/pages/99.scss");

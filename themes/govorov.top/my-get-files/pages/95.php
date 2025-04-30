@@ -13,7 +13,7 @@
                 </p>
                 <button class="btn order-4 popClick" data-pop="banner-pop">Получить консультацию</button>
             </div>
-            <img src="/wp-content/themes/govorov.top/assets/img/pages/95/banner.svg" alt="АльфаДок"
+            <img src="/wp-content/themes/govorov.top/assets/img/pages/95/banner.svg" alt="МТС линк"
                  class="image order-2 mb-3 mb-sm-4 mb-md-0 w-auto">
         </div>
     </div>
