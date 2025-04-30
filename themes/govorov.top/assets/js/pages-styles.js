@@ -35,3 +35,6 @@ import(/* webpackChunkName: "style-page-84" */ "../css/pages/84.scss");
 
 /* /alfadok/ */
 import(/* webpackChunkName: "style-page-90" */ "../css/pages/90.scss");
+
+/* /mts-link/ */
+import(/* webpackChunkName: "style-page-95" */ "../css/pages/95.scss");

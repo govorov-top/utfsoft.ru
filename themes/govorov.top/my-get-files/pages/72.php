@@ -68,7 +68,7 @@
                     безопасности. Это позволяет снять часть нагрузки со специалистов по безопасности и сфокусироваться
                     на решении более сложных задач.
                 </p>
-                <a href="#" class="btn btn_link"><span class="arrow"></span></a>
+                <a href="/alfadok/" class="btn btn_link"><span class="arrow"></span></a>
             </div>
             <div class="item">
                 <img src="" data-src="/wp-content/themes/govorov.top/assets/img/pages/72/products-4.svg"
@@ -78,7 +78,7 @@
                     процессов в сфере кибербезопасности. Пользователи также могут удостовериться в соответствии объектов
                     учета всем правовым нормам.
                 </p>
-                <a href="#" class="btn btn_link"><span class="arrow"></span></a>
+                <a href="/primo-rpa/" class="btn btn_link"><span class="arrow"></span></a>
             </div>
         </div>
     </div>

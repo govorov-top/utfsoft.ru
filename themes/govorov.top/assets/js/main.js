@@ -128,7 +128,6 @@ document.addEventListener("DOMContentLoaded", () => {
             const headerFixBlock = headerSite.querySelector(".container_header");
             const isMobile = window.matchMedia("(max-width: 991.98px)").matches;
             const wpAdminBar = document.getElementById("wpadminbar");
-            const mobileLogotype = headerSite.querySelector(".mobile-logotype");
 
             window.onscroll = () => {
                 const haveClassFixed = headerFixBlock.classList.contains("fixed");
@@ -143,16 +142,10 @@ document.addEventListener("DOMContentLoaded", () => {
                             headerFixBlock.style.top = `${wpAdminBar.clientHeight}px`;
                         }
                     }
-                    if (isMobile) {
-                        mobileLogotype.style.display = "none!important";
-                    }
                 }
                 if (top < step) {
                     if (haveClassFixed && !isMobile) {
                         headerFixBlock.classList.remove("fixed");
-                    }
-                    if (isMobile) {
-                        mobileLogotype.style.display = "none!important";
                     }
                 }
             };

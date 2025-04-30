@@ -46,6 +46,9 @@
 /* Часто повторяющиеся элементы */
 @include rg-bg-box;
 @include rg-feedback-form;
+// Генерация классов для padding-bottom
+@include generate-spacing-classes(pb, (15, 40, 50));
+
 /* Normalize */
 :root {
     //Цвета элементов
@@ -216,76 +219,6 @@ code {
     }
     @include max_576 {
         padding: 20px 10px;
-    }
-}
-
-// pb-40
-.pb-40 {
-    padding-bottom: 40px !important;
-}
-
-@include min_definite_width(576) {
-    .pb-sm-40 {
-        padding-bottom: 40px !important;
-    }
-}
-
-@include min_definite_width(768) {
-    .pb-md-40 {
-        padding-bottom: 40px !important;
-    }
-}
-
-@include min_definite_width(992) {
-    .pb-lg-40 {
-        padding-bottom: 40px !important;
-    }
-}
-
-@include min_definite_width(1200) {
-    .pb-xl-40 {
-        padding-bottom: 40px !important;
-    }
-}
-
-@include min_definite_width(1400) {
-    .pb-xxl-40 {
-        padding-bottom: 40px !important;
-    }
-}
-
-// pb-50
-.pb-50 {
-    padding-bottom: 50px !important;
-}
-
-@include min_definite_width(576) {
-    .pb-sm-50 {
-        padding-bottom: 50px !important;
-    }
-}
-
-@include min_definite_width(768) {
-    .pb-md-50 {
-        padding-bottom: 50px !important;
-    }
-}
-
-@include min_definite_width(992) {
-    .pb-lg-50 {
-        padding-bottom: 50px !important;
-    }
-}
-
-@include min_definite_width(1200) {
-    .pb-xl-50 {
-        padding-bottom: 50px !important;
-    }
-}
-
-@include min_definite_width(1400) {
-    .pb-xxl-50 {
-        padding-bottom: 50px !important;
     }
 }
 
@@ -579,6 +512,10 @@ img {
     &.error {
         opacity: 1;
     }
+
+    &.max-width-100 {
+        max-width: 100%;
+    }
 }
 
 object {
@@ -854,7 +791,7 @@ header#header.header {
             padding: 30px 0;
         }
         @include max_576 {
-            padding: 20px 0;
+            padding: 20px 10px;
         }
 
         .header-logo {

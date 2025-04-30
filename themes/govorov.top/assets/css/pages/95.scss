@@ -1,0 +1,51 @@
+/******************************
+* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss
+* Стили страницы
+******************************/
+@import "../fragments/variables";
+@import "../fragments/components_mixin";
+@import "../fragments/media_mixin";
+@import "../fragments/fonts_mixin";
+/* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
+@include rg-banner;
+@include rg-grid-column((1, 2));
+@include generate-gap-classes((40));
+/* Стили страницы */
+.page-95 {
+    &.vcs-leader-stability {
+        .content {
+            .title {
+                max-width: 440px;
+                @include max_1400 {
+                    max-width: 405px;
+                }
+                @include max_1200 {
+                    max-width: 359px;
+                }
+                @include max_992 {
+                    max-width: 100%;
+                }
+            }
+
+            .items {
+                gap: 40px 60px;
+                grid-template-columns: repeat(2, 300px);
+                @include max_1400 {
+                    gap: 50px;
+                    grid-template-columns: repeat(2, 270px);
+                }
+                @include max_1200 {
+                    gap: 50px;
+                    grid-template-columns: repeat(2, 220px);
+                }
+                @include max_992 {
+                    gap: 30px 100px;
+                }
+                @include max_576 {
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 30px 10px;
+                }
+            }
+        }
+    }
+}
