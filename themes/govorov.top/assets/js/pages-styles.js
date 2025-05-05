@@ -41,3 +41,6 @@ import(/* webpackChunkName: "style-page-95" */ "../css/pages/95.scss");
 
 /* /kontur-id/ */
 import(/* webpackChunkName: "style-page-99" */ "../css/pages/99.scss");
+
+/* /pam/ */
+import(/* webpackChunkName: "style-page-103" */ "../css/pages/103.scss");
