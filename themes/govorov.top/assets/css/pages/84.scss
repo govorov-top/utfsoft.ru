@@ -8,7 +8,7 @@
 @import "../fragments/fonts_mixin";
 /* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
 @include rg-banner;
-
+@include rg-grid-column((2, 4));
 /* Стили страницы */
 .page-84 {
     &.about-company {
@@ -154,13 +154,6 @@
         .title-desc {
             @include min_definite_width(1400) {
                 max-width: 980px;
-            }
-        }
-
-        .items {
-            grid-template-columns: repeat(4, 1fr);
-            @include max_992 {
-                grid-template-columns: repeat(2, 1fr);
             }
         }
     }

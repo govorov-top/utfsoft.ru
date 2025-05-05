@@ -78,7 +78,7 @@ $endDate = new DateTime(date('Y') + 1 . '-02-01');
             <nav id="menu-paste" class="p-0 text-start navbar navbar-expand-lg header-nav-bar-custom align-items-start">
 
             </nav>
-            <button class="btn btn_max-content mt-auto">Получить консультацию</button>
+            <button class="btn btn_max-content mt-auto popClick" data-pop="header-pop">Получить консультацию</button>
         </div>
     </div>
 </header>

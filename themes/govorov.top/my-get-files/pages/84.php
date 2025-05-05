@@ -33,7 +33,7 @@
 <section class="page-84 about-company">
     <div class="container">
         <div class="content d-flex flex-column flex-lg-row justify-content-between">
-            <h2 class="pb-30 pb-md-40 pb-lg-0">О компании</h2>
+            <h2 class="pb-3 pb-md-40 pb-lg-0">О компании</h2>
             <div class="desc">
                 <p class="mb-15">
                     Специалисты компании «Сайберпик» на протяжении десяти лет работают над созданием продуктов в области
@@ -51,7 +51,7 @@
 </section>
 <section class="page-84 available-products">
     <div class="container">
-        <h2 class="text-center pb-40">
+        <h2 class="text-center pb-4 pb-lg-40">
             Доступные продукты
         </h2>
         <div class="tabs-panel mb-40">
@@ -207,14 +207,14 @@
 </section>
 <section class="page-84 meet-requirements">
     <div class="container">
-        <div class="title-desc mb-50">
+        <div class="title-desc mb-4 mb-md-40 mb-lg-50">
             <h2 class="title">Соответствуйте требованиям</h2>
             <p class="desc mb-0">
                 Сервис предлагает несколько сотен готовых настроек, включая правила, классификации и отчеты, чтобы
                 соответствовать предписаниям контролирующих органов.
             </p>
         </div>
-        <div class="items grid column-gap-2 column-gap-sm-3 column-gap-lg-4 column-gap-xl-3 row-gap-3 row-gap-lg-4">
+        <div class="items grid rg-grid-column-2 rg-grid-column-lg-4 column-gap-2 column-gap-sm-3 column-gap-lg-4 column-gap-xl-3 row-gap-3 row-gap-lg-4">
             <div class="item">
                 <p class="subtitle mb-15">152-Ф3</p>
                 <p class="mb-0 color-grey">Законодательство РФ о персональных данных.</p>
@@ -252,7 +252,7 @@
 </section>
 <section class="page-84 clients">
     <div class="container">
-        <div class="title-desc mb-50">
+        <div class="title-desc mb-4 mb-md-40 mb-lg-50">
             <h2 class="title">Клиенты</h2>
             <p class="desc">
                 Нам доверяют защиту своих файловых хранилищ десятки российских компаний.

@@ -32,7 +32,7 @@
 </section>
 <section class="page-38 services">
     <div class="container">
-        <div class="title-desc big mb-50">
+        <div class="title-desc big mb-40 mb-lg-50">
             <h2 class="title">Все доступные <br> сервисы Альфы</h2>
             <p class="desc">Содействие в организационных и деловых процессах деятельности компании в части реализации
                 всех предписанных требований и норм в процессе использования информационных систем.</p>
@@ -109,9 +109,9 @@
 </section>
 <section class="page-38 features">
     <div class="container">
-        <div class="content rg-bg-box">
+        <div class="content p-40 rg-bg-box">
             <h2 class="text-center pb-40">Функции</h2>
-            <div class="items">
+            <div class="items grid rg-grid-column-1 rg-grid-column-lg-2 gap-4 gap-xl-50">
                 <div class="item bg-white br-2 p-3 p-sm-4">
                     <img src="/wp-content/themes/govorov.top/assets/img/pages/38/features-1.svg" class="w-auto mb-3"
                          alt="Внедрение методологии безопасной разработки">
@@ -137,7 +137,7 @@
 </section>
 <section class="page-38 application-examples">
     <div class="container">
-        <div class="block-1100 mb-40">
+        <div class="block-1100 mb-4 mb-lg-40">
             <h2 class="pb-4">
                 Стандартные примеры применения
             </h2>
@@ -151,21 +151,21 @@
             </p>
         </div>
         <div class="items rg-block-1 d-flex flex-wrap justify-content-between">
-            <div class="item">
+            <div class="item mb-4 mb-lg-40">
                 <p class="subtitle">Корпоративные структуры бизнеса</p>
                 <p class="mb-0">
                     Инновации в сфере культуры информационной безопасности, повышение уровня подготовки сотрудников и
                     адаптация к потребностям бизнеса посредством настройки и поддержки внутренних документов организаций
                 </p>
             </div>
-            <div class="item">
+            <div class="item mb-4 mb-lg-40">
                 <p class="subtitle">Инстанции федерального значения</p>
                 <p class="mb-0">
                     Всесторонняя оценка IT-поля для работы, значительное снижение рисков кибербезопасности и содействие
                     в организации действий, направленных на обеспечение безопасной деятельности.
                 </p>
             </div>
-            <div class="item mb-md-0">
+            <div class="item mb-4 mb-md-0">
                 <p class="subtitle">Региональные и ведомственные структуры</p>
                 <p class="mb-0">
                     Их деятельность направлена на внедрение современных технологий, развитие цифровых сервисов и

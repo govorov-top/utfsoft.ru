@@ -32,7 +32,7 @@
 </section>
 <section class="about page-45">
     <div class="container">
-        <div class="content rg-bg-box">
+        <div class="content p-50 rg-bg-box">
             <h2 class="pb-3 pb-sm-4">О продукте</h2>
             <div class="desc">
                 <p class="mb-15">
@@ -59,23 +59,24 @@
                 предпринимательства и конфиденциальность информации.
             </p>
         </div>
-        <div class="items grid">
+        <div class="items grid rg-grid-column-1 rg-grid-column-lg-3 gap-4 gap-xl-50">
             <div class="item px-2 py-3 py-sm-4 px-sm-3 px-md-4  shadow bg-white br-2">
                 <p class="subtitle mb-2 text-lg-center">Полный контроль</p>
                 <p class="mb-lg-4 text-lg-center">
                     DLP-система, используется в целях недопущения кражи персональных данных и выявления причин
                     произошедших индидентов.
                 </p>
-                <p class="mb-15 strong">Основные функции:</p>
+                <p class="mb-2 mb-sm-15 strong">Основные функции:</p>
                 <ul class="rg-list pb-lg-4">
-                    <li>Предотвращение утечки сведений</li>
-                    <li>Идентификация сотрудников по лицам</li>
+                    <li class="mb-2 mb-sm-15">Предотвращение утечки сведений</li>
+                    <li class="mb-2 mb-sm-15">Идентификация сотрудников по лицам</li>
                     <li>Система оповещений о предстоящих мероприятиях и произошедших инцидентах</li>
                 </ul>
-                <p class="mb-15 strong">Поддерживает:</p>
+                <p class="mb-2 mb-sm-15 strong">Поддерживает:</p>
                 <ul class="rg-list pb-0">
-                    <li>Предотвращение утечки сведений</li>
-                    <li>Учет рабочего времени, запись телефонных разговоров, мониторинг электронной почты и переписки в
+                    <li class="mb-2 mb-sm-15">Предотвращение утечки сведений</li>
+                    <li class="mb-2 mb-sm-15">Учет рабочего времени, запись телефонных разговоров, мониторинг
+                        электронной почты и переписки в
                         мессенджерах
                     </li>
                     <li>Управление печатью, используемым оборудованием и программным обеспечением</li>
@@ -85,19 +86,21 @@
                 <p class="subtitle mb-2 text-lg-center">ПРО</p>
                 <p class="mb-lg-4 text-lg-center">Расширенная версия, включающая все аналитические и защитные
                     компоненты</p>
-                <p class="mb-15 strong">Основные функции:</p>
+                <p class="mb-2 mb-sm-15 strong">Основные функции:</p>
                 <ul class="rg-list pb-lg-4">
-                    <li>Специальный аналитический раздел</li>
-                    <li>Оценка уровня рисков</li>
-                    <li>Весь функционал версии «Полный контроль»</li>
+                    <li class="mb-2 mb-sm-15">Специальный аналитический раздел</li>
+                    <li class="mb-2 mb-sm-15">Оценка уровня рисков</li>
+                    <li class="mb-2 mb-sm-15">Весь функционал версии «Полный контроль»</li>
                     <li>Все функции версии «Квант»</li>
                 </ul>
-                <p class="mb-15 strong">Поддерживает:</p>
+                <p class="mb-2 mb-sm-15 strong">Поддерживает:</p>
                 <ul class="rg-list pb-0">
-                    <li>Оценку рисков, статистику продуктивности и уровня активности работников по значительному числу
+                    <li class="mb-2 mb-sm-15">Оценку рисков, статистику продуктивности и уровня активности работников по
+                        значительному числу
                         критериев
                     </li>
-                    <li>Поиск по документации, защита от снимков экрана с конфиденциальными данными, распознавание лиц,
+                    <li class="mb-2 mb-sm-15">Поиск по документации, защита от снимков экрана с конфиденциальными
+                        данными, распознавание лиц,
                         голосовой DLP
                     </li>
                     <li>Формирование кодов маркировки при создании снимков экрана, блокировку доступа к съемным
@@ -109,18 +112,20 @@
                 <p class="subtitle mb-2 text-lg-center">Квант</p>
                 <p class="mb-lg-4 text-lg-center">Эффективное решение для анализа персонала, профайлинга и наблюдения за
                     рабочим процессом.</p>
-                <p class="mb-15 strong">Основные функции:</p>
+                <p class="mb-2 mb-sm-15 strong">Основные функции:</p>
                 <ul class="rg-list pb-lg-4">
-                    <li>Инструменты аналитики</li>
-                    <li>Трекер учета времени и табель УРВ</li>
-                    <li>Оценка активности персонала и прогнозирование увольнений</li>
+                    <li class="mb-2 mb-sm-15">Инструменты аналитики</li>
+                    <li class="mb-2 mb-sm-15">Трекер учета времени и табель УРВ</li>
+                    <li class="mb-2 mb-sm-15">Оценка активности персонала и прогнозирование увольнений</li>
                     <li>Распределение сотрудников по профилям</li>
                 </ul>
-                <p class="mb-15 strong">Поддерживает:</p>
+                <p class="mb-2 mb-sm-15 strong">Поддерживает:</p>
                 <ul class="rg-list pb-0">
-                    <li>Отслеживание запросов поисковой системы, используемых приложений и активности на рабочем месте
+                    <li class="mb-2 mb-sm-15">Отслеживание запросов поисковой системы, используемых приложений и
+                        активности на рабочем месте
                     </li>
-                    <li>Специальный механизм отслеживания рабочего времени, увольнений и отсутствия сотрудников на
+                    <li class="mb-2 mb-sm-15">Специальный механизм отслеживания рабочего времени, увольнений и
+                        отсутствия сотрудников на
                         рабочих местах
                     </li>
                     <li>Детализированные аналитические отчеты для определения областей роста и развития персонала</li>
@@ -131,7 +136,7 @@
 </section>
 <section class="page-45 stahanovec-10">
     <div class="container">
-        <div class="content d-flex flex-column flex-lg-row justify-content-between align-items-center rg-bg-box">
+        <div class="content p-50 d-flex flex-column flex-lg-row justify-content-between align-items-center rg-bg-box">
             <div class="wrapper order-1">
                 <h2 class="pb-3 text-center text-lg-start pb-lg-4 order-1">Стахановец 10</h2>
                 <p class="mb-40 text-center text-lg-start order-2">
@@ -144,14 +149,14 @@
             </div>
             <img src="" data-src="/wp-content/themes/govorov.top/assets/img/pages/45/stahanovec-10.svg"
                  alt="Стахановец 10"
-                 class="image w-auto d-block lazy order-3">
+                 class="image w-auto d-block mx-auto mx-lg-0 mb-lg-0 mb-md-40 mb-4 lazy order-3">
         </div>
     </div>
 </section>
 <section class="page-45 rich-experience">
     <div class="container">
         <div class="block-1100 mb-4">
-            <h2 class="pb-50">Стахановец: Богатый опыт и признание пользователей</h2>
+            <h2 class="pb-4 pb-xl-50">Стахановец: Богатый опыт и признание пользователей</h2>
             <p class="mb-15">
                 Компания «Стахановец» является признанным лидером среди российских разработчиков
                 многофункционального программного комплекса, предназначенного для защиты данных и анализа эффективности

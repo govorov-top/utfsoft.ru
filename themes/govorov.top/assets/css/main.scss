@@ -48,7 +48,7 @@
 @include rg-feedback-form;
 // Генерация классов для padding-bottom
 @include generate-spacing-classes(pb, (15, 40, 50));
-
+@include generate-spacing-classes(mb, (15, 40, 50));
 /* Normalize */
 :root {
     //Цвета элементов
@@ -170,25 +170,6 @@ code {
 
 .order-10 {
     order: 10;
-}
-
-// - Отступы
-.mb-15 {
-    margin-bottom: 15px;
-}
-
-.mb-50 {
-    margin-bottom: 50px;
-    @include max_992 {
-        margin-bottom: 40px;
-    }
-}
-
-.mb-40 {
-    margin-bottom: 40px;
-    @include max_992 {
-        margin-bottom: 30px;
-    }
 }
 
 // p-40

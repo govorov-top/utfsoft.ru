@@ -9,7 +9,6 @@
 /* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
 @include rg-banner;
 @include rg-block-1;
-@include generate-spacing-classes(mb, (40, 50));
 @include rg-grid-column((1, 3));
 @include generate-gap-classes((75, 60));
 /* Стили страницы */

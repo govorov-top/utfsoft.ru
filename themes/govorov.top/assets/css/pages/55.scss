@@ -9,50 +9,25 @@
 /* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
 @include rg-banner;
 @include rg-block-1;
-
+@include rg-grid-column((1, 2));
+@include generate-gap-classes((40));
 /* Стили страницы */
 .page-55 {
     &.solutions-by-sphere {
-        .content {
-            padding: 40px;
-            @include max_1200 {
-                padding: 30px;
-            }
-            @include max_768 {
-                padding: 30px 20px;
-            }
-            @include max_576 {
-                padding: 20px 10px;
-            }
-
-            .items {
-                grid-template-columns: 1fr 1fr;
-                gap: 40px 30px;
-                @include max_992 {
-                    grid-template-columns: 1fr;
-                    gap: 30px;
+        .items {
+            img {
+                @include max_1400 {
+                    max-width: 250px;
                 }
-
-                img {
-                    @include max_1400 {
-                        max-width: 250px;
-                    }
-                    @include max_1200 {
-                        max-width: 210px;
-                        width: 100% !important;
-                    }
+                @include max_1200 {
+                    max-width: 210px;
+                    width: 100% !important;
                 }
             }
         }
     }
 
     &.effective-solutions {
-        h2 {
-            @include max_1200 {
-                padding-bottom: 30px;
-            }
-        }
-
         .items {
             .item {
                 max-width: 280px;

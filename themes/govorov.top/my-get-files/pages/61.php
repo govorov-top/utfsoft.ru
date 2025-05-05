@@ -34,7 +34,7 @@
 <section class="page-61 advantages">
     <div class="container">
         <div class="block-1100">
-            <h2 class="pb-50">В чем преимущества UserGate?</h2>
+            <h2 class="pb-4 pb-md-40 pb-xl-50">В чем преимущества UserGate?</h2>
             <p class="mb-15">
                 UserGate предлагает готовые и эффективные решения для обеспечения высокого уровня защиты
                 модернизированной сетевой инфраструктуры от различных онлайн-угроз, таких как внешние атаки, вирусные
@@ -55,9 +55,9 @@
 </section>
 <section class="page-61 common-products">
     <div class="container">
-        <div class="content rg-bg-box">
+        <div class="content p-40 rg-bg-box">
             <h2 class="text-center pb-4">Распространенные продукты</h2>
-            <div class="items grid">
+            <div class="items grid rg-grid-column-1 rg-grid-column-lg-2 gap-4 ">
                 <div class="item bg-white br-2 p-3 p-sm-4">
                     <p class="subtitle">UserGate Next Generation Firewall</p>
                     <p class="mb-0">
@@ -103,7 +103,7 @@
 </section>
 <section class="page-61 available-solutions">
     <div class="container">
-        <div class="block-1100 mb-50">
+        <div class="block-1100 mb-40 mb-xl-50">
             <h2 class="pb-4">Все доступные решения</h2>
             <p class="mb-0">
                 UserGate обеспечивает защиту современных сетевых структур от большого количество угроз, исходящих от

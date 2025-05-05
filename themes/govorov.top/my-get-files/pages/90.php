@@ -31,7 +31,7 @@
 </section>
 <section class="page-90 data-protection-relevance">
     <div class="container">
-        <div class="title-desc mb-50">
+        <div class="title-desc mb-4 mb-md-40 mb-lg-50">
             <h2 class="title">Актуальность защиты данных</h2>
             <p class="desc">
                 Сегодня информация – главный нематериальный актив любой организации. Она обрабатывается:
@@ -171,7 +171,7 @@
     <div class="container">
         <div class="content rg-bg-box p-40">
             <h2 class="pb-4 text-center text-sm-start">С помощью АльфаДок, вы</h2>
-            <div class="items gap-4 grid">
+            <div class="items gap-4 grid rg-grid-column-1 rg-grid-column-lg-2">
                 <div class="item bg-white p-3 p-sm-4 br-2">
                     <p class="subtitle">Оптимизируете рабочее время</p>
                     <p class="mb-0">
@@ -236,65 +236,65 @@
 </section>
 <section class="page-90 service-advantages">
     <div class="container">
-        <h2 class="pb-50 text-center">В чем преимущества нашего сервиса</h2>
+        <h2 class="pb-4 pb-md-40 pb-lg-50 text-center">В чем преимущества нашего сервиса</h2>
         <div class="items grid justify-content-between">
             <div class="item">
-                <p class="subtitle mb-15 mb-lg-0">Богатый опыт</p>
+                <p class="subtitle mb-15 ">Богатый опыт</p>
                 <p class="mb-0">
                     В своих разработках АльфаДок использует навыки опытных экспертов в области обеспечения защиты
                     данных, работающих на территориии всей России.
                 </p>
             </div>
             <div class="item">
-                <p class="subtitle mb-15 mb-lg-0">Регулярные обновления</p>
+                <p class="subtitle mb-15">Регулярные обновления</p>
                 <p class="mb-0">
                     Систематические, ежемесячные обновления позволяют использовать максимально эффективные меры защиты
                     информации.
                 </p>
             </div>
             <div class="item">
-                <p class="subtitle mb-15 mb-lg-0">Механизм оценки уровня</p>
+                <p class="subtitle mb-15">Механизм оценки уровня</p>
                 <p class="mb-0">
                     Моделирование угроз, автоматически генерируемое в сервисе в соответствии с методологией ФСТЭК
                     России, получило одно из первых одобрений еще 4 года назад в отдельных районах России.
                 </p>
             </div>
             <div class="item">
-                <p class="subtitle mb-15 mb-lg-0">Организация защиты КИИ по всем правилам</p>
+                <p class="subtitle mb-15">Организация защиты КИИ по всем правилам</p>
                 <p class="mb-0">
                     Сервис гарантирует полное содействие в оформлении и предоставлении документации, отвечающей за
                     безопасность: от определения категорий до установления правил особо важных объектов.
                 </p>
             </div>
             <div class="item">
-                <p class="subtitle mb-15 mb-lg-0">Роботизация многих процессов</p>
+                <p class="subtitle mb-15 ">Роботизация многих процессов</p>
                 <p class="mb-0">
                     Применение встроенных справочников с уже имеющимися данными и множество возможностей для внедрения
                     сильно снижают уровень нагрузки на специалистов по безопасности.
                 </p>
             </div>
             <div class="item">
-                <p class="subtitle mb-15 mb-lg-0">Технические аспекты взаимодействия</p>
+                <p class="subtitle mb-15">Технические аспекты взаимодействия</p>
                 <p class="mb-0">
                     Пользователь может моментально приступить к работе за счет оперативной отправки и принятия файлов в
                     сервисе.
                 </p>
             </div>
             <div class="item">
-                <p class="subtitle mb-15 mb-lg-0">Оформление файлов в автоматическом режиме</p>
+                <p class="subtitle mb-15">Оформление файлов в автоматическом режиме</p>
                 <p class="mb-0">
                     Специальный механизм по оформлению документации обеспечивает ее полное соответствие актуальным
                     нормам и требованиям.
                 </p>
             </div>
             <div class="item">
-                <p class="subtitle mb-15 mb-lg-0">Инструмент для работы с ПНд</p>
+                <p class="subtitle mb-15">Инструмент для работы с ПНд</p>
                 <p class="mb-0">
                     Данный механизм позволяет кратно сократить временные издержки на подписание документации.
                 </p>
             </div>
             <div class="item">
-                <p class="subtitle mb-15 mb-lg-0">Безопасный доступ <br>
+                <p class="subtitle mb-15">Безопасный доступ <br>
                     к системе</p>
                 <p class="mb-0">Для входа в систему нужно пройти надежную, двухсистемную защиту: от ФСТЭК и
                     подтверждение с помощью лица.

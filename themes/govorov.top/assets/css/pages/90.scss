@@ -8,7 +8,7 @@
 @import "../fragments/fonts_mixin";
 /* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
 @include rg-banner;
-
+@include rg-grid-column((1, 2));
 /* Стили страницы */
 .page-90 {
     &.data-protection-relevance {
@@ -63,10 +63,8 @@
     &.alfadoc-benefits {
         .content {
             .items {
-                grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr 1fr;
                 @include max_992 {
-                    grid-template-columns: 1fr;
                     grid-template-rows: auto;
                 }
             }

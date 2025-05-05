@@ -13,15 +13,6 @@
 /* Стили страницы */
 .page-72 {
     &.banner {
-        .block-1100 {
-            @include max_768 {
-                margin-bottom: 30px;
-            }
-            @include max_576 {
-                margin-bottom: 20px;
-            }
-        }
-
         .btn {
             @include max_576 {
                 width: 100%;
@@ -37,19 +28,6 @@
                     max-width: 855px;
                 }
                 @include max_992 {
-                    max-width: 100%;
-                }
-                @include max_576 {
-                    margin-bottom: 30px;
-                }
-            }
-        }
-    }
-
-    &.products {
-        .items {
-            .item {
-                img {
                     max-width: 100%;
                 }
             }

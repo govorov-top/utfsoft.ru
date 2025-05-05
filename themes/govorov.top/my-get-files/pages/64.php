@@ -32,7 +32,7 @@
 </section>
 <section class="page-64 available-solutions">
     <div class="container">
-        <div class="block-1100 mb-50">
+        <div class="block-1100 mb-40 mb-xl-50">
             <h2 class="pb-4">Доступные решения</h2>
             <p class="mb-0">
                 «Лаборатория Касперского» предлагает своим пользователям продукты, гарантирующие безопасность любых
@@ -147,12 +147,13 @@
 </section>
 <section class="page-64 main-advantages">
     <div class="container">
-        <div class="content rg-bg-box">
+        <div class="content rg-bg-box p-40">
             <h2 class="pb-40 text-center">
                 В чем главные плюсы продуктов <br> «Лаборатории Касперского»?
             </h2>
             <div class="tabs-panel">
-                <ul class="nav nav-pills justify-content-center mb-40 gap-lg-4 gap-3" id="myTab2" role="tablist">
+                <ul class="nav nav-pills justify-content-center mb-4 mb-lg-40 gap-lg-4 gap-3" id="myTab2"
+                    role="tablist">
                     <li class="nav-item" role="presentation">
                         <div class="btn active" data-bs-toggle="tab" data-bs-target="#vozm-tab-1" role="tab"
                              aria-controls="vozm-tab-1" aria-selected="true">Защита
@@ -229,8 +230,8 @@
 </section>
 <section class="page-64 responsible-for-safety">
     <div class="container">
-        <div class="content d-flex flex-wrap justify-content-between">
-            <div class="left mb-4 mb-md-0">
+        <div class="content grid justify-content-between gap-4 gap-md-0">
+            <div class="left">
                 <h2 class="pb-3 pb-md-4">
                     Мы отвечаем за <br class="d-none d-lg-block"> вашу безопасность
                 </h2>
@@ -243,15 +244,15 @@
                 <div class="list">
                     <div class="item mb-3 mb-lg-4">
                         <p class="subtitle mb-2">437 млн</p>
-                        <p class="mb-0">кибератак остановлено</p>
+                        <p class="mb-0 color-grey">кибератак остановлено</p>
                     </div>
                     <div class="item mb-3 mb-lg-4">
                         <p class="subtitle mb-2">106 млн</p>
-                        <p class="mb-0">уникальных вредоносных ссылок заблокировано</p>
+                        <p class="mb-0 color-grey">уникальных вредоносных ссылок заблокировано</p>
                     </div>
                     <div class="item">
                         <p class="subtitle mb-2">112 млн</p>
-                        <p class="mb-0">уникальных вредоносных объектов нейтрализовано</p>
+                        <p class="mb-0 color-grey">уникальных вредоносных объектов нейтрализовано</p>
                     </div>
                 </div>
             </div>

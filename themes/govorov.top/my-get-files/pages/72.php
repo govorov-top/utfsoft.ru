@@ -1,6 +1,6 @@
 <section class="page-72 pt-0 banner">
     <div class="container">
-        <div class="block-1100 mx-auto mb-50 text-center">
+        <div class="block-1100 mx-auto mb-3 mb-sm-4 mb-md-50 text-center">
             <h1 class="pb-4">Обработка и обеспечение безопасности информации</h1>
             <p class="mb-0">
                 Каждая компания, занимающаяся обработкой данных должна неукоснительно следовать всем действующим законам
@@ -14,7 +14,7 @@
             <source media="(max-width:430.98px)"
                     srcset="/wp-content/themes/govorov.top/assets/img/pages/72/banner-430.svg">
             <img src="/wp-content/themes/govorov.top/assets/img/pages/72/banner.svg"
-                 class="w-auto mb-50 d-block mx-auto"
+                 class="w-auto mb-4 mb-sm-50 d-block mx-auto"
                  alt="Обработка и обеспечение безопасности информации">
         </picture>
         <button class="btn btn_center justify-content-center popClick" data-pop="banner-pop">Получить консультацию
@@ -36,13 +36,13 @@
 </section>
 <section class="page-72 products">
     <div class="container">
-        <h2 class="pb-50 text-center">
+        <h2 class="pb-md-50 pb-40 text-center">
             Продукты
         </h2>
         <div class="items d-flex flex-wrap justify-content-between rg-block-1">
             <div class="item">
                 <img src="" data-src="/wp-content/themes/govorov.top/assets/img/pages/72/products-1.svg"
-                     class="lazy w-auto mb-3" alt="">
+                     class="lazy w-auto mb-3 max-width-100" alt="">
                 <p class="mb-4">
                     Сервис для обеспечения защиты баз данных и получения необходимых сведений о запросах к БД. Киберпик
                     оценивает права доступа и структурирует материалы файлов. Также проводится постоянный мониторинг
@@ -52,17 +52,17 @@
             </div>
             <div class="item">
                 <img src="" data-src="/wp-content/themes/govorov.top/assets/img/pages/72/products-2.svg"
-                     class="lazy w-auto mb-3" alt="">
+                     class="lazy w-auto mb-3 max-width-100" alt="">
                 <p class="mb-4">
                     Многофункциональное, удобное и интуитивно-понятное средство для обеспечения коллективной работы и
                     взаимного документооборота. Сервис гарантирует конфиденциальность данных компании, их структуризацию
                     и возможность доступа к файлам в любое время.
                 </p>
-                <a href="#" class="btn btn_link"><span class="arrow"></span></a>
+                <a href="/kiber-fajly" class="btn btn_link"><span class="arrow"></span></a>
             </div>
             <div class="item">
                 <img src="" data-src="/wp-content/themes/govorov.top/assets/img/pages/72/products-3.svg"
-                     class="lazy w-auto mb-3" alt="">
+                     class="lazy w-auto mb-3 max-width-100" alt="">
                 <p class="mb-4">
                     Сервис Альфадок предназначен для автоматизации рутинных процессов в сфере обеспечения информационной
                     безопасности. Это позволяет снять часть нагрузки со специалистов по безопасности и сфокусироваться
@@ -72,7 +72,7 @@
             </div>
             <div class="item">
                 <img src="" data-src="/wp-content/themes/govorov.top/assets/img/pages/72/products-4.svg"
-                     class="lazy w-auto mb-3" alt="">
+                     class="lazy w-auto mb-3 max-width-100" alt="">
                 <p class="mb-4">
                     Сервис, предназначенный для индивидуализации и дополнительных персональных настроек различных
                     процессов в сфере кибербезопасности. Пользователи также могут удостовериться в соответствии объектов

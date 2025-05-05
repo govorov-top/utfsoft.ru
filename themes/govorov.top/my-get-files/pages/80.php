@@ -48,7 +48,7 @@
             <h2 class="pb-4 pb-xl-40">
                 Безопасное получение и <br> отправка документов
             </h2>
-            <div class="items mb-40 grid">
+            <div class="items pb-3 pb-sm-4 mb-xl-40 grid rg-grid-column-1 rg-grid-column-lg-2 gap-4 column-gap-lg-4 row-gap-lg-40">
                 <div class="item bg-white p-3 p-sm-4 br-2">
                     <p class="subtitle">Персональный сервер</p>
                     <p class="mb-0">
@@ -211,7 +211,7 @@
 </section>
 <section class="page-80 future-proof-solution">
     <div class="container">
-        <h2 class="text-center pb-50">
+        <h2 class="text-center pb-4 pb-sm-40 pb-xl-50">
             Перспективный продукт <br class="d-none d-sm-block">
             для вашей компании
         </h2>

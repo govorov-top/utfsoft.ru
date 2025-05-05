@@ -76,7 +76,8 @@
     <div class="container">
         <div class="content d-flex flex-column flex-md-row align-items-center justify-content-between">
             <div class="wrapper order-1">
-                <h2 class="title text-center text-md-start order-1 pb-50">Все остаются в пределах вашей
+                <h2 class="title text-center text-md-start order-1 pb-4 pb-xl-40 pb-xxl-50">Все остаются в пределах
+                    вашей
                     инфраструктуры </h2>
                 <p class="desc text-center text-md-start order-3 mb-0">Ваши данные размещаются на сервере вашей
                     организации и защищаются надежной
@@ -84,18 +85,18 @@
                     и MongoDB, обеспечивая гибкую установку на любые операционные системы.</p>
             </div>
             <img src="" data-src="/wp-content/themes/govorov.top/assets/img/pages/41/your-infrastructure.svg"
-                 class="w-auto lazy order-2"
+                 class="w-auto lazy order-2 mb-4 mb-sm-40 mb-md-0"
                  alt="Все остаются в пределах вашей инфраструктуры ">
         </div>
     </div>
 </section>
 <section class="page-41 main-features">
     <div class="container">
-        <div class="content rg-bg-box">
+        <div class="content rg-bg-box p-40">
             <h2 class="text-center pb-40">
                 Основные возможности
             </h2>
-            <div class="items grid">
+            <div class="items rg-grid-column-1 rg-grid-column-lg-2 gap-xl-50 gap-4 grid">
                 <div class="item bg-white br-2 p-3 p-sm-4">
                     <p class="subtitle">Проверка безопасности паролей</p>
                     <ul class="rg-list pb-0">
@@ -143,7 +144,7 @@
 <section class="page-41 access-from-any-device">
     <div class="container">
         <h2 class="text-center pb-50">Доступ с любого устройства</h2>
-        <div class="items grid">
+        <div class="items grid rg-grid-column-1 rg-grid-column-md-3 gap-40 gap-md-3 gap-lg-4 gap-xl-50">
             <div class="item d-flex flex-column align-items-stretch align-items-sm-center align-items-md-stretch flex-sm-row flex-md-column gap-3 gap-xl-4">
                 <div class="top rg-bg-box">
                     <p class="subtitle text-center">Браузерное расширение</p>

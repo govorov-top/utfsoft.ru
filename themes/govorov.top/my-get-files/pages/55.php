@@ -32,13 +32,13 @@
 </section>
 <section class="page-55 suggestions">
     <div class="container">
-        <div class="title-desc mb-50">
+        <div class="title-desc mb-40 mb-xl-50">
             <h2 class="title">Предложения ИНДИД</h2>
             <p class="desc">Получите больше информации об отечественных решениях для обеспечения высокого уровня
                 безопасности в крупных организациях.</p>
         </div>
         <div class="items rg-block-1 d-flex flex-wrap justify-content-between">
-            <div class="item">
+            <div class="item mb-4 mb-sm-40 mb-xl-50">
                 <p class="subtitle">Indeed Access Manager</p>
                 <p class="mb-0">
                     Платформа Indeed AM представляет собой комплексное решение для контроля доступа пользователей к
@@ -48,14 +48,14 @@
                     обслуживание инфраструктуры и повышению уровня продуктивности работы пользователей.
                 </p>
             </div>
-            <div class="item">
+            <div class="item mb-4 mb-sm-40 mb-xl-50">
                 <p class="subtitle">Indeed Priveleged Access Manager</p>
                 <p class="mb-0">Indeed PAM обеспечивает защиту первостепенного доступа, осуществляет мониторинг
                     привилегированных сессий и предоставляет расширенные функции управления важнейшими учетными
                     записями. Варианты работы с системой охватывают защиту учетных записей с повышенными правами, аудит
                     действий администраторов и контроль доступа сторонних подрядчиков.</p>
             </div>
-            <div class="item">
+            <div class="item mb-4 mb-sm-40 mb-md-0">
                 <p class="subtitle">Indeed Certificate Manager</p>
                 <p class="mb-0">
                     Indeed CM – это интегрированная платформа для администрирования инфраструктуры открытых ключей,
@@ -64,7 +64,7 @@
                     процедуры обслуживания PKI и усилить общую безопасность информации в организациях.
                 </p>
             </div>
-            <div class="item">
+            <div class="item mb-0">
                 <p class="subtitle">Identity Threat Detection <br>
                     And Response</p>
                 <p class="mb-0">
@@ -79,13 +79,13 @@
 </section>
 <section class="page-55 solutions-by-sphere">
     <div class="container">
-        <div class="content rg-bg-box">
-            <div class="title-desc mb-40">
+        <div class="content p-40 rg-bg-box">
+            <div class="title-desc mb-4 mb-lg-40">
                 <h2 class="title">Решения по сферам</h2>
                 <p class="desc">Получите больше информации о возможностях использования наших продуктов в различных
                     отраслях.</p>
             </div>
-            <div class="items grid">
+            <div class="items grid rg-grid-column-1 rg-grid-column-lg-2 gap-4 row-gap-lg-4 column-gap-lh-40">
                 <div class="item bg-white br-2 p-3 p-sm-4">
                     <img src="" data-src="/wp-content/themes/govorov.top/assets/img/pages/55/solutions-by-sphere-1.svg"
                          class="lazy mb-3 w-auto" alt="Финансовый сектор">
@@ -167,8 +167,8 @@
 </section>
 <section class="page-55 effective-solutions">
     <div class="container">
-        <div class="block-1100 mb-4">
-            <h2 class="pb-50">Создаем эффективные решения <br>
+        <div class="block-1100 mb-3 mb-sm-4 mb-xl-40">
+            <h2 class="pb-4 pb-md-40 pb-xl-50">Создаем эффективные решения <br class="d-none d-md-block">
                 для защиты вашего бизнеса</h2>
             <p class="mb-15">
                 Компания ИНДИД, являясь российским вендором, уже практически 15 лет специализируется на создании

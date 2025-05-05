@@ -32,7 +32,7 @@
 </section>
 <section class="page-75 automation-level">
     <div class="container">
-        <div class="content d-flex flex-wrap justify-content-between">
+        <div class="content grid justify-content-between">
             <div class="wrapper">
                 <h2 class="pb-4">
                     Автоматизация любого уровня сложности
@@ -54,13 +54,13 @@
 </section>
 <section class="page-75 single-automation-system">
     <div class="container">
-        <div class="content rg-bg-box">
-            <h2 class="pb-40">
+        <div class="content rg-bg-box p-40">
+            <h2 class="pb-4 pb-lg-40">
                 Единый механизм <br>
                 для автоматизации
             </h2>
             <div class="tabs-panel mb-40">
-                <ul class="nav nav-pills mb-40 gap-sm-4 gap-3" id="myTab2" role="tablist">
+                <ul class="nav nav-pills mb-4 mb-sm-40 gap-sm-4 gap-3" id="myTab2" role="tablist">
                     <li class="nav-item" role="presentation">
                         <div class="btn active" data-bs-toggle="tab" data-bs-target="#vozm-tab-1" role="tab"
                              aria-controls="vozm-tab-1" aria-selected="true">Studio
@@ -99,7 +99,7 @@
                             программистов. Здесь они формируют RPA-скрипты, применяя как стандартные блоки, так и
                             собственные разработки.
                         </p>
-                        <div class="items grid">
+                        <div class="items grid gap-4 gap-xl-40 rg-grid-column-1 rg-grid-column-lg-6">
                             <div class="item item_column-2">
                                 <p class="strong mb-15">Low-code и only-code</p>
                                 <p class="mb-0 color-grey">
@@ -146,7 +146,7 @@
                             Для обеспечения эффективной работы крупных организаций с множеством независимых команд,
                             Primo RPA Orchestrator предлагает функциональность разделения групп роботов.
                         </p>
-                        <div class="items grid">
+                        <div class="items grid gap-4 gap-xl-40 rg-grid-column-1 rg-grid-column-lg-6">
                             <div class="item item_column-3">
                                 <p class="strong mb-15">Контроль работы</p>
                                 <p class="mb-0 color-grey">
@@ -172,7 +172,7 @@
                             по автоматизации бизнес-процессов в компании, расчет рентабельности и отслеживание хода
                             выполнения задач.
                         </p>
-                        <div class="items grid">
+                        <div class="items grid gap-4 gap-xl-40 rg-grid-column-1 rg-grid-column-lg-6">
                             <div class="item item_column-2">
                                 <p class="strong mb-15">Приоритизация идей</p>
                                 <p class="mb-0 color-grey">
@@ -205,7 +205,7 @@
                             как фотографии и текстовые файлы. Разработанные модели могут быть интегрированы в процессы
                             роботизированной автоматизации.
                         </p>
-                        <div class="items grid">
+                        <div class="items grid gap-4 gap-xl-40 rg-grid-column-1 rg-grid-column-lg-6">
                             <div class="item item_column-2">
                                 <p class="strong mb-15">Работа с моделями без опыта в Data Science</p>
                                 <p class="mb-0 color-grey">
@@ -252,7 +252,7 @@
                         <p class="mb-3 mb-sm-4 desc">
                             Передовое отечественное решение в облаке для автоматизации задач компании.
                         </p>
-                        <div class="items grid">
+                        <div class="items grid gap-4 gap-xl-40 rg-grid-column-1 rg-grid-column-lg-6">
                             <div class="item item_column-2">
                                 <p class="strong mb-15">Быстрый запуск</p>
                                 <p class="mb-0 color-grey">
@@ -286,7 +286,8 @@
 <section class="page-75 video-section">
     <div class="container">
         <div class="content d-flex flex-column flex-lg-row justify-content-between align-items-center align-items-lg-stretch">
-            <h2 class="pb-lg-0 pb-40 text-center text-lg-start">Российская <br class="d-none d-lg-block"> RPA-платформа
+            <h2 class="pb-lg-0 pb-sm-40 pb-4 text-center text-lg-start">Российская <br class="d-none d-lg-block">
+                RPA-платформа
                 мирового уровня</h2>
             <div class="video-wrapper adaptive-video">
 
@@ -301,7 +302,7 @@
 </section>
 <section class="page-75 ready-solutions">
     <div class="container">
-        <div class="title-desc mb-50">
+        <div class="title-desc mb-4 mb-md-40 mb-lg-50">
             <h2 class="title">Более сотни готовых решений</h2>
             <p class="desc">
                 Начните работать прямо сейчас, выбрав подходящие интеграционные модули из нашего каталога. Пользователям
@@ -389,7 +390,7 @@
 </section>
 <section class="page-75 primo-rpa-start">
     <div class="container">
-        <h2 class="pb-50">
+        <h2 class="pb-4 pb-sm-40 pb-lg-50">
             Алгоритм начала <br> взаимодействия с Primo RPA
         </h2>
         <div class="rg-accordion accordion">

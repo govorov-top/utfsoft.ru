@@ -9,7 +9,8 @@
 /* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
 @include rg-banner;
 @include rg-block-1;
-
+@include rg-grid-column((1, 2));
+@include generate-gap-classes((40, 50));
 /* Стили страницы */
 .page-80 {
     &.teamwork-security {
@@ -31,20 +32,6 @@
         .content {
             @include min_definite_width(768) {
                 border-radius: 50px;
-            }
-
-            .items {
-                grid-template-columns: 1fr 1fr;
-                gap: 40px 30px;
-                @include max_1400 {
-                    gap: 40px 50px;
-                }
-                @include max_1200 {
-                    gap: 30px;
-                }
-                @include max_992 {
-                    grid-template-columns: 1fr;
-                }
             }
         }
     }
