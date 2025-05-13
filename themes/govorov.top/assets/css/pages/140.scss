@@ -8,7 +8,8 @@
 @import "../fragments/fonts_mixin";
 /* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
 @include rg-banner;
-@include rg-grid-column((1, 2));
+@include rg-grid-column((1, 2, 3));
+@include generate-gap-classes((40, 60, 75));
 /* Стили страницы */
 .page-140 {
     &.key-benefits {
@@ -47,6 +48,28 @@
         }
 
         .btn {
+            @include max_576 {
+                width: 100%;
+            }
+        }
+    }
+
+    &.import-replacement-software-requirements {
+        .item {
+            img {
+                @include max_1200 {
+                    max-width: 70px;
+                }
+                @include max_576 {
+                    max-width: 50px;
+                }
+            }
+        }
+    }
+
+    &.types-of-technical-support {
+        .tabs-panel .nav-pills .btn,
+        .tabs-panel .nav-pills .nav-item {
             @include max_576 {
                 width: 100%;
             }
