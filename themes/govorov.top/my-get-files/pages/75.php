@@ -23,7 +23,7 @@
             <p class="title h3 pb-3">Primo RPA</p>
             <p class="desc mb-4">Оставьте контактные данные, и мы свяжемся с вами в ближайшее время.</p>
             <div class="form-right">
-                <?= do_shortcode('[contact-form-7 id="71404d0" title="/primo-rpa/ форма в баннере Primo RPA"]') ?>
+                [contact-form-7 id="71404d0" title="/primo-rpa/ форма в баннере Primo RPA"]
             </div>
         </div>
     </div>
@@ -473,4 +473,4 @@
         </div>
     </div>
 </section>
-<?php echo do_shortcode('[rg-code f="repeat-elements/feedback-form.php"]'); ?>
+[rg-code f="repeat-elements/feedback-form.php"]

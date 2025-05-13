@@ -45,22 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
         // Your custom settings go here
     });
 
-    /* Собираем данные сквозной аналитики Битрикс */
-
-    setTimeout(() => {
-        if (b24Tracker) {
-            const btnCF7Bitrix24 = document.querySelectorAll(".wpcf7-form-control.wpcf7-submit");
-            btnCF7Bitrix24.forEach(clickBtn => {
-                clickBtn.onmouseover = function () {
-                    let traceInput = this.closest("form").querySelector('input[name="TRACE"]');
-                    if (traceInput) {
-                        traceInput.value = b24Tracker.guest.getTrace();
-                    }
-                };
-            });
-        }
-    }, 1000);
-
     /* Меняем дату на всем сайте внутри тегов с классом rg-today-date */
 
     const rgTodayDate = document.querySelectorAll(".rg-today-date");
@@ -158,7 +142,13 @@ document.addEventListener("DOMContentLoaded", () => {
                     if (closeBtn) {
                         const btnMobileMenu = document.querySelector(".mobile-menu-button");
                         btnMobileMenu.addEventListener("click", () => {
+                            document.documentElement.style.overflow = "hidden";
                             btnMobileMenu.classList.toggle("active");
+                            if (btnMobileMenu.classList.contains("active")) {
+                                document.documentElement.style.overflow = "hidden";
+                            } else {
+                                document.documentElement.style.overflow = "auto";
+                            }
                             if (mobileMenuPaste.innerText <= 0) {
                                 let copyMenu = document.querySelector("ul.navbar-nav");
                                 if (copyMenu) {
@@ -179,6 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         });
                         closeBtn.addEventListener("click", () => {
                             btnMobileMenu.classList.remove("active");
+                            document.documentElement.style.overflow = "auto";
                         });
                     }
                 }

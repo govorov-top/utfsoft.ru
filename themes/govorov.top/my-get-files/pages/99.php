@@ -23,7 +23,7 @@
             <p class="title h3 pb-3">Контур.ID</p>
             <p class="desc mb-4">Оставьте контактные данные, и мы свяжемся с вами в ближайшее время.</p>
             <div class="form-right">
-                <?= do_shortcode('[contact-form-7 id="ba35774" title="/kontur-id/ форма в баннере Контур.ID"]') ?>
+                [contact-form-7 id="ba35774" title="/kontur-id/ форма в баннере Контур.ID"]
             </div>
         </div>
     </div>
@@ -120,7 +120,7 @@
                     <p class="subtitle mb-15 mb-xxl-3">Мобильное приложение</p>
                     <p class="mb-0">
                         Наше собственное приложение обеспечивает удобную двухфакторную аутентификацию. Это безопасный и
-                        оперативный способ подтверждения личности.  
+                        оперативный способ подтверждения личности.
                     </p>
                 </div>
             </div>
@@ -149,4 +149,4 @@
         </div>
     </div>
 </section>
-<?php echo do_shortcode('[rg-code f="repeat-elements/feedback-form.php"]'); ?>
+[rg-code f="repeat-elements/feedback-form.php"]

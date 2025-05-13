@@ -22,7 +22,7 @@
             <p class="title h3 pb-3">Информационная безопасность</p>
             <p class="desc mb-4">Оставьте контактные данные, и мы свяжемся с вами в ближайшее время.</p>
             <div class="form-right">
-                <?= do_shortcode('[contact-form-7 id="a996323" title="/ форма в баннере Информационная безопасность"]') ?>
+                [contact-form-7 id="a996323" title="/ форма в баннере Информационная безопасность"]
             </div>
         </div>
     </div>
@@ -33,7 +33,7 @@
     <div class="container">
         <h2 class="pb-50">Продукты для бизнеса</h2>
         <div class="items rg-block-1 d-flex flex-wrap justify-content-between">
-            <div class="item">
+            <div class="item link-js" data-link="/usergate/">
                 <img src="/wp-content/themes/govorov.top/assets/img/pages/2/products-for-business-1.png"
                      class="mb-3 w-auto"
                      alt="UserGate">
@@ -43,7 +43,7 @@
                 </p>
                 <a href="/usergate/" class="btn btn_link"><span class="arrow"></span></a>
             </div>
-            <div class="item">
+            <div class="item link-js" data-link="/passvork/">
                 <img src="/wp-content/themes/govorov.top/assets/img/pages/2/products-for-business-2.png"
                      class="mb-3 w-auto"
                      alt="Пасcворк">
@@ -53,7 +53,7 @@
                 </p>
                 <a href="/passvork/" class="btn btn_link"><span class="arrow"></span></a>
             </div>
-            <div class="item">
+            <div class="item link-js" data-link="/kaspersky/">
                 <img src="/wp-content/themes/govorov.top/assets/img/pages/2/products-for-business-3.png"
                      class="mb-3 w-auto"
                      alt="Kaspersky">
@@ -63,7 +63,7 @@
                 </p>
                 <a href="/kaspersky/" class="btn btn_link"><span class="arrow"></span></a>
             </div>
-            <div class="item">
+            <div class="item link-js" data-link="/indid/">
                 <img src="/wp-content/themes/govorov.top/assets/img/pages/2/products-for-business-4.png"
                      class="mb-3 w-auto"
                      alt="Компания Индид">
@@ -73,7 +73,7 @@
                 </p>
                 <a href="/indid/" class="btn btn_link"><span class="arrow"></span></a>
             </div>
-            <div class="item mb-lg-0">
+            <div class="item link-js" data-link="/stahanovec/">
                 <img src="/wp-content/themes/govorov.top/assets/img/pages/2/products-for-business-5.png"
                      class="mb-3 w-auto"
                      alt="Стахановец">
@@ -84,7 +84,7 @@
                 </p>
                 <a href="/stahanovec/" class="btn btn_link"><span class="arrow"></span></a>
             </div>
-            <div class="item mb-0">
+            <div class="item link-js" data-link="/alfa/">
                 <img src="/wp-content/themes/govorov.top/assets/img/pages/2/products-for-business-6.png"
                      class="mb-3 w-auto"
                      alt="Компания «Альфа»">
@@ -97,4 +97,4 @@
         </div>
     </div>
 </section>
-<?php echo do_shortcode('[rg-code f="repeat-elements/feedback-form.php"]'); ?>
+[rg-code f="repeat-elements/feedback-form.php"]

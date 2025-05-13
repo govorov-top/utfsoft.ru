@@ -23,7 +23,7 @@
             <p class="title h3 pb-3">Пассворк</p>
             <p class="desc mb-4">Оставьте контактные данные, и мы свяжемся с вами в ближайшее время.</p>
             <div class="form-right">
-                <?= do_shortcode('[contact-form-7 id="e756533" title="/passvork/ форма в баннере Пассворк"]') ?>
+                [contact-form-7 id="e756533" title="/passvork/ форма в баннере Пассворк"]
             </div>
         </div>
     </div>
@@ -175,20 +175,24 @@
                         плагину для вашего веб-обозревателя.
                     </p>
                     <div class="d-flex items mt-auto justify-content-center justify-content-sm-start justify-content-md-center align-items-center gap-3 gap-xl-4">
-                        <a href="#">
+                        <a href="https://apps.apple.com/us/app/passwork-extension/id1584570476?mt=12" target="_blank"
+                           rel="nofollow noopener noreferrer">
                             <img src="" data-src="/wp-content/themes/govorov.top/assets/img/pages/41/safari.svg"
                                  alt="safari" class="w-auto lazy">
                         </a>
-                        <a href="#">
+                        <a href="https://addons.mozilla.org/ru/firefox/addon/passwork-self-hosted/" target="_blank"
+                           rel="nofollow noopener noreferrer">
                             <img src="" data-src="/wp-content/themes/govorov.top/assets/img/pages/41/firefox.svg"
                                  alt="firefox" class="w-auto lazy">
                         </a>
-                        <a href="#">
+                        <a href="https://chromewebstore.google.com/detail/passwork-self-hosted/ibiipnmmlnehmeonnhbdajcfagcgihkl?pli=1"
+                           target="_blank" rel="nofollow noopener noreferrer">
                             <img src="" data-src="/wp-content/themes/govorov.top/assets/img/pages/41/chrome.svg"
                                  alt="chrome"
                                  class="w-auto lazy">
                         </a>
-                        <a href="#">
+                        <a href="https://microsoftedge.microsoft.com/addons/detail/passwork-selfhosted/nakajpankdpmmaaljmdjmbnnicaolcpc"
+                           target="_blank" rel="nofollow noopener noreferrer">
                             <img src="" data-src="/wp-content/themes/govorov.top/assets/img/pages/41/microsoft.svg"
                                  alt="microsoft" class="w-auto lazy">
                         </a>
@@ -226,15 +230,18 @@
                         устройства.</p>
                     <div class="d-flex items mt-auto justify-content-center justify-content-sm-start justify-content-md-center align-items-center gap-3 gap-xl-4">
 
-                        <a href="#">
+                        <a href="https://play.google.com/store/apps/details?id=com.passwork.passwork_sh" target="_blank"
+                           rel="nofollow noopener noreferrer">
                             <img src="" data-src="/wp-content/themes/govorov.top/assets/img/pages/41/google-play.svg"
                                  alt="google-play" class="w-auto lazy">
                         </a>
-                        <a href="#">
+                        <a href="https://www.rustore.ru/catalog/app/com.passwork.passwork_sh" target="_blank"
+                           rel="nofollow noopener noreferrer">
                             <img src="" data-src="/wp-content/themes/govorov.top/assets/img/pages/41/rustore.svg"
                                  alt="rustore" class="w-auto lazy">
                         </a>
-                        <a href="#">
+                        <a href="https://apps.apple.com/us/app/passwork-self-hosted/id1589706401" target="_blank"
+                           rel="nofollow noopener noreferrer">
                             <img src="" data-src="/wp-content/themes/govorov.top/assets/img/pages/41/apple-logo.svg"
                                  alt="apple-logo" class="w-auto lazy">
                         </a>
@@ -271,15 +278,19 @@
                         аутентификация для входа в Пассворк с
                         использованием нашего приложения-аутентификатора.</p>
                     <div class="d-flex items mt-auto justify-content-center justify-content-sm-start justify-content-md-center align-items-center gap-3 gap-xl-4">
-                        <a href="#">
+                        <a href="https://play.google.com/store/apps/details?id=com.passwork.authenticator"
+                           target="_blank"
+                           rel="nofollow noopener noreferrer">
                             <img src="" data-src="/wp-content/themes/govorov.top/assets/img/pages/41/google-play.svg"
                                  alt="google-play" class="w-auto lazy">
                         </a>
-                        <a href="#">
+                        <a href="https://www.rustore.ru/catalog/app/com.passwork.authenticator" target="_blank"
+                           rel="nofollow noopener noreferrer">
                             <img src="" data-src="/wp-content/themes/govorov.top/assets/img/pages/41/rustore.svg"
                                  alt="rustore" class="w-auto lazy">
                         </a>
-                        <a href="#">
+                        <a href="https://apps.apple.com/us/app/passwork-2fa/id1632066067" target="_blank"
+                           rel="nofollow noopener noreferrer">
                             <img src="" data-src="/wp-content/themes/govorov.top/assets/img/pages/41/apple-logo.svg"
                                  alt="apple-logo" class="w-auto lazy">
                         </a>
@@ -289,4 +300,4 @@
         </div>
     </div>
 </section>
-<?php echo do_shortcode('[rg-code f="repeat-elements/feedback-form.php"]'); ?>
+[rg-code f="repeat-elements/feedback-form.php"]

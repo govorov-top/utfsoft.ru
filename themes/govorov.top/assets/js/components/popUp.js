@@ -26,7 +26,8 @@ class PopUp {
                 // Кастомный продукт
                 let popupProduct = isString ? 0 : this.btnGetPopup?.getAttribute("data-product");
                 // У последующего открытого окна z-index будет > предыдущего
-                popup.style.zIndex = this.popUpCounter <= 0 ? 999 : this.popUpCounter;
+                const zIndexValue = this.popUpCounter <= 0 ? 999 : this.popUpCounter;
+                popup.style.zIndex = Math.max(1041, zIndexValue);
                 // Блок .pop с контентом
                 const popupContent = popup.querySelector(".pop");
                 // Создаем и добавляем контейнер окна, для дальнейшей реализации прокрутки длинных окон

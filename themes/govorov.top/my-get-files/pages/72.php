@@ -27,7 +27,8 @@
             <p class="title h3 pb-3">Обработка и обеспечение безопасности информации</p>
             <p class="desc mb-4">Оставьте контактные данные, и мы свяжемся с вами в ближайшее время.</p>
             <div class="form-right">
-                <?= do_shortcode('[contact-form-7 id="4cd9dc9" title="/obrabotka-i-obespechenie-bezopasnosti-informacii/ форма в баннере Обработка и обеспечение безопасности информации"]') ?>
+                [contact-form-7 id="4cd9dc9" title="/obrabotka-i-obespechenie-bezopasnosti-informacii/ форма в баннере
+                Обработка и обеспечение безопасности информации"]
             </div>
         </div>
     </div>
@@ -40,29 +41,29 @@
             Продукты
         </h2>
         <div class="items d-flex flex-wrap justify-content-between rg-block-1">
-            <div class="item">
+            <div class="item link-js" data-link="/spektr/">
                 <img src="" data-src="/wp-content/themes/govorov.top/assets/img/pages/72/products-1.svg"
-                     class="lazy w-auto mb-3 max-width-100" alt="">
+                     class="lazy w-auto mb-3 max-width-100" alt="Cyberpeak">
                 <p class="mb-4">
                     Сервис для обеспечения защиты баз данных и получения необходимых сведений о запросах к БД. Киберпик
                     оценивает права доступа и структурирует материалы файлов. Также проводится постоянный мониторинг
                     активности пользователей и учетных записей по отношению к объектам СУБД.
                 </p>
-                <a href="#" class="btn btn_link"><span class="arrow"></span></a>
+                <a href="/spektr/" class="btn btn_link"><span class="arrow"></span></a>
             </div>
-            <div class="item">
+            <div class="item link-js" data-link="/kiber-fajly/">
                 <img src="" data-src="/wp-content/themes/govorov.top/assets/img/pages/72/products-2.svg"
-                     class="lazy w-auto mb-3 max-width-100" alt="">
+                     class="lazy w-auto mb-3 max-width-100" alt="Киберпроект">
                 <p class="mb-4">
                     Многофункциональное, удобное и интуитивно-понятное средство для обеспечения коллективной работы и
                     взаимного документооборота. Сервис гарантирует конфиденциальность данных компании, их структуризацию
                     и возможность доступа к файлам в любое время.
                 </p>
-                <a href="/kiber-fajly" class="btn btn_link"><span class="arrow"></span></a>
+                <a href="/kiber-fajly/" class="btn btn_link"><span class="arrow"></span></a>
             </div>
-            <div class="item">
+            <div class="item link-js" data-link="/alfadok/">
                 <img src="" data-src="/wp-content/themes/govorov.top/assets/img/pages/72/products-3.svg"
-                     class="lazy w-auto mb-3 max-width-100" alt="">
+                     class="lazy w-auto mb-3 max-width-100" alt="Альфадок">
                 <p class="mb-4">
                     Сервис Альфадок предназначен для автоматизации рутинных процессов в сфере обеспечения информационной
                     безопасности. Это позволяет снять часть нагрузки со специалистов по безопасности и сфокусироваться
@@ -70,9 +71,9 @@
                 </p>
                 <a href="/alfadok/" class="btn btn_link"><span class="arrow"></span></a>
             </div>
-            <div class="item">
+            <div class="item link-js" data-link="/primo-rpa/">
                 <img src="" data-src="/wp-content/themes/govorov.top/assets/img/pages/72/products-4.svg"
-                     class="lazy w-auto mb-3 max-width-100" alt="">
+                     class="lazy w-auto mb-3 max-width-100" alt="Primo RPA">
                 <p class="mb-4">
                     Сервис, предназначенный для индивидуализации и дополнительных персональных настроек различных
                     процессов в сфере кибербезопасности. Пользователи также могут удостовериться в соответствии объектов
@@ -83,4 +84,4 @@
         </div>
     </div>
 </section>
-<?php echo do_shortcode('[rg-code f="repeat-elements/feedback-form.php"]'); ?>
+[rg-code f="repeat-elements/feedback-form.php"]

@@ -23,7 +23,7 @@
             <p class="title h3 pb-3">Спектр</p>
             <p class="desc mb-4">Оставьте контактные данные, и мы свяжемся с вами в ближайшее время.</p>
             <div class="form-right">
-                <?= do_shortcode('[contact-form-7 id="e2c843f" title="/spektr/ форма в баннере Спектр"]') ?>
+                [contact-form-7 id="e2c843f" title="/spektr/ форма в баннере Спектр"]
             </div>
         </div>
     </div>
@@ -124,7 +124,9 @@
                             данных любого размера, способных обрабатывать огромное количество запросов.
                         </p>
                     </div>
-                    <button class="btn popClick" data-pop="banner-pop">Отправить заявку</button>
+                    <button class="btn popClick" data-pop="product-pop" data-title="Спектр | DAM"
+                            data-form-title="ЮТФ Софт - Консультация по 'Спектр | DAM'">Отправить заявку
+                    </button>
 
                 </div>
                 <div class="tab-pane tab-pane_2 fade " id="vozm-tab-2" role="tabpanel">
@@ -199,11 +201,26 @@
                             предотвращение действий различных вирусов.
                         </li>
                     </ul>
-                    <button class="btn popClick" data-pop="banner-pop">Отправить заявку</button>
+                    <button class="btn popClick" data-pop="product-pop" data-title="Спектр | DCAP/DAG"
+                            data-form-title="ЮТФ Софт - Консультация по 'Спектр | DCAP/DAG'">Отправить заявку
+                    </button>
                 </div>
             </div>
         </div>
     </div>
+    <!--noindex-->
+    <!--googleoff: all-->
+    <div class="popup" data-max-width="650" id="product-pop">
+        <div class="pop html br-2 bg-white">
+            <p class="title h3 pb-3">Спектр</p>
+            <p class="desc mb-4">Оставьте контактные данные, и мы свяжемся с вами в ближайшее время.</p>
+            <div class="form-right">
+                [contact-form-7 id="e2c843f" title="/spektr/ форма в баннере Спектр"]
+            </div>
+        </div>
+    </div>
+    <!--googleon: all-->
+    <!--/noindex-->
 </section>
 <section class="page-84 meet-requirements">
     <div class="container">
@@ -283,4 +300,4 @@
         </div>
     </div>
 </section>
-<?php echo do_shortcode('[rg-code f="repeat-elements/feedback-form.php"]'); ?>
+[rg-code f="repeat-elements/feedback-form.php"]

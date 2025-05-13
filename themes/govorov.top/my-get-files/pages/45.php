@@ -23,7 +23,7 @@
             <p class="title h3 pb-3">Стахановец</p>
             <p class="desc mb-4">Оставьте контактные данные, и мы свяжемся с вами в ближайшее время.</p>
             <div class="form-right">
-                <?= do_shortcode('[contact-form-7 id="60b819c" title="/stahanovec/ форма в баннере Стахановец"]') ?>
+                [contact-form-7 id="60b819c" title="/stahanovec/ форма в баннере Стахановец"]
             </div>
         </div>
     </div>
@@ -193,4 +193,4 @@
         </div>
     </div>
 </section>
-<?php echo do_shortcode('[rg-code f="repeat-elements/feedback-form.php"]'); ?>
+[rg-code f="repeat-elements/feedback-form.php"]

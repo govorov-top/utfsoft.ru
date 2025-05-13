@@ -22,7 +22,7 @@
             <p class="title h3 pb-3">АльфаДок</p>
             <p class="desc mb-4">Оставьте контактные данные, и мы свяжемся с вами в ближайшее время.</p>
             <div class="form-right">
-                <?= do_shortcode('[contact-form-7 id="c8a3692" title="/alfadok/ форма в баннере АльфаДок"]') ?>
+                [contact-form-7 id="c8a3692" title="/alfadok/ форма в баннере АльфаДок"]
             </div>
         </div>
     </div>
@@ -304,4 +304,4 @@
         </div>
     </div>
 </section>
-<?php echo do_shortcode('[rg-code f="repeat-elements/feedback-form.php"]'); ?>
+[rg-code f="repeat-elements/feedback-form.php"]

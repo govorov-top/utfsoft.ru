@@ -23,7 +23,7 @@
             <p class="title h3 pb-3">ИНДИД</p>
             <p class="desc mb-4">Оставьте контактные данные, и мы свяжемся с вами в ближайшее время.</p>
             <div class="form-right">
-                <?= do_shortcode('[contact-form-7 id="2e6429b" title="/indid/ форма в баннере ИНДИД"]') ?>
+                [contact-form-7 id="2e6429b" title="/indid/ форма в баннере ИНДИД"]
             </div>
         </div>
     </div>
@@ -203,4 +203,4 @@
         </div>
     </div>
 </section>
-<?php echo do_shortcode('[rg-code f="repeat-elements/feedback-form.php"]'); ?>
+[rg-code f="repeat-elements/feedback-form.php"]

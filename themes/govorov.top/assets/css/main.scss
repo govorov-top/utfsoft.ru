@@ -921,7 +921,7 @@ header#header.header {
             border: none;
             gap: 3px;
             position: relative;
-            z-index: 10400;
+            z-index: 1041;
 
             &.active {
                 align-items: flex-end;
@@ -953,7 +953,7 @@ header#header.header {
     margin: 0 auto;
     left: 0;
     width: 100%;
-    z-index: 10400;
+    z-index: 1041;
     min-height: 400px;
     height: max-content;
     padding: 40px 30px 30px;
@@ -1287,17 +1287,17 @@ main {
                 height: 2px;
                 transition: all 0.3s linear;
                 right: 0;
+                top: 50%;
                 background: var(--rg-color-site);
+                transform-origin: right center;
             }
 
             &:before {
-                transform: rotate(45deg);
-                top: -3px;
+                transform: translate(0, -50%) rotate(45deg);
             }
 
             &:after {
-                transform: rotate(-45deg);
-                bottom: -3px;
+                transform: translate(0, -50%) rotate(-45deg);
             }
         }
     }

@@ -24,7 +24,7 @@
             <p class="title h3 pb-3">МТС линк</p>
             <p class="desc mb-4">Оставьте контактные данные, и мы свяжемся с вами в ближайшее время.</p>
             <div class="form-right">
-                <?= do_shortcode('[contact-form-7 id="2d7a8a8" title="/mts-link/ форма в баннере МТС линк"]') ?>
+                [contact-form-7 id="2d7a8a8" title="/mts-link/ форма в баннере МТС линк"]
             </div>
         </div>
     </div>
@@ -291,4 +291,4 @@
         </div>
     </div>
 </section>
-<?php echo do_shortcode('[rg-code f="repeat-elements/feedback-form.php"]'); ?>
+[rg-code f="repeat-elements/feedback-form.php"]

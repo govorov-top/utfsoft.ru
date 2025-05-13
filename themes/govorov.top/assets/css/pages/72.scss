@@ -33,4 +33,16 @@
             }
         }
     }
+
+    &.products {
+        .item {
+            &:hover {
+                .btn_link {
+                    .arrow {
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
 }

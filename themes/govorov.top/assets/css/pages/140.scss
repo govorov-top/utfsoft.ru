@@ -1,0 +1,55 @@
+/******************************
+* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss
+* Стили страницы
+******************************/
+@import "../fragments/variables";
+@import "../fragments/components_mixin";
+@import "../fragments/media_mixin";
+@import "../fragments/fonts_mixin";
+/* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
+@include rg-banner;
+@include rg-grid-column((1, 2));
+/* Стили страницы */
+.page-140 {
+    &.key-benefits {
+        .item {
+            grid-template-columns: 424px 766px;
+            @include max_1400 {
+                grid-template-columns: 398px 666px;
+            }
+            @include max_1200 {
+                grid-template-columns: 345px 590px;
+            }
+            @include max_992 {
+                grid-template-columns: 230px 470px;
+            }
+            @include max_768 {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    &.user-features {
+        .wrapper {
+            max-width: 600px;
+            @include max_1400 {
+                max-width: 530px;
+            }
+            @include max_1200 {
+                max-width: 473px;
+            }
+            @include max_992 {
+                max-width: 344px;
+            }
+            @include max_768 {
+                display: contents;
+            }
+        }
+
+        .btn {
+            @include max_576 {
+                width: 100%;
+            }
+        }
+    }
+}
