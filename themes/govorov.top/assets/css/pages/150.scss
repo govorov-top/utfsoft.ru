@@ -1,0 +1,89 @@
+/******************************
+* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss
+* Стили страницы
+******************************/
+@import "../fragments/variables";
+@import "../fragments/components_mixin";
+@import "../fragments/media_mixin";
+@import "../fragments/fonts_mixin";
+/* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
+@include rg-banner;
+@include rg-block-1;
+@include rg-grid-column((1, 2));
+@include generate-gap-classes((40));
+/* Стили страницы */
+.page-150 {
+    &.main-advantages {
+        .items {
+            grid-template-columns: repeat(2, 349px);
+            gap: 40px 70px;
+            @include max_1400 {
+                grid-template-columns: repeat(2, 323px);
+            }
+            @include max_1200 {
+                grid-template-columns: repeat(2, 280px);
+                gap: 40px 50px;
+            }
+            @include max_992 {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px 60px;
+            }
+            @include max_768 {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    }
+
+    &.application-options {
+        .item {
+            grid-template-columns: 380px 766px;
+            @include max_1400 {
+                grid-template-columns: 380px 666px;
+            }
+            @include max_1200 {
+                grid-template-columns: 320px 590px;
+            }
+            @include max_992 {
+                grid-template-columns: 240px 460px;
+            }
+            @include max_768 {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    &.comprehensive-solution {
+        .wrapper {
+            max-width: 660px;
+            @include max_1400 {
+                max-width: 530px;
+            }
+            @include max_1200 {
+                max-width: 473px;
+            }
+            @include max_992 {
+                max-width: 344px;
+            }
+            @include max_768 {
+                display: contents;
+            }
+        }
+
+        .image {
+            @include max_1400 {
+                max-width: 437px;
+            }
+            @include max_1200 {
+                max-width: 344px;
+            }
+            @include max_768 {
+                max-width: 350px;
+            }
+            @include max_576 {
+                max-width: 340px;
+                width: 100% !important;
+            }
+        }
+    }
+}

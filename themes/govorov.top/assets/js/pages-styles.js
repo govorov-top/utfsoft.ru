@@ -47,3 +47,6 @@ import(/* webpackChunkName: "style-page-103" */ "../css/pages/103.scss");
 
 /* /astra-linux-desktop/ */
 import(/* webpackChunkName: "style-page-140" */ "../css/pages/140.scss");
+
+/* /dostup/ */
+import(/* webpackChunkName: "style-page-150" */ "../css/pages/150.scss");
