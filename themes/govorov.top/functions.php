@@ -308,7 +308,7 @@ function rg_widgets_init()
     register_sidebar(array(
         'name' => "Виджет #1 [footer]",
         'id' => 'footer-widget-1',
-        'description' => "Виджет в подвале №1.",
+        'description' => "Логотип, О нас, Контакты",
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<p class="widget-title">',
@@ -318,7 +318,7 @@ function rg_widgets_init()
     register_sidebar(array(
         'name' => "Виджет #2 [footer]",
         'id' => 'footer-widget-2',
-        'description' => "Виджет в подвале №2.",
+        'description' => "Footer Menu 1",
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<p class="widget-title">',
@@ -327,7 +327,7 @@ function rg_widgets_init()
     register_sidebar(array(
         'name' => "Виджет #3 [footer]",
         'id' => 'footer-widget-3',
-        'description' => "Виджет в подвале №3.",
+        'description' => "Footer Menu 2",
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<p class="widget-title">',
@@ -336,7 +336,7 @@ function rg_widgets_init()
     register_sidebar(array(
         'name' => "Виджет #4 [footer]",
         'id' => 'footer-widget-4',
-        'description' => "Виджет в подвале №4.",
+        'description' => "Footer Menu 3",
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<p class="widget-title">',
@@ -354,7 +354,7 @@ function rg_widgets_init()
     register_sidebar(array(
         'name' => "Виджет #6 [footer]",
         'id' => 'footer-widget-6',
-        'description' => "Виджет в подвале №6.",
+        'description' => "Контакты в подвале",
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<p class="widget-title">',

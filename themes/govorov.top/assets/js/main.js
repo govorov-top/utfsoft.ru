@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 const top = window.scrollY;
                 if (top > step) {
-                    if (!haveClassFixed && !isMobile) {
+                    if (!haveClassFixed) {
                         headerFixBlock.classList.add("fixed");
                         if (wpAdminBar) {
                             headerFixBlock.style.top = `${wpAdminBar.clientHeight}px`;
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     }
                 }
                 if (top < step) {
-                    if (haveClassFixed && !isMobile) {
+                    if (haveClassFixed) {
                         headerFixBlock.classList.remove("fixed");
                     }
                 }

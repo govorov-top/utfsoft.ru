@@ -55,17 +55,17 @@ $endDate = new DateTime(date('Y') + 1 . '-02-01');
                         'container' => 'div',
                         'container_class' => 'header-menu collapse navbar-collapse',
                         'container_id' => 'navbarNavHeaderMenu',
-                        'menu_class' => 'navbar-nav menu-items d-flex align-items-lg-center gap-2 gap-lg-3 gap-xl-4 w-100',
+                        'menu_class' => 'navbar-nav menu-items d-flex align-items-lg-center gap-4 gap-lg-3 gap-xl-4 w-100',
                         'fallback_cb' => 'BootstrapMenu::fallback',
                         'walker' => new BootstrapMenu()
                     ));
                     ?>
                 </nav>
             </div>
-            <div class="item header-callback d-none d-sm-flex align-items-start align-items-lg-end gap-3 gap-lg-0 flex-row-reverse flex-lg-column ms-auto">
-                <?= do_shortcode('[site_info phone]') ?>
+            <div class="item header-callback d-none d-sm-flex align-items-center gap-3 gap-lg-2  gap-xl-3 ms-auto">
                 <button class=" small-text strong popClick" data-pop="header-pop" id="requestCall">Позвоните мне
                 </button>
+                <?= do_shortcode('[site_info phone]') ?>
             </div>
         </div>
     </div>
@@ -75,10 +75,11 @@ $endDate = new DateTime(date('Y') + 1 . '-02-01');
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body d-flex p-0 flex-column">
-            <nav id="menu-paste" class="p-0 text-start navbar navbar-expand-lg header-nav-bar-custom align-items-start">
+            <nav id="menu-paste"
+                 class="p-0 mb-50 mb-sm-40 text-start navbar navbar-expand-lg header-nav-bar-custom align-items-start">
 
             </nav>
-            <button class="btn btn_max-content mt-auto popClick" data-pop="header-pop">Получить консультацию</button>
+            <button class="btn btn_max-content popClick" data-pop="header-pop">Получить консультацию</button>
         </div>
     </div>
 </header>

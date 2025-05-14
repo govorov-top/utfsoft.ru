@@ -657,6 +657,10 @@ p.point_go {
     border-radius: 50%;
 }
 
+.b24-widget-button-wrapper {
+    z-index: 1040 !important;
+}
+
 @keyframes fall {
     to {
         transform: translateY(250vh) translateX(10vw);
