@@ -50,3 +50,6 @@ import(/* webpackChunkName: "style-page-140" */ "../css/pages/140.scss");
 
 /* /dostup/ */
 import(/* webpackChunkName: "style-page-150" */ "../css/pages/150.scss");
+
+/* /moj-ofis/ */
+import(/* webpackChunkName: "style-page-186" */ "../css/pages/186.scss");

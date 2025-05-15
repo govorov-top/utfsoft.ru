@@ -1,0 +1,100 @@
+/******************************
+* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss
+* Стили страницы
+******************************/
+@import "../fragments/variables";
+@import "../fragments/components_mixin";
+@import "../fragments/media_mixin";
+@import "../fragments/fonts_mixin";
+/* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
+@include rg-banner;
+@include rg-grid-column((1, 2, 3));
+@include generate-gap-classes((40));
+/* Стили страницы */
+.page-186 {
+    &.pro3-components {
+        .nav-item,
+        .nav-item .btn {
+            @include max_768 {
+                width: 100%;
+            }
+        }
+
+        .items {
+            align-items: stretch;
+            grid-auto-rows: 1fr;
+
+            .item {
+                height: 100%;
+
+                .icon-title {
+                    gap: 15px;
+
+                    img {
+                        @include max_1200 {
+                            max-width: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.advantages {
+        .item {
+            grid-template-columns: 424px 766px;
+            @include max_1400 {
+                grid-template-columns: 380px 666px;
+            }
+            @include max_1200 {
+                grid-template-columns: 320px 590px;
+            }
+            @include max_992 {
+                grid-template-columns: 240px 460px;
+            }
+            @include max_768 {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    &.service-offer {
+        .items {
+            @include min_definite_width(992) {
+                align-items: stretch;
+                grid-auto-rows: 1fr;
+            }
+
+            .item {
+                @include min_definite_width(992) {
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    &.reliability-guarantee {
+        .items {
+            grid-template-columns: repeat(2, 349px);
+            gap: 50px 70px;
+            @include max_1400 {
+                grid-template-columns: repeat(2, 323px);
+                gap: 40px 50px;
+            }
+            @include max_1200 {
+                grid-template-columns: repeat(2, 280px);
+            }
+            @include max_992 {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px 60px;
+            }
+            @include max_992 {
+                gap: 40px 20px;
+            }
+            @include max_576 {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    }
+}
