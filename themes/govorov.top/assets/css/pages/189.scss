@@ -1,0 +1,63 @@
+/******************************
+* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss
+* Стили страницы
+******************************/
+@import "../fragments/variables";
+@import "../fragments/components_mixin";
+@import "../fragments/media_mixin";
+@import "../fragments/fonts_mixin";
+/* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
+
+/* Стили страницы */
+.page-189 {
+    &.contacts {
+        .wrapper {
+            max-width: 349px;
+            @include max_1400 {
+                max-width: 332px;
+            }
+            @include max_1200 {
+                max-width: 297px;
+            }
+            @include max_992 {
+                max-width: 193px;
+            }
+            @include max_768 {
+                display: contents;
+            }
+        }
+
+        .image {
+            img {
+                @include max_576 {
+                    width: 100% !important;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .items {
+            @include max_768 {
+                gap: 50px;
+            }
+            @include max_576 {
+                gap: 20px 35px;
+            }
+
+            .item {
+                &.phone,
+                &.email {
+                    p {
+                        white-space: nowrap;
+                    }
+                }
+
+                &.address {
+                    @include max_576 {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

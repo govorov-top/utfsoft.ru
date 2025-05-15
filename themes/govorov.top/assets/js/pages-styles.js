@@ -53,3 +53,6 @@ import(/* webpackChunkName: "style-page-150" */ "../css/pages/150.scss");
 
 /* /moj-ofis/ */
 import(/* webpackChunkName: "style-page-186" */ "../css/pages/186.scss");
+
+/* /kontakty/ */
+import(/* webpackChunkName: "style-page-189" */ "../css/pages/189.scss");
