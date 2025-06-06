@@ -9,7 +9,18 @@
 /* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
 @include rg-banner-2;
 @include rg-block-1;
-
 /* Стили страницы */
-.page-72 {
+.page-209 {
+    &.available-solutions {
+        .item {
+            img {
+                @include max_1400 {
+                    max-width: 35px;
+                }
+                @include max_576 {
+                    max-width: 30px;
+                }
+            }
+        }
+    }
 }

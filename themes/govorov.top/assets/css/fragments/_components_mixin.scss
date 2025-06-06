@@ -391,6 +391,31 @@ $spacing-properties: (
     }
 }
 
+// Баннер  rg-banner-2
+@mixin rg-banner-2 {
+    .rg-banner-2 {
+        .btn {
+            @include max_576 {
+                width: 100%;
+            }
+        }
+
+        .image {
+            img {
+                @include max_1400 {
+                    max-width: 1042px;
+                }
+                @include max_1200 {
+                    max-width: 855px;
+                }
+                @include max_992 {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
 // Блок rg-block-1
 @mixin rg-block-1 {
     .rg-block-1 {
@@ -420,14 +445,6 @@ $spacing-properties: (
     .rg-products-for-business {
         .items {
             .item {
-                &:hover {
-                    .btn_link {
-                        .arrow {
-                            width: 50px;
-                        }
-                    }
-                }
-
                 max-width: 600px;
                 margin-bottom: 60px;
                 @include max_1400 {

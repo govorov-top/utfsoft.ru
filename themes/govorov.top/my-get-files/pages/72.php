@@ -1,4 +1,4 @@
-<section class="page-72 pt-0 banner">
+<section class="page-72 pt-0 banner rg-banner-2">
     <div class="container">
         <div class="block-1100 mx-auto mb-3 mb-sm-4 mb-md-50 text-center">
             <h1 class="pb-4">Обработка и обеспечение безопасности информации</h1>

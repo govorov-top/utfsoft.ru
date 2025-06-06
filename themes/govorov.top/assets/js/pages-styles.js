@@ -59,3 +59,6 @@ import(/* webpackChunkName: "style-page-189" */ "../css/pages/189.scss");
 
 /* /o-nas/ */
 import(/* webpackChunkName: "style-page-207" */ "../css/pages/207.scss");
+
+/* /drugoe-po/ */
+import(/* webpackChunkName: "style-page-209" */ "../css/pages/209.scss");

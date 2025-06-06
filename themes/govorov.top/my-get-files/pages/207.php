@@ -30,5 +30,5 @@
         </div>
     </div>
 </section>
-<?php echo do_shortcode('[rg-code f="repeat-elements/rg-products-for-business.php"]'); ?>
-<?php echo do_shortcode('[rg-code f="repeat-elements/feedback-form.php"]'); ?>
+[rg-code f="repeat-elements/rg-products-for-business.php"]
+[rg-code f="repeat-elements/feedback-form.php"]

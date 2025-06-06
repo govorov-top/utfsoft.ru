@@ -1566,6 +1566,18 @@ form {
     }
 }
 
+.link-js {
+    &.item {
+        &:hover {
+            .btn_link {
+                .arrow {
+                    width: 50px;
+                }
+            }
+        }
+    }
+}
+
 // - Комментарии
 #rg-comments {
     max-width: 900px;
