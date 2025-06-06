@@ -1,6 +1,12 @@
 @use "sass:math";
 /******************************
-*
+* Компонент rg-container-for-cards
+* Миксин для генерации классов колонок гридов
+* Миксин для генерации классов gap, row-gap и column-gap
+* Форма перед футером .rg-feedback-form
+* Баннер  rg-banner
+* Блок rg-block-1
+
 ******************************/
 @import "_variables";
 @import "_media_mixin";
@@ -385,6 +391,7 @@ $spacing-properties: (
     }
 }
 
+// Блок rg-block-1
 @mixin rg-block-1 {
     .rg-block-1 {
         .item {
@@ -403,6 +410,40 @@ $spacing-properties: (
             @include max_768 {
                 max-width: 100%;
                 margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+// Блок rg-products-for-business
+@mixin rg-products-for-business {
+    .rg-products-for-business {
+        .items {
+            .item {
+                &:hover {
+                    .btn_link {
+                        .arrow {
+                            width: 50px;
+                        }
+                    }
+                }
+
+                max-width: 600px;
+                margin-bottom: 60px;
+                @include max_1400 {
+                    max-width: 530px;
+                }
+                @include max_1200 {
+                    max-width: 465px;
+                    margin-bottom: 50px;
+                }
+                @include max_992 {
+                    max-width: 340px;
+                }
+                @include max_768 {
+                    max-width: 100%;
+                    margin-bottom: 40px;
+                }
             }
         }
     }

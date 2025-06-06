@@ -7,18 +7,8 @@
 @import "../fragments/media_mixin";
 @import "../fragments/fonts_mixin";
 /* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
-@include rg-banner;
-@include rg-block-1;
+
 @include rg-products-for-business;
 /* Стили страницы */
-.page-2 {
-    &.banner {
-        .content {
-            .wrapper {
-                @include min_definite_width(1400) {
-                    max-width: 574px;
-                }
-            }
-        }
-    }
+.page-207 {
 }
