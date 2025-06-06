@@ -62,3 +62,6 @@ import(/* webpackChunkName: "style-page-207" */ "../css/pages/207.scss");
 
 /* /drugoe-po/ */
 import(/* webpackChunkName: "style-page-209" */ "../css/pages/209.scss");
+
+/* /info-bezopasnost/ */
+import(/* webpackChunkName: "style-page-212" */ "../css/pages/212.scss");

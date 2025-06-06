@@ -23,8 +23,8 @@
             <p class="title h3 pb-3">Программное обеспечение для информационной безопасности</p>
             <p class="desc mb-4">Оставьте контактные данные, и мы свяжемся с вами в ближайшее время.</p>
             <div class="form-right">
-                [contact-form-7 id="4cd9dc9" title="/obrabotka-i-obespechenie-bezopasnosti-informacii/ форма в баннере
-                Обработка и обеспечение безопасности информации"]
+                [contact-form-7 id="e696104" title="/drugoe-po/ форма в баннере Программное обеспечение для
+                информационной безопасности"]
             </div>
         </div>
     </div>

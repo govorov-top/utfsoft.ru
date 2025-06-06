@@ -1,0 +1,79 @@
+/******************************
+* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss
+* Стили страницы
+******************************/
+@import "../fragments/variables";
+@import "../fragments/components_mixin";
+@import "../fragments/media_mixin";
+@import "../fragments/fonts_mixin";
+/* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
+@include rg-banner-2;
+@include rg-block-1;
+@include rg-grid-column((1, 2));
+/* Стили страницы */
+.page-212 {
+    &.protection-personal-data {
+        .wrapper {
+            max-width: 600px;
+            @include max_1400 {
+                max-width: 470px;
+            }
+            @include max_1200 {
+                max-width: 370px;
+            }
+            @include max_992 {
+                max-width: 340px;
+            }
+            @include max_768 {
+                display: contents;
+            }
+        }
+
+        img {
+            @include max_1400 {
+                max-width: 420px;
+            }
+            @include max_1200 {
+                max-width: 393px;
+            }
+            @include max_992 {
+                max-width: 312px;
+            }
+            @include max_768 {
+                max-width: 350px;
+            }
+            @include max_576 {
+                max-width: 100%;
+            }
+        }
+
+        .btn {
+            @include max_768 {
+                display: flex;
+                margin: 0 auto;
+                justify-content: center;
+            }
+            @include max_576 {
+                width: 100%;
+            }
+        }
+    }
+
+    &.services {
+        .item {
+            grid-template-columns: 380px 766px;
+            @include max_1400 {
+                grid-template-columns: 380px 666px;
+            }
+            @include max_1200 {
+                grid-template-columns: 320px 590px;
+            }
+            @include max_992 {
+                grid-template-columns: 230px 460px;
+            }
+            @include max_768 {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
