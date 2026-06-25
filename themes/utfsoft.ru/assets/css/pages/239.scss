@@ -1,0 +1,49 @@
+/******************************
+* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss
+* Стили страницы
+******************************/
+@import "../fragments/variables";
+@import "../fragments/components_mixin";
+@import "../fragments/media_mixin";
+@import "../fragments/fonts_mixin";
+/* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
+@include rg-banner;
+@include rg-grid-column((2));
+@include generate-gap-classes((40, 50));
+/* Стили страницы */
+.page-239 {
+    &.drweb-discount {
+        .wrapper {
+            max-width: 600px;
+            @include max_1400 {
+                max-width: 530px;
+            }
+            @include max_1200 {
+                max-width: 450px;
+            }
+            @include max_992 {
+                max-width: 350px;
+            }
+            @include max_768 {
+                display: contents;
+            }
+        }
+
+        .btn {
+            @include max_576 {
+                width: 100%;
+            }
+        }
+    }
+
+    &.corp-solutions {
+        .image {
+            @include max_1400 {
+                max-width: 180px;
+            }
+            @include max_1200 {
+                max-width: 150px;
+            }
+        }
+    }
+}

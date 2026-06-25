@@ -65,3 +65,15 @@ import(/* webpackChunkName: "style-page-209" */ "../css/pages/209.scss");
 
 /* /info-bezopasnost/ */
 import(/* webpackChunkName: "style-page-212" */ "../css/pages/212.scss");
+
+/* /drweb/ */
+import(/* webpackChunkName: "style-page-236" */ "../css/pages/236.scss");
+
+/* /drweb/workstations/ */
+import(/* webpackChunkName: "style-page-239" */ "../css/pages/239.scss");
+
+/* /drweb/fileserver/ */
+import(/* webpackChunkName: "style-page-241" */ "../css/pages/241.scss");
+
+/* /drweb/mailserver/ */
+import(/* webpackChunkName: "style-page-243" */ "../css/pages/243.scss");
