@@ -50,6 +50,9 @@
 @include generate-spacing-classes(pb, (15, 40, 50));
 @include generate-spacing-classes(mb, (15, 40, 50));
 @include generate-spacing-classes(p, (15, 40, 50));
+@include generate-spacing-classes(px, (15, 40, 50));
+@include generate-spacing-classes(pt, (15, 40, 50));
+@include generate-spacing-classes(mt, (15, 40, 50));
 
 /* Normalize */
 :root {

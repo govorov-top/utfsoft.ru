@@ -77,3 +77,12 @@ import(/* webpackChunkName: "style-page-241" */ "../css/pages/241.scss");
 
 /* /drweb/mailserver/ */
 import(/* webpackChunkName: "style-page-243" */ "../css/pages/243.scss");
+
+/* /drweb/gateway/ */
+import(/* webpackChunkName: "style-page-251" */ "../css/pages/251.scss");
+
+/* /drweb/mobile/ */
+import(/* webpackChunkName: "style-page-254" */ "../css/pages/254.scss");
+
+/* /drweb/katana/ */
+import(/* webpackChunkName: "style-page-256" */ "../css/pages/256.scss");

@@ -1,0 +1,73 @@
+/******************************
+* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss
+* Стили страницы
+******************************/
+@import "../fragments/variables";
+@import "../fragments/components_mixin";
+@import "../fragments/media_mixin";
+@import "../fragments/fonts_mixin";
+/* Часто повторяющиеся элементы (/components/) - все они находятся в файле _components_mixin.scss */
+@include rg-banner;
+@include rg-grid-column((2, 3, 4));
+@include generate-gap-classes((40, 50));
+/* Стили страницы */
+.page-256 {
+    &.katana-system-features {
+        .item {
+            padding: 40px 0;
+            border-top: 1px solid #9a9a9a;
+            @include max_992 {
+                padding: 40px 0;
+            }
+            @include max_576 {
+                padding: 30px 0;
+            }
+
+            &:first-child {
+                padding-top: 0;
+                border-top: 0;
+            }
+
+            p {
+                max-width: 1080px;
+                margin-bottom: 15px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .btn {
+            margin-top: 20px;
+            @include max_576 {
+                width: 100%;
+            }
+        }
+    }
+    &.key-benefits {
+        img {
+            @include max_1400 {
+                max-height: 180px;
+            }
+            @include max_1200 {
+                max-height: 150px;
+            }
+        }
+    }
+    &.sig-non-sig-combo {
+        .wrapper {
+            max-width: 560px;
+            @include max_1400 {
+                max-width: 550px;
+            }
+            @include max_1200 {
+                max-width: 450px;
+            }
+            @include max_992 {
+                max-width: 100%;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
